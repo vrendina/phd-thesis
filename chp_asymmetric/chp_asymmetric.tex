@@ -1,0 +1,1724 @@
+%%% Reset counters for the footnotes and compound numbering
+%\setcounter{compound}{0}
+\stepcounter{cmpreset}
+\captionsetup[figure]{list=no} % hide figures from list in experimental section
+
+\chapter{Development of Sc(III)-Catalyzed Asymmetric Homologation of\\
+ Cycloalkanones with Non-Stabilized Diazoalkanes}
+ \label{chp:asymmetric}
+ %\thispagestyle{empty}
+ \pagebreak
+ 
+ \section{Introduction}
+ \doublespacing
+ 
+ In previous work, we had
+ demonstrated that scandium (III) salts function as highly effective catalysts for the diazoalkane carbonyl homologation reaction.\footnote{See chapter \ref{chp:diazobkg} for a more thorough discussion. (a) {\frenchspacing Moebius, D. C.; Kingsbury, J. S. Catalytic Homologation of Cycloalkanones with Substituted Diazomethanes. Mild and Efficient
+ Single-Step Access to $\alpha$-Tertiary and $\alpha$-Quaternary Carbonyl Compounds. \textit{J. Am. Chem. Soc.} \textbf{2009}, \textit{131}, 878-879.} (b) {\frenchspacing
+ Wommack, A. J.; Moebius, D. C.; Travis, A. L.; Kingsbury, J. S. Diverse Alkanones by Catalytic
+ Carbon Insertion into the Formyl C-H Bond. Concise Access to the Natural Precursor of Achyrofuran.
+ \textit{Org. Lett.} \textbf{2009}, \textit{11}, 3202-3205.} (c) {\frenchspacing Dabrowski, J. A.;
+ Moebius, D. C.; Wommack, A. J.; Kornahrens, A. F.; Kingsbury, J. S. Catalytic and Regioselective
+ Ring Expansion of Arylcyclobutanones with Trimethylsilyldiazomethane. Ligand-Dependent Entry to
+ $\beta$-Ketosilane or Enolsilane Adducts. \textit{Org. Lett.} \textbf{2010}, \textit{12},
+ 3598-3601.} \label{ref:askingsbury}} Given the success of these early reactions, we were eager to
+ begin developing a general catalytic enantioselective version of the reaction. In the ideal transformation, a generic
+ ketone, when combined with a chiral scandium catalyst and diazoalkane would undergo a regio-- and
+ stereoselective union to deliver a new homologated ketone (\ce{->}\ref{cmp:asaaa}, \refscheme{generalrxn}).
+ We believed it would be logical to start by extending the ring expansion of symmetrical
+ cycloalkanones to stereoselective insertion reactions.\footnote{{\frenchspacing Rendina, V. L.;
+ Moebius, D. C.; Kingsbury, J. S. An Enantioselective Synthesis of 2-Aryl Cycloalkanones by
+ Sc-Catalyzed Carbon Insertion. \textit{Org. Lett.} \textbf{2011}, \textit{13}, 2004-2007.}} 
+  \begin{Scheme}[h]
+  \centering \includegraphics[scale=0.8]{chp_asymmetric/images/generalrxn}
+  \begin{textblock}{1}(12.7,-4.1) \cmp{asaaa} \end{textblock}
+  \caption{General catalytic regio-- and enantioselective diazoalkane insertion.}
+  \label{sch:generalrxn}
+\end{Scheme}   
+ By starting from symmetrical cycloalkanones of the appropriate ring size,\footnote{The
+ order of reactivity for the ring expansion of cycloalkanones with diazomethane based on literature
+ precedents and qualitative observations is: cyclobutanone $\approx$ cyclohexanone $>$
+ cycloheptanone $>$ cyclopentanone. \frenchspacing{Gutsche, C.
+D. The Reaction of Diazomethane and Its Derivatives with Aldehydes and Ketones.
+\textit{Org. React.} \textbf{1954}, \textit{8}, 364-403}. \label{ref:asgutscherev}} the classic
+problems of regiochemical control could be removed and issues with overhomologation could be
+minimized initially.
+The ultimate goal of the project was to develop general methods for the construction alkyl, vinyl, and aryl
+ bearing stereogenic centers adjacent to the carbonyl functionality.
+
+ 
+%   \begin{figure}[h]
+%   \centering
+%   \vspace{2.8in}
+%   \includegraphics[scale=0.8]{chp_asymmetric/images/evanspybox}
+%   \begin{textblock}{5}(-1,-4) \small \textsf{\textit{Evans}
+%   \textbf{2001}\crossref{ref:asevans}\textsuperscript{a}}\end{textblock}
+%   \begin{textblock}{5}(10,-4) \small \textsf{\textit{Evans}
+%   \textbf{2003}\crossref{ref:asevans}\textsuperscript{b}}\end{textblock}  
+%   \begin{textblock}{1}(0,-12)
+%   \includegraphics[scale=0.35]{chp_asymmetric/images/evanspybox2ortep}\end{textblock}
+%   \begin{textblock}{1}(10.5,-13)
+%   \includegraphics[scale=0.4]{chp_asymmetric/images/evanspyboxortep}\end{textblock}
+%   \caption{Crystal structures of Evan's pybox \ce{Sc(OTf)3} complexes.}
+%   \label{fig:evanspybox}
+%   \end{figure}  
+%  
+ We felt confident that by combining scandium (III) salts with the correct chiral ligand, the
+ catalyst ligand complex would efficiently direct the stereochemical outcome of the newly forged
+ \ce{C-C} bonds. A survey of the Cambridge Structural Database\footnote{{\frenchspacing
+ Cambridge Structural Database (WebCSD). http://webcsd.ccdc.cam.ac.uk.proxy.bc.edu (accessed Jan 25, 2013).}} revealed
+ four crystal structures containing chiral ligands bound to scandium triflate.
+ Among the most well characterized and widely studied are the scandium PyBOX complexes reported by
+ the Evans' group (\ref{cmp:asaaaa} and \ref{cmp:asaaab}, \reffigure{xraypage}).\footnote{ (a)
+ {\frenchspacing Evans, D.
+ A.; Sweeney, Z.
+ K.; Rovis, T.; Tedrow, J. S. Highly Enantioselective Syntheses of Homopropargylic Alcohols and Dihydrofurans Catalyzed by a Bis(oxazolinyl)pyridine--Scandium Triflate Complex. \textit{J. Am. Chem. Soc.} \textbf{2001},
+ \textit{123}, 12095-12096.} (b) {\frenchspacing Evans, D. A.; Scheidt, K. A.; Fandrick, K. R.; Lam,
+ H. W.; Wu, J. Enantioselective Indole Friedel-Crafts Alkylations Catalyzed by
+ Bis(oxazolinyl)pyridine--Scandium(III) Triflate Complexes. \textit{J. Am. Chem. Soc.}
+ \textbf{2003}, \textit{125}, 10780-10781.} \label{ref:asevans}} Both structures show scandium bound
+ with an additional water molecule (omitted from the line drawings for clarity), bringing the
+ coordination number to seven.
+ Two additional scandium triflate structures, one based on a proline-derived
+ \textit{N}-oxide ligand (\ref{cmp:asaaac})\footnote{{\frenchspacing Liu, Y.;
+ Shang, D.; Zhou, X.; Liu, X.; Feng, X. Enantioselective Friedel-Crafts Alkylation of Indoles with
+ Alkylidene Malonates Catalyzed by \textit{N},\textit{N}-Dioxide-Scandium(III) Complexes:
+ Asymmetric Synthesis of $\beta$-Carbolines. \textit{Chem. Eur. J.} \textbf{2009}, \textit{15},
+ 2055-2058.} \label{ref:asfengstructure}} and one based on a BINOL ligand
+ framework\footnote{{\frenchspacing Di Bari, L.; Di Pietro, S.; Pescitelli, G.; Tur, F.; Mansilla,
+ J.; Sa\'{a}, J. M. \ce{[Ln(binolam)3].(OTf)3}, a New Class of Propeller-Shaped Lanthanide(III) Salt
+ Complexes as Enantioselective Catalysts: Structure, Dynamics and Mechanistic Insight. \textit{Chem.
+ Eur. J.} \textbf{2010}, \textit{16}, 14190-14201.}} were reported in 2009 and 2010, respectively. A
+ wider search revealed a fifth chiral scandium complex, containing \ce{ScBr3} complexed with a
+ bipyridine-based ligand (\ref{cmp:asaaad}).\footnote{{\frenchspacing Ishikawa,
+ S.; Hamada, T.; Manabe, K.; Kobayashi, S.
+ Catalytic Asymmetric Hydroxymethylation of Silicon Enolates Using an Aqueous Solution of Formaldehyde with a Chiral Scandium Complex. \textit{J. Am. Chem. Soc.}
+ \textbf{2004}, \textit{126}, 12236-12237.} \label{ref:askobayashistructure}} 
+ 
+  \begin{figure}[p]
+  \centering
+  \vspace{1.6in}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/xraypage}
+  %%%%% references
+  \begin{textblock}{5}(2,-12.5) \small \textsf{\textit{Evans}
+  \textbf{2001}\crossref{ref:asevans}\textsuperscript{a}}\end{textblock}
+  \begin{textblock}{5}(14,-12.5) \small \textsf{\textit{Evans}
+  \textbf{2003}\crossref{ref:asevans}\textsuperscript{b}}\end{textblock}
+    \begin{textblock}{5}(2.1,0) \small \textsf{\textit{Feng}
+   \textbf{2009}\crossref{ref:asfengstructure}}\end{textblock}
+   \begin{textblock}{5}(14,0) \small \textsf{\textit{Kobayashi}
+   \textbf{2004}\crossref{ref:askobayashistructure}}\end{textblock} 
+   %%%% compound numbers
+   \begin{textblock}{1}(1.5,-15) \cmp{asaaaa} \end{textblock}
+   \begin{textblock}{1}(13.5,-15.5) \cmp{asaaab} \end{textblock}
+   \begin{textblock}{1}(0.5, -2.5) \cmp{asaaac} \end{textblock}
+   \begin{textblock}{1}(13,-3) \cmp{asaaad} \end{textblock}
+   %%%% crystal structures
+   \begin{textblock}{1}(0,-24.5)
+   \includegraphics[scale=0.35]{chp_asymmetric/images/evanspybox2ortep}\end{textblock}
+   \begin{textblock}{1}(10.5,-25.5)
+   \includegraphics[scale=0.4]{chp_asymmetric/images/evanspyboxortep}\end{textblock}
+   \begin{textblock}{1}(10,-11.5)
+   \includegraphics[scale=0.3]{chp_asymmetric/images/kobayashibromideortep}\end{textblock}
+    \begin{textblock}{1}(-1,-12.5)
+  \includegraphics[scale=0.35]{chp_asymmetric/images/fengoxideortep}\end{textblock}
+  \vspace{0.3in}
+  \caption{Crystal structures of selected chiral scandium complexes.}
+  \label{fig:xraypage}
+  \end{figure}
+ 
+ Three of the four
+ structures in \reffigure{xraypage} contain a seven
+ coordinate pentagonal bipyramidal metal geometry. Scandium (III), because of its filled valence shell
+ and lack of \textit{d} electrons, tends to adopt coordination geometries that are based primarily
+ on steric constraints rather than traditional orbital overlap based geometries
+ observed for the transition metals.\footnote{{\frenchspacing Wu, J. Enantioselective
+ Lanthanide-Catalyzed Mukaiyama Aldol, Carbonyl-Ene, Sakurai-Hosomi, and Quinone Diels-Alder Reactions. Ph.D. Dissertation, Harvard University, Cambridge, MA, 2005.} } The
+ literature clearly shows precedents for scandium to form well-defined and competent chiral
+ catalysts. Chiral scandium complexes have been used to
+ catalyze a number of asymmetric \ce{C-C} bond forming reactions.\footnote{For reviews see: (a) {\frenchspacing Kobayashi, S.
+ Scandium Triflate in Organic Synthesis. \textit{Eur. J. Org. Chem.} \textbf{1999}, 15-27.} (b)
+ {\frenchspacing Mikami, K.; Terada, M.; Matsuzawa, H.
+ ``Asymmetric'' Catalysis by Lanthanide Complexes. \textit{Angew. Chem. Int. Ed.} \textbf{2002},
+ \textit{41}, 3512-3554.} (c) {\frenchspacing Kobayashi, S.; Sugiura, M.; Kitagawa, H.; Lam, W. W.
+ L. Rare-Earth Metal Triflates in Organic Synthesis. \textit{Chem. Rev.} \textbf{2002},
+ \textit{102}, 2227-2302.}} 
+ 
+
+
+ 
+%  \begin{figure}[h]
+%   \centering
+%   \vspace{2.5in}
+%   \includegraphics[scale=0.8]{chp_asymmetric/images/fengkobxrays}
+%   \begin{textblock}{5}(2.1,0) \small \textsf{\textit{Feng}
+%   \textbf{2009}\crossref{ref:asfengstructure}}\end{textblock}
+%   \begin{textblock}{5}(14,0) \small \textsf{\textit{Kobayashi}
+%   \textbf{2004}\crossref{ref:askobayashistructure}}\end{textblock}  
+%   \begin{textblock}{1}(-1,-13)
+%   \includegraphics[scale=0.6]{chp_asymmetric/images/fengoxideortep}\end{textblock}
+%   \begin{textblock}{1}(10,-11.5)
+%   \includegraphics[scale=0.35]{chp_asymmetric/images/kobayashibromideortep}\end{textblock}
+%   \vspace{20pt}
+%   \caption{Crystal structures of chiral scandium complexes.}
+%   \label{fig:fengkobxrays}
+%   \end{figure}  
+  
+  In the sections that follow, an account of how we developed the first catalytic asymmetric
+  diazoalkane carbon insertion reactions is presented. The crystallographic data from the literature
+  suggests a logical starting point for the development of a new method based on chiral scandium complexes. Ligand constructs
+ known to form competent catalysts with Sc(III) salts would be among the first screened for
+ asymmetric induction. Before discussing
+  experimental details, a brief background on alternative methods for the synthesis of
+  $\alpha$-substituted cycloalkanones is given. 
+ 
+ \pagebreak
+ \section{Methods for Asymmetric $\alpha$-Functionalization of
+ Cycloalkanones}
+ 
+ \subsection{Construction of $\alpha$-Tertiary Centers}
+ 
+ One of the most common methods for \ce{C-C} bond construction involves the
+ $\alpha$-functionalization of ketone enolates.
+ Some of the first sucessful methods for $\alpha$-functionalized of cycloalkanes in a
+ stereocontrolled fashion relied extensively on the pre-formation of chiral imines or hydrazones. In
+ 1976, Meyers and coworkers reported a highly enantioselective synthesis of 2-alkyl substituted
+ cyclohexanones through the formation of a lithio-chelated enamine
+ nucleophile (\ref{cmp:asaab}, \refscheme{asmeyers}).\footnote{{\frenchspacing Meyers, A. I.;
+ Williams, D.
+ R.; Druelinger, M.
+ Enantioselective Alkylation of Cyclohexanone via Chiral Lithio-Chelated Enamines. \textit{J. Am.
+ Chem. Soc.} \textbf{1976}, \textit{98}, 3032-3033.}} Upon treatment with an alkyl electrophile,
+ a stereoselective trap of the electrophile lead to products in up to 97.5:2.5 er
+ after careful imine hydrolysis.
+ The introduction of a chelating methyl ether moiety rigidified the proposed metalloenamine
+ intermediate \ref{cmp:asaab} and led to much higher levels of stereocontrol than previous reports
+ with imines that lacked an additional chelating group.\footnote{(a) {\frenchspacing Mea-Jacheet, D.; Horeau, A. Asymmetric Synthesis and Optical purity of 2-Methylcyclohexanone. \textit{Bull. Soc. Chim. Fr.} \textbf{1968}, 4571-4573.} (b) {\frenchspacing Kitamoto, M.; Hiroi, K.; Terashima, S.
+ Stereochemical Studies. XXIX. Asymmetric Synthesis of 2-Alkylcyclohexanones via Optically Active
+ Lithioenamines. \textit{Chem. Pharm. Bull.} \textbf{1974}, \textit{22}, 459-464.}} 
+  \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/meyers}
+  \begin{textblock}{1}(7.8,-1) \cmp{asaab} \end{textblock}
+  \caption{Meyers auxiliary based approach for $\alpha$-alkylation.}
+  \label{sch:asmeyers}
+\end{Scheme}   
+ 
+ Around the time of Meyers work, the Enders group introduced the proline derived chiral auxiliary
+ (\textit{S})-1-amino-2-methoxymethylpyrrolidine (SAMP, \ref{cmp:asaad}, \refscheme{assamp}), which
+ contained a very similar chelating functional group.\footnote{{\frenchspacing Enders, D.; Eichenauer, H.
+ Asymmetric Synthesis of $\alpha$-Substituted Ketones by Metalation and Alkylation of Chiral Hydrazones. \textit{Angew.
+ Chem. Int. Ed.} \textbf{1976}, \textit{15}, 549-551.}} The SAMP auxiliary and related derivatives
+ have been widely utilized for their often very high and predictable levels of stereoinduction and
+ for their mild and varied means of cleavage.\footnote{For a recent review see: {\frenchspacing Job, A.; Janeck, C. F.; Bettray, W.;
+ Peters, R.; Enders, D. The SAMP-/RAMP-Hydrazone Methodology in Asymmetric Synthesis.
+ \textit{Tetrahedron} \textbf{2002}, \textit{58}, 2253-2329.}} In the context of a cycloheptanone
+ substrate, the Holmes group sucessfully applied a SAMP hydrazone alkylation strategy to their
+ enantioselective synthesis of ($-$)-gloeosporone
+ (\ce{->}\ref{cmp:asaac}, \refscheme{assamp}).\footnote{{\frenchspacing Curtis, N.
+ R.; Holmes, A. B.; Looney, M. G.; Pearson, N. D.; Slim, G. C. Synthesis of ($-$)-Gloeosporone.
+ \textit{Tetrahedron Lett.} \textbf{1991}, \textit{32}, 537-540.}} Cleavage of the auxiliary was
+ achieved by treatment with ozone at low temperature, delivering the target cycloheptanone
+ \ref{cmp:asaaca} in 97:3 er. 
+ \begin{Scheme}[t]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/samp}
+  \begin{textblock}{1}(8.5,-0.5) \cmp{asaaca} \end{textblock}
+  \begin{textblock}{1}(15,-1) \cmp{asaac} \end{textblock}
+  \begin{textblock}{1}(18,-1) \cmp{asaad} \end{textblock}
+  \caption{Application of Ender's SAMP auxiliary in total synthesis.}
+  \label{sch:assamp}
+\end{Scheme}   
+ 
+More modern strategies have focused on the use of chiral catalysts to control stereochemistry, which
+foregoes the need to pre-install a costly chiral auxiliary in the substrate. The formation of an
+$\alpha$-tertiary center requires control over either the installation of the $\alpha$-substituent
+through an asymmetric alkylation event or control over installation of the $\alpha$-hydrogen. Aside
+from stoichiometric auxiliary-based approaches, catalytic methods for enolate alkylation based on
+phase transfer catalysts\footnote{{\frenchspacing Dolling, U. H.; Davis, P.; Grabowski, E. J. J.
+Efficient Catalytic Asymmetric Alkylations. 1. Enantioselective Synthesis of (+)-Indacrinone
+\textit{via} Chiral Phase-Transfer Catalysis. \textit{J. Am. Chem. Soc.} \textbf{1984}, \textit{106}, 446-447.}} and chiral lithium enolates\footnote{{\frenchspacing Imai, M.; Hagihara, A.; Kawasaki, H.; Manabe, K.; Koga, K. Catalytic Asymmetric Benzylation of Achiral Lithium Enolates Using a Chiral Ligand for Lithium in the Presence of an Achiral Ligand. \textit{J. Am. Chem. Soc.}
+\textbf{1994}, \textit{116}, 8829-8830.}} have also been demonstrated. Alternative approaches have
+examined catalytic methods for the installation of an $\alpha$-hydrogen through an enantioselective
+enolate protonation event.\footnote{For a review see:
+{\frenchspacing Mohr, J.
+T.; Hong, A.
+Y.; Stoltz, B.
+M.
+Enantioselective Protonation. \textit{Nature Chem.} \textbf{2009}, \textit{1}, 359-369.}} Achieving
+stereocontrol while delivering a group as small as a proton has been a significant challenge and
+the subject of considerable research.
+ 
+In 2005, the Yanagisawa group introduced an asymmetric protonation method utilizing a simple
+catalyst system derived from commercially available silver fluoride and (\textit{R})-BINAP.\footnote{{\frenchspacing Yanagisawa, A.; Touge, T.; Arai, T.
+Enantioselective Protonation of Silyl Enolates Catalyzed by a
+\ce{Binap.AgF} Complex. \textit{Angew. Chem. Int. Ed.} \textbf{2005}, \textit{44}, 1546-1548.}
+\label{ref:asyanagisawa}} Starting from a pre-formed silyl enol ether, face selective delivery of
+the proton from methanol was proposed to proceed through a silver fluoride BINAP complex that delivered methanol while
+concomitantly deprotecting the silyl ether (\ref{cmp:asaae}, \refscheme{asyanagisawaproton}). High
+yields and near perfect enantioselectivities were observed across a range of 2-aryl substituted cyclic substrates. The
+Yamamoto group also demonstrated a very similar asymmetric protonation reaction with a comparable
+substrate scope using a non-commercial chiral phosphoric acid catalyst.\footnote{{\frenchspacing
+Cheon, C.
+H.; Yamamoto, H.
+A Br\o nsted Acid Catalyst for the Enantioselective Protonation Reaction. \textit{J. Am. Chem. Soc.}
+ \textbf{2008}, \textit{130}, 9246-9247.}}  
+\begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/yanagisawaproton}
+  \begin{textblock}{1}(11,-0.5) \cmp{asaae} \end{textblock}
+  \caption{Yanagisawa's asymmetric protonation of silyl enol ethers.}
+  \label{sch:asyanagisawaproton}
+\end{Scheme}  
+ 
+ 
+ 
+ The Stoltz group has also examined enantioselective protonation reactions in the context
+ of palladium enolates.\footnote{(a) {\frenchspacing Mohr, J. T.; Nishimata, T.; Behenna, D.
+ C.; Stoltz, B.
+ M.
+ Catalytic Enantioselective Decarboxylative Protonation. \textit{J. Am. Chem. Soc.} \textbf{2006},
+ \textit{128}, 11348-11349.} (b) {\frenchspacing Marinescu, S. C.; Nishimata, T.; Mohr, J. T.;
+ Stoltz, B. M.
+ Homogeneous Pd-Catalyzed Enantioselective Decarboxylative Protonation. \textit{Org. Lett.}
+ \textbf{2008}, \textit{10}, 1039-1042.} \label{ref:stoltzprotonation}} When a racemic allyl
+ $\beta$-ketoester (\ref{cmp:asaaf}, \refscheme{asstoltzprotonation}) is combined with Pd(0) in the presence of
+ PHOX ligand \ref{cmp:asaah}, oxidative addition to the allyl group followed by decarboxylation
+ furnishes a chiral palladium enolate intermediate. By adding a superstoichiometric amount of
+ Meldrum's acid (\ref{cmp:asaag}, 2.5 equiv), the reaction can be effectively interrupted before
+ reductive elimination to deliver $\alpha$-tertiary substituted cycloalkanones in high yields and enantioselectivities. The catalytic cycle is closed by ultimately delivering the allyl fragment to the Meldrum's acid enolate, regenerating the
+ Pd(0) catalyst.
+  \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/stoltzprotonation}
+  \begin{textblock}{1}(1.5,-1.5) \cmp{asaaf} \end{textblock}
+  \begin{textblock}{1}(4.9,-1.5) \cmp{asaag} \end{textblock}
+  \begin{textblock}{1}(16,-1) \cmp{asaah} \end{textblock}
+  \begin{textblock}{1}(8.5,-3.37) \crossrefcmp{asaah} \end{textblock}
+  \caption{Stoltz's asymmetric protonation of Pd-enolates.}
+  \label{sch:asstoltzprotonation}
+\end{Scheme}   
+ 
+ 
+ Another strategy, not based on enolate alkylation or asymmetric protonation, was developed by the
+ Hoveyda group. Enantioselective conjugate addition of alkylzinc reagents to nitroalkenes catalyzed
+ by a chiral copper complex, followed by acidic Nef hydrolysis, affords $\alpha$-tertiary
+ substituted cycloalkanones (\refscheme{ashoveydaconj}).\footnote{{\frenchspacing Luchaco-Cullis, C.
+ A.; Hoveyda, A.
+ H.
+ Cu-Catalyzed Enantioselective Conjugate Addition of Alkylzincs to Cyclic Nitroalkenes: Catalytic
+ Asymmetric Synthesis of Cyclic $\alpha$-Substituted ketones. \textit{J. Am. Chem. Soc.}
+ \textbf{2002}, \textit{124}, 8192-8193.}} The hydrolysis, carried out in a subsequent step with
+ 20\% aqueous sulfuric acid, leads to minimal racemization of the products. Notably, the method
+ was amenable to the synthesis of a variety of ring sizes and high levels of enantioselectivity
+ were observed from 5 to 12 membered rings.
+ 
+ 
+ \begin{Scheme}[h]
+  \centering \includegraphics[scale=0.8]{chp_asymmetric/images/hoveydaconj}
+  \begin{textblock}{1}(13,-1) \cmp{asaai} \end{textblock}
+  \begin{textblock}{1}(3.8,-3) \crossrefcmp{asaai} \end{textblock}
+  \caption{Hoveyda's conjugate addition to nitroalkenes.}
+  \label{sch:ashoveydaconj}
+\end{Scheme}   
+ 
+ 
+ The Shi group introduced a two-step protocol to access optically active
+ 2-aryl cyclopentanones using an enantioselective epoxidation of
+ cyclobutylidene olefins (\refscheme{asshirearrangement}).\footnote{{\frenchspacing Shen, Y.-M.;
+ Wang, B.; Shi, Y.
+ Enantioselective Synthesis of 2-Aryl Cyclopentanones by Asymmetric Epoxidation and Epoxide Rearrangement. \textit{Angew. Chem.
+ Int. Ed.} \textbf{2006}, \textit{45}, 1429-1432.} \label{ref:asshitertiary}} Treatment of
+ trisubstituted cyclobutylidene olefins with catalyst \ref{cmp:asaaj} in the presence of Oxone\regtm\  delivered
+ the intermediate chiral epoxides in high yields and enantioselectivities. Upon exposure of the
+ epoxides to \ce{Et2AlCl}, a facile and highly selective rearrangement to the 2-aryl substituted
+ cyclopentanones occurred. Shi also showed that by simply adding lithium iodide during the
+ Lewis-acid mediated rearrangement, the opposite enantiomer of the cyclopentanones could be obtained with high
+ stereochemical fidelity. This obviates the need to synthesize the opposite enantiomer of catalyst
+ \ref{cmp:asaaj}, which can often be challenging if the source of chirality is ultimately derived
+ from a chiral pool molecule. This method was extended to the synthesis of $\alpha$-quaternary
+ cyclopentanones by starting from tetrasubstituted cyclobutylidene olefins.\footnote{{\frenchspacing Shen, Y.-M.; Wang, B.; Shi, Y. Enantioselective Synthesis of 2-Alkyl-2-Aryl Cyclopentanones by Asymmetric Epoxidation of Tetrasubstituted Cyclobutylidene Olefins and Epoxide Rearrangement. \textit{Tetrahedron Lett.} \textbf{2006}, \textit{47}, 5455-5458.}} 
+ \begin{Scheme}[t]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/shirearrangement}
+  \begin{textblock}{1}(16,-1) \cmp{asaaj} \end{textblock}
+  \begin{textblock}{1}(4.4,-3.2) \crossrefcmp{asaaj} \end{textblock}
+  \caption{Shi's asymmetric epoxidation / rearrangement strategy.}
+  \label{sch:asshirearrangement}
+\end{Scheme}   
+ 
+  \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/macmillansomo}
+  \begin{textblock}{1}(9.5,-1) \cmp{asaaja} \end{textblock}
+  \begin{textblock}{1}(18.3,-3.2) \cmp{asaajb} \end{textblock}
+  \begin{textblock}{1}(6.1,-3.32) \crossrefcmp{asaajb} \end{textblock}
+  \caption{Asymmetric allylation with MacMillan's SOMO catalysis.}
+  \label{sch:macmillansomo}
+\end{Scheme}   
+ In 2010 MacMillian reported an intriguing new organocatalytic allylation
+ method (\refscheme{macmillansomo}).\footnote{{\frenchspacing Mastracchio, A.; Warkentin, A.
+ A.; Walji, A.
+ M.; MacMillan, D. W. C. Direct and Enantioselective $\alpha$-Allylation of Ketones \textit{via}
+ Singly Occupied Molecular Orbital (SOMO) Catalysis. \textit{Proc. Natl. Acad. Sci. U.S.A.}
+ \textbf{2010}, \textit{107}, 20648-20651.} \label{ref:macmillansomo}} Treatment of unfunctionalized
+ cycloalkanones with \ref{cmp:asaajb} and CAN facilitates access to a unique three electron
+ $\pi$-system (\ref{cmp:asaaja}) through a single electron oxidation event. Face-selective radical
+ coupling with substituted allyl trimethylsilanes lead directly to $\alpha$-tertiary substituted
+ chiral cycloalkanones with excellent enantioselectivity. 
+
+ 
+ \subsection{Construction of $\alpha$-Quaternary Centers}
+ 
+ The construction of quaternary centers, especially those possessing all-carbon
+ substituents, presents a significant and ongoing challenge for synthetic
+ chemists.\footnote{For a reviews on methods for all-carbon quaternary center construction see: (a)
+ {\frenchspacing Trost, B. M.; Jiang, C. Catalytic Enantioselective Construction of All-Carbon
+ Quaternary Stereocenters. \textit{Synthesis} \textbf{2006}, 369-396.} (b) {\frenchspacing Douglas,
+ C.
+ J.; Overman, L.
+ E.
+ Catalytic Asymmetric Synthesis of All-Carbon Quaternary Stereocenters. \textit{Proc. Natl. Acad.
+ Sci. U.S.A.} \textbf{2004}, \textit{101}, 5363-5367.}} In their seminal work, Doyle and Jacobsen
+ demonstrated a highly enantioselective catalytic asymmetric alkylation of tin enolates to form
+ products bearing all-carbon quaternary centers
+ (\refscheme{asjacobsentin}).\footnote{{\frenchspacing Doyle, A.
+ G.; Jacobsen, E.
+ N.
+ Enantioselective Alkylations of Tributyltin Enolates Catalyzed by Cr(salen)Cl: Access to Enantiomerically Enriched
+ All-Carbon Quaternary Centers. \textit{J. Am. Chem. Soc.} \textbf{2005}, \textit{127}, 62-63.}}
+ Tetrasubstituted tin enolates underwent smooth conversion to the $\alpha$-quaternary cycloalkanones
+ upon treatment with chromium salen complex \ref{cmp:asaak} and an appropriate alkyl electrophile.
+ Cycloalkanones of varying ring sizes were isolated in moderate to high yields with excellent levels of stereocontrol over the newly constructed \ce{C-C} bond. Trisubstituted tin
+ enolates that would lead to $\alpha$-tertiary products decomposed under the reaction conditions and
+ afforded products in low yields and modest enantioselectivities.
+  \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/jacobsentin}
+   \begin{textblock}{1}(12.5,-4) \cmp{asaak} \end{textblock}
+  \begin{textblock}{1}(5,-3.35) \crossrefcmp{asaak} \end{textblock}
+  \caption{Jacobsen's asymmetric alkylation of tin enolates.}
+  \label{sch:asjacobsentin}
+\end{Scheme}   
+ 
+The Buchwald\footnote{(a) {\frenchspacing \AA
+hman, J.; Wolfe, J.
+P.; Troutman, M.
+V; Palucki, M.; Buchwald, S. L. Asymmetric Arylation of Ketone Enolates. \textit{J. Am. Chem. Soc.}
+ \textbf{1998}, \textit{120}, 1918-1919.} (b) {\frenchspacing Hamada, T.; Chieffi, A.; \AA hman, J.; Buchwald, S. L. An Improved Catalyst for the Asymmetric Arylation of Ketone Enolates. \textit{J. Am. Chem.
+ Soc.} \textbf{2002}, \textit{124}, 1261-1268.} \label{ref:asbuchwaldarylation}} and
+ Hartwig\footnote{{\frenchspacing Liao, X.; Weng, Z.; Hartwig, J. F. Enantioselective $\alpha$-Arylation of Ketones with Aryl Triflates Catalyzed by Difluorphos Complexes of Palladium
+ and Nickel. \textit{J. Am. Chem. Soc.} \textbf{2008}, \textit{130}, 195-200.}} groups introduced similar cross-coupling strategies to access
+ all-carbon quaternary centers containing an aromatic substituent. In Buchwald's approach, a two step sequence involving formylation and condensation to prepare an $\alpha$' blocked vinylogous amide
+(\ref{cmp:asaal}, \refscheme{asbuchwaldarylation}) was necessary to prevent enolization and coupling
+from occuring on the left half of the molecule.
+Hartwig focused on indanone and tetralone substrates lacking enolizable $\alpha$' protons
+(\refscheme{ashartwigarylation}).
+Both methods utilized sodium \textit{tert}-butoxide to generate a sodium enolate that
+transmetallated to a chiral Pd(II) or Ni(II) intermediate and ultimately underwent a stereoselective
+reductive elimination to forge the new \ce{C-aryl} bond. Buchwald then cleaved the vinylogous amide
+protecting group through a dilute acid mediated retro-Claisen condensation. The primary differences
+between the two methods were in the choice of chiral ligand and aryl coupling partner. Buchwald
+later expanded the substrate scope to include vinyl electrophiles.\footnote{{\frenchspacing Chieffi, A.; Kamikawa, K.; \AA hman, J.; Fox, J. M.; Buchwald, S. L. Catalytic Asymmetric Vinylation of Ketone Enolates. \textit{Org. Lett.}
+ \textbf{2001}, \textit{3}, 1897-1900.}}  
+   \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/buchwaldarylation}
+  \begin{textblock}{1}(2.5,-1.5) \cmp{asaal} \end{textblock}
+  \begin{textblock}{1}(17,-0.8) \cmp{asaam} \end{textblock}
+  \begin{textblock}{1}(6.1,-3.78) \crossrefcmp{asaam} \end{textblock}
+  \caption{Buchwald's asymmetric arylation of $\alpha$'-blocked cycloalkanones.}
+  \label{sch:asbuchwaldarylation}
+\end{Scheme}   
+    \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/hartwigarylation}
+  \begin{textblock}{1}(17.5,-0.8) \cmp{asaan} \end{textblock}
+  \begin{textblock}{1}(6,-3.35) \crossrefcmp{asaan} \end{textblock}
+  \caption{Hartwig's asymmetric arylation of $\alpha$'-blocked cycloalkanones.}
+  \label{sch:ashartwigarylation}
+\end{Scheme}   
+ 
+ 
+ The Trost\footnote{{\frenchspacing Trost, B. M.; Schroeder, G. M.
+ Palladium-Catalyzed Asymmetric Allylic Alkylation of Ketone Enolates. \textit{J. Am. Chem. Soc.}
+ \textbf{2004}, \textit{121}, 6759-6760.}} and Stoltz\footnote{(a) {\frenchspacing Behenna, D.
+ C.; Stoltz, B.
+ M.
+ The Enantioselective Tsuji Allylation. \textit{J. Am. Chem. Soc.} \textbf{2004}, \textit{126}, 15044-15045.} (b)
+ {\frenchspacing Mohr, J. T.; Behenna, D. C.; Harned, A. M.; Stoltz, B. M. Deracemization of
+ Quaternary Stereocenters by Pd-Catalyzed Enantioconvergent Decarboxylative Allylation of Racemic
+ $\beta$-Ketoesters. \textit{Angew. Chem. Int. Ed.} \textbf{2005}, \textit{44}, 6924-6927.}} groups both developed palladium mediated enolate allylation methods that
+ generate $\alpha$-keto all-carbon quaternary centers. In Stoltz's work, starting from either the
+ $\beta$-keto allyl ester (\ref{cmp:asaao}, \refscheme{stoltzallylation}) or allyl enol carbonate
+ (\ref{cmp:asaap}) lead to the same intermediate chiral Pd(II) enolate. Reductive elimination with
+ the allyl fragment furnished $\alpha$-quaternary allyl substituted cycloalkanones in high yields
+ with excellent levels of enantioselectivity. The mechanistic insight gained through the development of
+ this process lead Stoltz to extend this metholodology to allow for the synthesis of
+ $\alpha$-tertiary centers through asymmetric protonation as discussed
+ previously.\crossref{ref:stoltzprotonation}
+  \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/stoltzallylation}
+  \begin{textblock}{1}(1.6,-0.9) \cmp{asaao} \end{textblock}
+  \begin{textblock}{1}(6.5,-0.9) \cmp{asaap} \end{textblock}
+  \caption{Stoltz's asymmetric allylation of Pd-enolates.}
+  \label{sch:stoltzallylation}
+\end{Scheme}   
+ 
+ With the exception of MacMillan's notable allylation reactions,\crossref{ref:macmillansomo} all of
+ the previous examples required a multi-step sequence to install functional group handles that would
+ be utilized in the key stereodefining reaction and then ultimately removed to access the target
+ cycloalkanone products. We envisioned developing a general strategy to directly access a broad
+ range of chiral $\alpha$-substituted cycloalkanones in a single carbon insertion step with aryl--,
+ vinyl--, and alkyl-substituted diazoalkanes.
+ The versatility and prevalence of the ketone functional group justifies the development of
+ methods complementary to those aforementioned.  
+ 
+ \pagebreak
+ \section{Discovery of a Catalyst System for Asymmetric $\alpha$-Arylation}
+ 
+ We initially decided to target the enantioselective $\alpha$-arylation of cycloalkanones for two
+ primary reasons.
+ The Brewer group had recently introduced a mild and operationally simple method for the synthesis of
+ aryl-substituted diazoalkanes based on a modified Swern oxidation procedure.\footnote{(a)
+ {\frenchspacing Javed, M. I.; Brewer, M. Diazo Preparation \textit{via} Dehydrogenation of
+ Hydrazones with Activated DMSO. \textit{Org. Lett.} \textbf{2007}, \textit{9}, 1789-1792.} (b)
+ {\frenchspacing Javed, M. I.; Brewer, M. Diphenyldiazomethane. \textit{Org. Synth.} \textbf{2008},
+ \textit{85}, 189-195.} \label{ref:asbrewer}}  A simple protocol for preparing the requisite
+ diazoalkanes, coupled with the relative stability of aryl-substituted
+ diazoalkanes,\footnote{For the relative reactivity of substituted diazoalkanes see \reffigure{nucleophilicity} on page
+ \pageref{fig:nucleophilicity}.} made $\alpha$-arylation an ideal proving ground for the first asymmetric insertion
+ reactions.
+
+In advance of looking at any catalytic asymmetric reactions, we wanted to run a control experiment
+to determine if the products of our reaction would retain their stereochemical information in the
+presence of scandium triflate. The Shi group reported earlier that $\alpha$-aryl cyclopentanones
+readily racemize on silica gel, presumably through a rather facile enolization
+pathway.\crossref{ref:asshitertiary} We began by preparing an optically active sample of
+(\textit{R})-2-phenylcycloheptanone according to a three step sequence using the asymmetric
+protonation chemistry developed by Yanagisawa
+(\refscheme{asracemizationone}).\crossref{ref:asyanagisawa}
+  \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/racemizationone}
+  \begin{textblock}{1}(0.35,-0.7) \cmp{ascyclohexanone} \end{textblock}
+  \begin{textblock}{1}(3.3,-3.3) \cmp{diazoaa} \end{textblock}
+  \begin{textblock}{1}(5.8,-0.7) \cmp{xaaa} \end{textblock}
+  \begin{textblock}{1}(11.6,-0.7) \cmp{asaaq} \end{textblock}
+  \begin{textblock}{1}(18,-0.7) \cmp{asaar} \end{textblock}
+  \caption{Preparation of optically active 2-phenylcycloheptanone.}
+  \label{sch:asracemizationone}
+\end{Scheme}   
+Scandium-catalyzed homologation of cyclohexanone with phenyldiazomethane (\ref{cmp:diazoaa})
+afforded racemic 2-phenylcycloheptanone (\ref{cmp:xaaa}) in a 65\% distilled yield. Dropwise
+addition of 0.95 equivalents of LDA to \ref{cmp:xaaa} followed by trapping with TMSCl selectively
+delivered the thermodynamic enol silane \ref{cmp:asaaq} in 85\% yield.
+Asymmetric protonation according to the reported conditions provided access
+(\textit{R})-2-phenylcycloheptanone (\ref{cmp:asaar}) in 83\% yield and 95:5 er in our
+hands.\footnote{The Yanagisawa group reported a 95\% yield and 98.5:1.5 er for the preparation of 
+\ref{cmp:asaar}.
+See reference \ref{ref:asyanagisawa} for details.} Exposure of \ref{cmp:asaar} to phenyldiazomethane,
+\ce{Sc(OTf)3}, or the combination of the two (toluene, 0 \degc, 6 h) resulted in no loss of enantiopurity (95:5 er by chiral SFC analysis). This promising initial result indicated that chiral homologation products should be configurationally
+stable under conditions of scandium catalysis. \refscheme{asracemizationone} also
+underscores the benefits of eliminating the three step sequence that must precede asymmetric protonation, as products like \ref{cmp:asaar} could
+be accessible in a single asymmetric homologation step.
+
+
+We also wanted to run a simple mechanistic control to determine if the scandium-catalyzed reactions
+proceeded through a pathway involving an epoxide intermediate. House had previously shown that
+epoxides formed in Lewis acid mediated ring expansion reactions readily underwent rearrangement
+to the corresponding aldehydes.\footnote{{\frenchspacing House, H. O.; Grubbs, E. J.; Gannon, W. F.
+The Reaction of Ketones with Diazomethane. \textit{J. Am. Chem. Soc.} \textbf{1960}, \textit{82},
+4099-4106.}} We had never detected any epoxide or aldehyde byproducts in any scandium catalyzed ring expansion reactions (by $^1$H NMR), but regardless, we carried out the experiment shown in \refscheme{asepoxideexperiment}. Epoxide \ref{cmp:asaara} was obtained
+through standard chemistry in an 87\% yield over two steps from cyclohexanone. Subjecting
+epoxide \ref{cmp:asaara} to 10 mol \% \ce{Sc(OTf)3} at $-78$ \degc\  for 5 days resulted in $<$2\%
+conversion, clearly indicating that it was improbable the scandium catalyzed homologation reactions
+involved an epoxide intermediate. The most plausible mechanism was that
+previously discussed in the literature, a concerted collapse of a diazonium
+betaine to directly deliver the observed ring expanded products
+(\refscheme{mechanism}, page \pageref{sch:mechanism}).\crossref{ref:asgutscherev}
+
+ \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/epoxideexperiment}
+  \begin{textblock}{1}(3.4,-0.2) \crossrefcmp{ascyclohexanone} \end{textblock}
+   \begin{textblock}{1}(9.4,-0.2) \cmp{asaara} \end{textblock}
+   \begin{textblock}{1}(14.8,-0.2) \crossrefcmp{xaaa} \end{textblock}
+%   \begin{textblock}{1}(11.6,-0.7) \cmp{asaaq} \end{textblock}
+%   \begin{textblock}{1}(18,-0.7) \cmp{asaar} \end{textblock}
+  \caption{Mechanistic probe of plausible epoxide rearrangement pathway.}
+  \label{sch:asepoxideexperiment}
+\end{Scheme}   
+
+\subsection{Optimized Conditions for Consistent Reactivity}
+
+\begin{wrapfigure}{r}{2.8in}
+  \centering
+  \vspace{-40pt}
+  \includegraphics[scale=0.3]{chp_asymmetric/images/scandiumhydratedortep}
+  %\begin{textblock}{5}(-1,-4) \small \textsf{test}\end{textblock}
+  \caption{Crystal structure of \ce{Sc(H2O)9(OTf)3}.}
+  \vspace{-25pt}
+  \label{fig:asscandiumhydrated}
+  \end{wrapfigure}
+The newly discovered scandium catalyzed homologation reactions often gave variable and
+unpredictable results that appeared to depend on the source of \ce{Sc(OTf)3} and batch of
+diazoalkane solution.
+In order to obtain meaningful results when optimizing conditions for asymmetric reactions, the reaction
+variability would first need to be understood and mitigated. At the time this project began,
+no special protocols were in place to purify any of the reaction components. The \ce{Sc(OTf)3} was
+often used as received and the aryl-diazoalkanes were prepared by directly following the
+reported Brewer procedure.\crossref{ref:asbrewer} In order to mimimize reaction variability, efforts
+were undertaken to rigorously purify and dry \textit{all} reaction components: solvents,
+\ce{Sc(OTf)3}, ketones, diazoalkanes, and ligands.
+
+Scandium triflate is a deliquescent solid that rapidly absorbs significant quantities of atmospheric
+moisture. Crystallographic data from the literature has shown \ce{Sc(OTf)3} to bind up to nine water
+molecules (\reffigure{asscandiumhydrated}).\footnote{{\frenchspacing Abbasi, A.; Lindqvist-Reis, P.;
+Eriksson, L.; Sandstr\"{o}m, D.; Lidin, S.; Persson, I.; Sandstr\"{o}m, M. Highly Hydrated Cations:
+Deficiency, Mobility, and Coordination of Water in Crystalline Nonahydrated Scandium(III),
+Yttrium(III), and Lanthanoid(III) Trifluoromethanesulfonates. \textit{Chem. Eur. J.} \textbf{2005},
+\textit{11}, 4065-4077.}} Although \ce{Sc(OTf)3} is known to retain catalytic activity even in
+aqueous media,\footnote{{\frenchspacing Kobayashi, S.; Hachiya, I. Lanthanide Triflates as
+Water-Tolerant Lewis Acids. Activation of Commercial Formaldehyde Solution and Use in the Aldol
+Reaction of Silyl Enol Ethers with Aldehydes in Aqueous Media. \textit{J. Org. Chem.} \textbf{1994},
+\textit{59}, 3590-3596.}} we had anecdotal evidence that suggested drier conditions lead to higher
+reaction efficiencies for diazoalkane insertion reactions.\footnote{Reaction rates can be
+approximated visually by the evolution of nitrogen gas and the loss of the characteristic
+diazoalkane color.} When Kobayashi first introduced \ce{Sc(OTf)3} in
+1993, he reported drying the salt at 200 \degc\ under high vacuum before use.\footnote{{\frenchspacing Kobayashi, S.; Hachiya, I.; Araki, M.; Ishitani, H.
+Scandium Trifluoromethanesulfonate (\ce{Sc(OTf)3}). A Novel Reusable Catalyst in the Diels-Alder
+Reaction. \textit{Tetrahedron Lett.} \textbf{1993}, \textit{34}, 3755-3758.}} We took this drying
+method one step further and dried commercial \ce{Sc(OTf)3} under high vacuum at 200 \degc\  with
+inline \ce{P2O5} for 24 hours before taking the salt into an inert atmosphere glove box using
+rigorous Schlenk techniques.
+
+Diazoalkane solutions were originally prepared according to the general procedure reported by Brewer.\crossref{ref:asbrewer} In a typical experimental procedure, a
+solution of the hydrazone and triethylamine were added dropwise to a cold solution of chlorodimethylsulfonium chloride, formed \textit{in situ} from oxalyl chloride and DMSO (\refscheme{asbrewerswern}).
+After stirring for an hour at $-$78 \degc, the reaction mixture was filtered to remove insoluble
+triethylammonium chloride and carefully concentrated to remove THF. The neat diazoalkane was then
+dissolved in toluene and stored at $-78$ \degc. Following this procedure gave fairly pure
+diazoalkane solutions, but we wanted to be sure to remove all traces of Lewis basic impurities. We modified the procedure to include an aqueous workup which
+removed any residual triethylamine and DMSO. The oxidation was run for one hour
+in a 9:1 \ce{Et2O}:\ce{CH2Cl2} solvent mixture and immediately poured into a separatory funnel
+containing an ice cold 50\% solution of aqueous \ce{NH4Cl}. The \ce{NH4Cl} layer was drained and the
+organics were washed with \ce{H2O} and saturated \ce{NaHCO3} before drying over solid \ce{K2CO3}. Filtration,
+concentration, and finally dissolution in toluene afforded exceptionally pure diazoalkane solutions. 
+\begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/brewerswern}
+  \begin{textblock}{1}(16,-0.7) \crossrefcmp{diazoaa} \end{textblock}
+  \caption{Original preparation of aryl-substituted diazoalkanes by Brewer.}
+  \label{sch:asbrewerswern}
+\end{Scheme}  
+
+Unfortunately, by performing an aqueous workup on the diazoalkanes, we inadvertently introduced an
+additional problem. Occasionally we would observe the formation of a white precipitate in some of
+the diazoalkane solutions after prolonged storage at $-78$ \degc. After numerous unsuccessful
+attempts to isolate and characterize the white precipitate, we realized that it was residual water
+from inefficient drying of diazoalkane solution after workup. Although \ce{K2CO3} was not the most
+efficient dessicant, the highest yields of diazoalkane were obtained with solutions dried over
+\ce{K2CO3}. The residual water was ultimately best removed by carefully gravity filtering the
+diazoalkane solution at $-$78 \degc\ in a cold-jacketed dropping funnel, then storing the clear
+solution over 3\AA\ molecular sieves.
+
+With rigorously dried \ce{Sc(OTf)3}, pure and dry diazoalkane solutions, distilled ketones, and
+solvents passed through an alumina column and stored over 3\AA\ molecular
+sieves,\footnote{{\frenchspacing Williams, D.
+B.
+G.; Lawton, M.
+Drying of Organic Solvents: Quantitative Evaluation of the Efficiency of Several Desiccants.
+\textit{J. Org. Chem.} \textbf{2010}, \textit{75}, 8351-8354.}} dramatic increases in reaction
+efficiency were observed.\footnote{{\frenchspacing Rendina, V. L.; Kaplan, H. Z.; Kingsbury, J. S.
+Highly Efficient and Enantioselective $\alpha$-Arylation of Cycloalkanones by Scandium-Catalyzed
+Diazoalkane-Carbonyl Homologation. \textit{Synthesis} \textbf{2012}, \textit{44}, 686-693.}
+\label{ref:asrendinapsp}} More importantly though, reactions worked in a predictable and
+reproducible manner.
+When we had prepared racemic 2-phenylcycloheptanone (\ref{cmp:xaaa}) previously,
+the reaction was run with 10 mol \% \ce{Sc(OTf)3} and 1.1 equivalents of phenyldiazomethane
+(\ref{cmp:diazoaa}) for 16 hours (\refscheme{asracemizationone},
+page \pageref{sch:asracemizationone}).
+After workup and attempted purification by silica gel chromatography, the desired product was obtained in a quantitative yield but was contaminated with overhomologation byproducts.\footnote{Not isolated, but double insertion was detected by low resolution mass spectrometry. \ce{C20H23O} [M+H]$^+$: 279.1749.} Careful K\"{u}gelrohr distillation delivered analytically pure material in a modest 65\% yield. Under the new drier conditions, running the reaction for 15 minutes with 0.5 mol \% \ce{Sc(OTf)3}, 1.0
+equivalents of phenyldiazomethane, and 1.2 equivalents of cyclohexanone, a 92\% isolated yield was
+obtained after silica gel chromatography. By modifying the stoichiometry, no further purification
+away from overhomologation byproducts was necessary. The reaction rates were so high, an 18 gauge
+exit needle was needed to relieve excess pressure generated by the copious amounts of nitrogen gas evolved.
+\begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/rendinapspsubstrates}
+  \begin{textblock}{1}(13.5,-10.3) \cmp{xaac} \end{textblock}
+  \begin{textblock}{1}(6.5,-10.2) \crossrefcmp{diazoaa} \end{textblock}
+  %row 1
+  \begin{textblock}{1}(2,-6.6) \cmp{xaab} \end{textblock}
+  \begin{textblock}{1}(5.5,-6.6) \cmp{xaad} \end{textblock}
+  \begin{textblock}{1}(9,-6.6) \cmp{xaae} \end{textblock}
+  \begin{textblock}{1}(12.8,-6.6) \cmp{xaaf} \end{textblock}
+  \begin{textblock}{1}(16.5,-6.6) \cmp{xaag} \end{textblock}
+  % row 2
+\begin{textblock}{1}(2,-1.5) \cmp{xaah} \end{textblock}
+\begin{textblock}{1}(5.5,-1.5) \cmp{xaai} \end{textblock}
+\begin{textblock}{1}(9,-1.5) \crossrefcmp{xaaa} \end{textblock}
+\begin{textblock}{1}(12.8,-1.5) \cmp{xaaj} \end{textblock}
+\begin{textblock}{1}(18.2,-3.3) \cmp{xaak} \end{textblock}
+  \caption{Highly efficient insertion reactions with aryl-diazoalkanes.}
+  \label{sch:asrendinapspsubstrates}
+\end{Scheme}  
+
+The newly optimized conditions were successfully applied to a number of ring expansion reactions
+with aryl-substituted diazoalkanes (\refscheme{asrendinapspsubstrates}).\crossref{ref:asrendinapsp}
+Good scope with regard to the diazoalkane and ketone ring size were demonstrated. Reactions
+catalyzed by low loadings of \ce{Sc(OTf)3} (0.5--7 mol \%) were complete in $<$1 hour and gave high
+yields in all cases tested. In addition to being reliable and efficient, the reactions could be
+scaled to afford gram quantities of homologation products (\ce{->}\ref{cmp:xaac}). With reliable
+protocols in place and an understanding that water was the culprit of previous reproducibility
+issues, we were prepared to examine asymmetric insertion reactions. 
+
+\subsection{Early Results with Bis(oxazoline) Ligands}
+
+We began by evaluating the PyBOX\crossref{ref:asevans} and bipyridine
+diol\crossref{ref:askobayashistructure} ligand frameworks previously reported to form competent
+chiral scandium complexes (\refscheme{asinitialligandscreen}). In an inert atmosphere glove box,
+\ce{Sc(OTf)3} was stirred in toluene with a slight excess of the ligand for 1.5 hours to pre-form
+the ligand-metal complex. During complexation, 25 mol \% THF was added as a cosolvent to help
+solubilize the scandium salt. The catalyst mixture was removed from the glove box, connected to a nitrogen manifold, and stirred with cyclohexanone for 15 minutes. After cooling to $-$78 \degc,
+phenyldiazomethane (\ref{cmp:diazoaa}) was added in a single portion and the reactions were stirred
+until no further evolution of nitrogen gas was observed. An aliquot of the reaction mixture was purified by
+preparative thin-layer chromatography and analyzed for optical purity by chiral SFC analysis in
+comparison with authentic racemic material. Commercially available PyBOX ligand \ref{cmp:asaas}
+delivered \ref{cmp:xaan} in a measurable 56:44 er. The bipyridine diol ligand \ref{cmp:asaat} afforded racemic product. We also tested a
+commercially available Salen\footnote{{\frenchspacing Larrow, J. F.; Jacobsen, E. N. Asymmetric
+Processes Catalyzed by Chiral (Salen)Metal Complexes. \textit{Topics Organomet. Chem.} \textbf{2004}, \textit{6},
+123-152.}} ligand which produced nearly racemic product. Ligands \ref{cmp:asaat} and \ref{cmp:asaau}
+were likely not stable under the reaction conditions, as diazoalkanes are known to undergo \ce{O-H}
+insertion reactions.\footnote{See the discussion in Chapter \ref{chp:diazobkg} for examples.}
+Etherification of the two \ce{O-H} groups would decrease the binding affinity of the ligand and
+metal, leading to background reaction by uncomplexed scandium.
+\begin{Scheme}[h]
+  \centering
+  \begin{textblock}{1}(3.1,2.2) \crossrefcmp{ascyclohexanone} \end{textblock}
+  \begin{textblock}{1}(6.2,2.2) \crossrefcmp{diazoaa} \end{textblock}
+  \begin{textblock}{1}(13.3,2.6) \cmp{xaan} \end{textblock}
+  \begin{textblock}{1}(2.6,5.3) \cmp{asaas} \end{textblock}
+  \begin{textblock}{1}(8.2,5.3) \cmp{asaat} \end{textblock}
+  \begin{textblock}{1}(17,3.2) \cmp{asaau} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/initialligandscreen}
+  \caption{Initial ligand screening.}
+  \label{sch:asinitialligandscreen}
+\end{Scheme}  
+
+
+
+Previous experiments had shown that Lewis basic impurities could dramatically affect reaction
+efficiency. Reactions run with PyBOX ligand \ref{cmp:asaas} visually progressed more slowly than
+those without the ligand present. We believed that by excising the bridging pyridine ring, we
+could decrease the Lewis basicity of the ligand while simultaneously bringing the ligand blocking
+groups closer to the metal center. The well known bis(oxazoline) ligand class retains the blocking
+group structure of the PyBOX ligands, but contains a methylene bridge between the two oxazoline
+units. While scandium PyBOX crystal structures have been reported, there are no examples of scandium
+bis(oxazoline) structures. In contrast, a preponderance of bis(oxazoline) copper
+complexes have been reported.\footnote{Nineteen Cu(II) bis(oxazoline) crystal
+structures were discussed by Desimoni in a 2006 review. {\frenchspacing Desimoni, G.; Faita, G.;
+J\o rgensen, K.
+A.
+C$_2$-Symmetric Chiral Bis(oxazoline) Ligands in Asymmetric Catalysis. \textit{Chem. Rev.}
+\textbf{2006}, \textit{106}, 3561-3651.} \label{ref:asboxreview}} \reffigure{ascoppercomplexes}
+shows a direct comparison between copper PyBOX\footnote{{\frenchspacing Evans, D. A.; Kozlowski, M. C.; Murry, J. A.; Burgey,
+C. S.; Campos, K. R.; Connell, B. T.; Staples, R. J. C$_2$-Symmetric Copper (II) Complexes as Chiral
+Lewis Acids. Scope and Mechanism of Catalytic Enantioselective Aldol Additions of Enolsilanes to
+(Benzyloxy)acetaldehyde. \textit{J. Am. Chem. Soc.} \textbf{1999}, \textit{121}, 669-685.}} and
+copper BOX\footnote{{\frenchspacing Evans, D. A.; Johnson, J. S.; Burgey, C. S.; Campos,
+K. R. Reversal in Enantioselectivity of \textit{tert}-Butyl Versus Phenyl-Substituted Bis(oxazoline)
+Copper(II) Catalyzed Hetero Diels-Alder and Ene Reactions. Crystallographic and Mechanistic Studies.
+\textit{Tetrahedron Lett.} \textbf{1999}, \textit{40}, 2879-2882.}} hexafluoroantimonate salts
+containing the same valine-derived oxazoline units. The BOX complex (right,
+\ref{cmp:asaaw}) shows a smaller through space N$_{ox}$\ce{-}N$_{ox}$ distance (1.13 \AA\  shorter)
+and a significantly compressed N$_{ox}$\ce{-}Cu\ce{-}N$_{ox}$ internal angle relative to the
+corresponding PyBOX complex (left, \ref{cmp:asaav}).
+\begin{figure}[t]
+\vspace{1.65in}
+  \centering
+     \begin{textblock}{1}(0.7,1.2) \cmp{asaav} \end{textblock}
+   \begin{textblock}{1}(11.7,1.2) \cmp{asaaw} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/evanscopper}
+  \begin{textblock}{5}(2,0.5) \small \textsf{N$_{ox}$\ce{-}N$_{ox}$ distance 3.95
+  \AA \\ $\angle$ N$_{ox}$\ce{-}Cu\ce{-}N$_{ox}$ 158.4$^\circ$}\end{textblock}
+  \begin{textblock}{5}(12.5,0.5) \small \textsf{N$_{ox}$\ce{-}N$_{ox}$ distance 2.82
+  \AA \\ $\angle$ N$_{ox}$\ce{-}Cu\ce{-}N$_{ox}$ 91.6$^\circ$}\end{textblock} 
+  \begin{textblock}{1}(-1.5,-9)
+  \includegraphics[scale=0.3]{chp_asymmetric/images/copperpyboxortep}\end{textblock}
+  \begin{textblock}{1}(10,-9)
+  \includegraphics[scale=0.3]{chp_asymmetric/images/copperboxortep}\end{textblock}
+  \vspace{0.6in}
+  \caption{Comparison of copper PyBOX and BOX complexes. Counterions omitted for clarity.}
+  \label{fig:ascoppercomplexes}
+\end{figure}  
+
+
+We quickly tested several readily available BOX ligands, hoping the different steric
+and electronic properties would translate into increased levels of stereoinduction
+(\refscheme{asfirstboxscreen}).
+We were pleased to see that ligand \ref{cmp:boxasab} provided much higher levels of selectivity. Different blocking
+groups (\ref{cmp:boxasaa}, \ref{cmp:boxasac}) and bis(oxazoline) \ref{cmp:boxasad} resulted in
+lower selectivity. Excited by this promising lead, we initiated a broader screen of BOX ligands
+(\refscheme{asbigboxscreen}). The bis(oxazoline) framework contains three diversity sites for
+C$_2$-symmetric ligands, making it a highly tunable and privileged ligand
+class.\crossref{ref:asboxreview} We wanted to simultaneously optimize with regard to both backbone substitution and the amino alcohol derived blocking groups.\footnote{For a lead reference on the
+benefits of multi-factor optimization see: {\frenchspacing Lendrem, D.; Owen, M.; Godbert,
+S. DOE (Design of Experiments) in Development Chemistry: Potential Obstacles. \textit{Org. Process
+Res. Dev.} \textbf{2001}, \textit{5}, 324-327.}}
+ \begin{Scheme}[t]
+  \centering
+   \begin{textblock}{1}(3.1,2.3) \crossrefcmp{ascyclohexanone} \end{textblock}
+   \begin{textblock}{1}(6.2,2.3) \crossrefcmp{diazoaa} \end{textblock}
+   \begin{textblock}{1}(14,2) \crossrefcmp{xaan} \end{textblock}
+   \begin{textblock}{1}(1.6,5.3) \cmp{boxasaa} \end{textblock}
+    \begin{textblock}{1}(6.4,5.3) \cmp{boxasab} \end{textblock}
+     \begin{textblock}{1}(12,5.3) \cmp{boxasac} \end{textblock}
+      \begin{textblock}{1}(17,5.3) \cmp{boxasad} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/firstboxscreen}
+  \caption{Screen of commercially available bis(oxazoline) ligands.}
+  \label{sch:asfirstboxscreen}
+\end{Scheme}
+
+Examination of the results in \refscheme{asbigboxscreen} showed that backbone substitution was
+integral to obtaining high levels of induction. Ligands lacking geminal substitution on the bridging
+methylene are known to tautomerize, which could adversely impact the ligand-metal
+binding. We prepared a series of ligands containing cyclic backbone
+substitution to probe the effect of bite angle on enantioselectivity. Davies and coworkers had
+prepared a similar series of BOX ligands and observed a strong dependence of enantioselectivity on ligand bite
+angle in copper catalyzed Diels-Alder reactions.\footnote{(a) {\frenchspacing Davies, I. W. I. W.;
+Gerena, L.; Castonguay, L.; Senanayake, C.
+H.; Larsen, R. D.; Verhoevena, T. R.; Reidera, P. J.; Verhoeven, T. R.; Reider, P. J. The Influence
+of Ligand Bite Angle on the Enantioselectivity of Copper(II)-Catalysed Diels-Alder Reactions.
+\textit{Chem. Commun.} \textbf{1996}, 1753-1754.} (b) {\frenchspacing Davies, I. W.; Deeth, R. J.;
+Larsen, R. D.; Reider, P. J. A CLFSE/MM Study on the Role of Ligand Bite-Angle in Cu(II)-Catalyzed
+Diels-Alder Reactions. \textit{Tetrahedron Lett.} \textbf{1999}, \textit{40}, 1233-1236.}\label{ref:asdaviesdielsalder}} \begin{Scheme}[p]
+  \centering
+%% header row
+  \begin{textblock}{1}(3,2.3) \crossrefcmp{ascyclohexanone} \end{textblock}
+  \begin{textblock}{1}(6.2,2.3) \crossrefcmp{diazoaa} \end{textblock}
+  \begin{textblock}{1}(13.3,2.6) \crossrefcmp{xaan} \end{textblock}
+%% row 1
+   \begin{textblock}{1}(7.4,5.9) \crossrefcmp{boxasaa} \end{textblock}
+    \begin{textblock}{1}(11.8,5.9) \crossrefcmp{boxasab} \end{textblock}
+     \begin{textblock}{1}(16.5,5.9) \crossrefcmp{boxasac} \end{textblock}
+ %% row 2
+   \begin{textblock}{1}(2,11) \cmp{ligandac} \end{textblock}
+    \begin{textblock}{1}(7.2,11) \cmp{ligandad} \end{textblock}
+     \begin{textblock}{1}(12,11) \cmp{ligandae} \end{textblock}
+     \begin{textblock}{1}(16.8,11) \cmp{ligandaf} \end{textblock}
+ %% row 3
+    \begin{textblock}{1}(1.8,15.8) \cmp{boxasae} \end{textblock}
+    \begin{textblock}{1}(7,15.8) \cmp{boxasaf} \end{textblock}
+     \begin{textblock}{1}(12,15.8) \cmp{ligandal} \end{textblock}
+     \begin{textblock}{1}(16.8,15.8) \cmp{boxasag} \end{textblock}
+%% row 4
+    \begin{textblock}{1}(4.2,20) \cmp{boxasah} \end{textblock}
+    \begin{textblock}{1}(9.35,20) \cmp{boxasai} \end{textblock} %% dibenzyl gemdimethyl
+     \begin{textblock}{1}(14.65,20) \cmp{ligandaa} \end{textblock} %% indabox
+  \includegraphics[scale=0.8]{chp_asymmetric/images/bigboxscreen}
+  \vspace{10pt}
+  \caption{Wider screen of bis(oxazoline) ligands reveals two optimum ligands.}
+  \label{sch:asbigboxscreen}
+\end{Scheme}
+Ligand \ref{cmp:ligandac}, containing a three-membered ring backbone, showed the highest selectivity
+(87:13 er) among the series, consistent with the results obtained by Davies. However, no clear trend
+emerged from these data. Ligand \ref{cmp:ligandad} showed a significant drop in selectivty (55:45
+er), which was regained again with ligand \ref{cmp:ligandae} (85.5:14.5 er). Purity of the ligand
+may have been a determining factor, as ligand \ref{cmp:ligandad} was not as easy to crystallize
+cleanly as the others in the series. Some of the ligands in \refscheme{asbigboxscreen} have also
+been observed to crystallize as a solvate complex with water. Changing the blocking group to a single phenyl ring on each half and placing geminal methyl groups
+on the backbone afforded comparable levels of selectivity (ligand \ref{cmp:boxasae}, 85:15 er).
+Installing geminal ethyl groups on the backbone increased the selectivity slightly
+(\ref{cmp:boxasaf}, 89:11 er), but with geminal benzyl groups the selectivity dropped
+(\ref{cmp:ligandal}, 57:43 er). Running with \textit{tert}-leucine derived BOX \ref{cmp:boxasag}
+gave completely racemic material. Curiously, phenylalanine derived BOX \ref{cmp:boxasai} and
+indanyl BOX \ref{cmp:ligandaa} gave an identical 91:9 er. Material from the reaction with ligand
+\ref{cmp:boxasai} was isolated in an excellent 93\% yield.
+
+We hoped at this point that we could spend time further refining and optimizing the reaction
+conditions with commercially available BOX ligand \ref{cmp:boxasai} to improve the selectivity beyond 91:9 er.
+Significant effort was invested in optimizing the reaction with regard to stoichiometry, solvent, temperature, and even
+various additives (\reftable{asoptimization}). Reactions run in \ce{CH2Cl2} afforded lower
+selectivities, but the values were consistent regardless of changes with respect to
+stoichiometry (entries 1--6). Using coordinating solvents either shut down the reaction in the case of \ce{CH3CN} (entry
+7), or gave lower levels of selectivity in the case of \ce{Et2O} (entry 8). Entry 10, run in
+toluene at $-$90 \degc, showed the highest selectivity at 92.5:7.5 er. The freezing point of toluene
+($-$95 \degc) and the practicality of running reactions at temperatures lower than $-78$ \degc\
+prevented us from looking at even lower temperatures. We looked at various additives other than THF
+hoping that the appropriate additive could help solubilize or stabilize the chiral catalyst. Adding
+25 mol \%  \ce{CH3CN}, \ce{Et2O}, or DME  effectively had no impact on the
+selectivity (entries 11--13). Addition of 2,6-lutidine or pyridine had a detrimental effect on both
+reaction kinetics and the observed enantioselectivity (entries 14, 15). This may help rationalize
+why reactions with PyBOX ligand \ref{cmp:asaas} were sluggish and only moderately selective. We also
+found that although THF appeared to help solubilize the catalyst mixture, it was unnecessary to
+obtain high levels of selectivity (entry 17). By pre-mixing the catalyst suspension with
+cyclohexanone for 15 minutes, the reaction mixture became homogeneous and afforded comparable
+levels of enantioselectivity (90:10 er).
+Dropping the catalyst loading to 5 mol \% had no effect on the enantioselectivity and increasing the catalyst loading to 20 mol \% gave an identical result (entries 18, 19).
+
+\singlespacing
+\ctable[
+	caption = Attempts to optimize reaction conditions with bis(oxazoline) ligand \ref{cmp:boxasai}.,
+	label = nowidth,
+	pos = t,
+	label = tbl:asoptimization,
+	doinside = \footnotesize,
+	botcap,
+	notespar
+]{ccccccccc}{
+	\tnote{\textit{Conditions:} 0.1 M in solvent with 25 mol \% additive, 1.0 equiv
+	phenyldiazomethane (\ref{cmp:diazoaa}). Ligand \ref{cmp:boxasai} and \ce{Sc(OTf)3} pre-complexed
+	for 1.5 hrs at 23 \degc. Stirred 15 min with cyclohexanone (\ref{cmp:ascyclohexanone}) before cooling.}
+	\tnote[b]{Determined by chiral SFC analysis in comparison with authentic racemic material.}
+	\tnote[c]{Isolated yield after silica gel chromatography.}
+	\tnote[d]{Run with 18 mg of powdered sieves and 25 mol \% THF.}
+	\begin{textblock}{1}(3.1,-14) \crossrefcmp{ascyclohexanone} \end{textblock}
+	\begin{textblock}{1}(6,-14) \crossrefcmp{diazoaa} \end{textblock}
+	\begin{textblock}{1}(10.1,-15.95) \crossrefcmp{boxasai} \end{textblock}
+	\begin{textblock}{1}(14.4,-14.2) \crossrefcmp{xaan} \end{textblock}
+}{
+\multicolumn{9}{c}{
+\includegraphics[scale=0.8]{chp_asymmetric/images/conditionscreenhead} \vspace{10pt}
+} \\
+\FL
+%%% begin header line
+\multirow{2}{*}{entry\tmark} &  mol \% & mol \% & equiv & \multirow{2}{*}{solvent} & \multirow{2}{*}{additive} & \multirow{2}{*}{temp (\degc)} & \multirow{2}{*}{er (\textit{R}/\textit{S})\tmark[b]} & \multirow{2}{*}{yield (\%)\tmark[c]} \NN
+&\ce{Sc(OTf)3} & \ref{cmp:boxasai} & \ref{cmp:ascyclohexanone} & & & & & \ML 
+%% end header line, begin data
+1 & 10 & 11 & 1.1 & CH$_2$Cl$_2$ & THF & $-$78   & 84.5:15.5 (\textit{S}) & 99 \\
+2\tmark[d] & 10 & 11 & 1.2 & CH$_2$Cl$_2$ & 3\AA\ sieves & $-$78   & 84:16 (\textit{S}) & 99 \\
+3\tmark[d] & 10 & 11 & 1.2 & CH$_2$Cl$_2$ & 4\AA\ sieves & $-$78   & 84.5:15.5 (\textit{S}) & $>$98 \\
+4 & 10 & 11 & 1.5 & CH$_2$Cl$_2$ & THF & $-$78   & 83.5:16.5 (\textit{S}) & $>$98 \\
+5 & 10 & 11 & 2.0 & CH$_2$Cl$_2$ & THF & $-$78   & 83.5:16.5 (\textit{S}) & 98 \\
+6 & 10 & 11 & 4.0 & CH$_2$Cl$_2$ & THF & $-$78   & 83:17 (\textit{S}) & 95 \\
+7 & 10 & 11 & 1.2 & \ce{CH3CN} & $-$ & $-$78   & nd & nr \\
+8 & 10 & 11 & 1.2 & Et$_2$O & $-$ & $-$78   & 75:25 (\textit{S}) & nd \\
+9 & 10 & 11 & 1.2 & toluene & THF & $-$78   & 91:9 (\textit{S}) & 93 \\
+\rowcolor{gray!15} 10 & 10 & 11 & 1.2 & toluene & THF & $-$90   & \textbf{92.5:7.5 (\textit{S})} &
+nd \\
+11 & 10 & 11 & 1.2 & toluene & CH$_3$CN & $-$78   & 90.5:9.5 (\textit{S}) & nd \\
+12 & 10 & 11 & 1.2 & toluene & Et$_2$O & $-$78   & 90.5:9.5 (\textit{S}) & nd \\
+13 & 10 & 11 & 1.2 & toluene & DME & $-$78   & 91:9 (\textit{S}) & nd \\
+14 & 10 & 11 & 1.2 & toluene & 2,6-lutidine & $-$78   & 72.5:27.5 (\textit{S}) & nd \\
+15 & 10 & 11 & 1.2 & toluene & pyridine & $-$78   & 57.5:42.5 (\textit{S}) & nd \\
+16 & 10 & 11 & 1.2 & toluene & NaOTf & $-$78   & 90.5:9.5 (\textit{S}) & nd \\
+17 & 10 & 11 & 1.2 & toluene & $-$ & $-$78   & 90:10 (\textit{S}) & nd \\
+18 & 5 & 5.5 & 1.2 & toluene & THF & $-$78   & 90.5:9.5 (\textit{S}) & nd \\
+19 & 20 & 22 & 1.2 & toluene & THF & $-$78   & 90.5:9.5 (\textit{S}) & nd \LL}
+\doublespacing
+
+\subsection{Optimal Conditions for Medium Ring Arylation}
+  
+After struggling to obtain higher selectivities through extensive optimization, we wanted to
+glean more information about the catalyst-ligand complex. $^1$H NMR analysis of scandium BOX
+mixtures showed significant line broadening and multiple additional signals, consistent with a
+poorly defined and fluxional catalyst structure. By constrast, $^1$H NMR analysis of scandium PyBOX
+mixtures showed cleanly resolved signals slightly offset from the uncomplexed ligand, consistent with a well
+defined monomeric catalyst species in solution. Attempts to obtain a solid state structure of
+scandium BOX complexes lead to a number of bis(oxazoline) triflate salt structures
+(\ce{->}\ref{cmp:xabf}, \refscheme{boxtriflatesalt}). 
+ \begin{Scheme}[h]
+ % \centering
+  \begin{textblock}{1}(9,1) \includegraphics[scale=0.8]{chp_asymmetric/images/triflatesaltformation}
+  \end{textblock}
+   \begin{textblock}{1}(10.2,6.5) \crossrefcmp{ligandal} \end{textblock}
+   \begin{textblock}{1}(16.6,6.5) \cmp{xabf} \end{textblock}
+  \includegraphics[scale=0.35]{chp_asymmetric/images/xray/xabf_nolabels}
+  \caption{Formation of a triflate salt with attempts to crystallize scandium bis(oxazoline) complexes.}
+  \label{sch:boxtriflatesalt}
+\end{Scheme}
+It is plausible that residual water on the
+\ce{Sc(OTf)3}, ligand, or in the solvents, caused water to exchange for one of the triflate ligands,
+producing a Br{\o}nsted acid.\footnote{{\frenchspacing Kobayashi, S.; Nagayama, S.; Busujima, T.
+Lewis Acid Catalysts Stable in Water. Correlation between Catalytic Activity in Water and Hydrolysis Constants and Exchange Rate
+Constants for Substitution of Inner-Sphere Water Ligands. \textit{J. Am. Chem. Soc.} \textbf{1998},
+\textit{120}, 8287-8288.}} The crystal structures of scandium PyBOX complexes contain a bound
+inner-sphere water which could indicate a higher Br\o nsted basicity of the BOX ligand framework.
+The increased basicity serves to funnel the Br{\o}nsted acid equilibrium to \ref{cmp:xabf}. It is
+also plausible the the BOX triflate salt was simply less soluble than the corresponding PyBOX triflate salt. A control
+experiment with 10 mol \% \ref{cmp:xabf} indicated that it was not a competent catalyst. These data are also consistent with experiments that showed undried \ce{Sc(OTf)3} gave variable and significantly lower levels of
+enantioselectivity.
+
+
+\begin{figure}[b]
+\centering
+\includegraphics[scale=0.8]{chp_asymmetric/images/coordinationsitehypothesis}
+  \caption{Several possibilities for the installation of a third coordinating group.}
+  \label{fig:coordinationsitehypothesis}
+\end{figure}
+As discussed in the introduction, the PyBOX\crossref{ref:asevans} and bipyridine diol
+structures\crossref{ref:askobayashistructure} from the literature revealed a 7-coordinate scandium
+metal center.
+Evans' well-studied scandium PyBOX catalyzed reactions all relied on a model that invoked a
+two-point binding interaction between the substrate and metal, thus filling the available
+coordination sites.\footnote{For a lead reference see:
+{\frenchspacing Evans, D. A.; Fandrick, K. R.; Song, H. J.; Scheidt, K. A.; Xu, R. Enantioselective
+Friedel-Crafts Alkylations Catalyzed by Bis(oxazolinyl)pyridine-Scandium(III) Triflate Complexes. \textit{J. Am. Chem. Soc.} \textbf{2007},
+\textit{129}, 10029-10041.}} We were concerned that the BOX ligand left too much open space around
+the metal center and multiple equivalents of ketone could be bound during turnover. The NMR
+experiments also seemed to suggest there was a relatively weak interaction between the ligand and
+scandium.  By installing another coordinating functional group in the ligand, we hypothesized that we could increase the
+binding affinity for the ligand and fill more space in the coordination sphere. Our hope was that
+this would force the substrate into a single binding site around the metal center and ultimately
+lead to a more selective reaction. The most simple way to accomplish this would be to append the
+third coordinating group to the backbone of the BOX ligand, breaking the $C_2$ symmetry.
+\reffigure{coordinationsitehypothesis} illustrates several early ideas we considered. 
+
+
+The first ligand we were able to access was the methyl ether substituted bis(oxazoline)
+\ref{cmp:ligandam} (\refscheme{asmethyletherligand}).
+Ligand \ref{cmp:ligandam} was prepared through an iterative alkylation strategy, first adding methyl
+iodide and then bromoethyl methyl ether to the unsubstituted BOX framework. We were disappointed to
+see a significant drop in enantioselectivity (59:41 er), but regardless, we were still motivated to
+pursue alternative ligands to thoroughly test our hypothesis. The Lewis basicity of cyclohexanone and diethyl ether, as
+measured by the \ce{BF3} affinity scale, are 76.36 $\pm$ 0.82 and 78.77 $\pm$ 0.38
+$\frac{\mathrm{kJ}}{\mathrm{mol}}$ respectively.\footnote{Calculated from the enthalpy of
+interaction between \ce{BF3}$_{\mathrm{(g)}}$ and the Lewis base. Laurence, C.; Gal, J. F.
+\textit{Lewis Basicity and Affinity Scales: Data and Measurement}; John Wiley \& Sons: West Sussex,
+2010; pp 85-109.} The relatively close Lewis basicities of the pendant ether functionality and
+cyclohexanone could allow the cyclohexanone (present in 12 catalyst equivalents) to effectively compete for the additional coordination site.
+ \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/methyletherligand}
+ \begin{textblock}{1}(17.1,-1) \cmp{ligandam} \end{textblock}
+ \begin{textblock}{1}(3.2,-1) \crossrefcmp{diazoaa} \end{textblock}
+  \begin{textblock}{1}(0.2,-1) \crossrefcmp{ascyclohexanone} \end{textblock}
+  \begin{textblock}{1}(11.5,-1.5) \crossrefcmp{xaan} \end{textblock}
+  \begin{textblock}{1}(8.0,-2.87) \crossrefcmp{ligandam} \end{textblock}
+  \caption{First attempt to use a BOX ligand with third coordinating group.}
+  \label{sch:asmethyletherligand}
+\end{Scheme}
+
+
+\begin{Scheme}[t]
+ \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/bigtrisoxscreen}
+  \begin{textblock}{1}(3.1,-14.7) \crossrefcmp{ascyclohexanone} \end{textblock}
+   \begin{textblock}{1}(6,-14.9) \crossrefcmp{diazoaa} \end{textblock}
+  \begin{textblock}{1}(14,-15) \crossrefcmp{xaan} \end{textblock}
+%%% row 1
+\begin{textblock}{1}(4.5,-11.5) \cmp{asaax} \end{textblock}
+\begin{textblock}{1}(11.7,-11.5) \cmp{asaay} \end{textblock}
+%%% row 2
+\begin{textblock}{1}(2,-6.5) \cmp{asaaz} \end{textblock}
+\begin{textblock}{1}(6.5,-6.5) \cmp{ligandab} \end{textblock}
+\begin{textblock}{1}(12.8,-6) \cmp{ligandah} \end{textblock}
+%% row 3
+\begin{textblock}{1}(6.5,-1) \cmp{ligandai} \end{textblock}
+\begin{textblock}{1}(11.7,-1) \cmp{ligandaj} \end{textblock}
+  \caption{Screen of C$_3$-symmetric and pseudo C$_3$-symmetric tris(oxazoline) ligands.}
+  \label{sch:bigtrisoxscreen}
+\end{Scheme}
+To increase the binding ability of the third coordinating group we were drawn to the $C_3$-symmetric
+tris(oxazoline) ligands reported by Bellemin-Laponnaz and Gade in 2002.\footnote{(a) {\frenchspacing
+Bellemin-Laponnaz, S.; Gade, L.
+H.
+Three 2-Oxazolinyl Rings on One Quaternary Carbon Atom: Preparation of a Novel Tripodal Tris(oxazolinyl)
+Ligand and the Tetrameric Molecular Structure of its CuI Complex. \textit{Chem. Commun.}
+\textbf{2002}, 1286-1287.} (b) {\frenchspacing Gade, L. H.; Bellemin-Laponnaz, S. S. Exploiting
+Threefold Symmetry in Asymmetric Catalysis: The Case of Tris(oxazolinyl)ethanes (``trisox'').
+\textit{Chem. Eur. J.} \textbf{2008}, \textit{14}, 4142-4152.}} The $C_3$-symmetric TOX ligands
+\ref{cmp:asaax} and \ref{cmp:asaay} were synthesized according to the reported procedures and tested
+under our standard reaction conditions (\refscheme{bigtrisoxscreen}). The
+indanyl TOX ligand \ref{cmp:asaax} afforded the same selectivity observed with the parent BOX
+ligand \ref{cmp:ligandaa} (91:9 er). We were excited to see a
+slight increase in selectivity with phenylglycine-derived TOX ligand \ref{cmp:asaay} (93:7 er).  We
+also prepared several pseudo $C_3$-symmetric TOX ligands first introduced by Tang in
+2002.\footnote{(a) {\frenchspacing Zhou, J.; Tang, Y. Sidearm Effect:
+improvement of the Enantiomeric Excess in the Asymmetric Michael Addition of Indoles to Alkylidene Malonates. \textit{J. Am. Chem.
+Soc.} \textbf{2002}, \textit{124}, 9030-9031.} (b) {\frenchspacing Zhou, J.; Tang, Y. The
+Development and Application of Chiral Trisoxazolines in Asymmetric Catalysis and Molecular
+Recognition. \textit{Chem. Soc. Rev.} \textbf{2005}, \textit{34}, 664-676.}} The phenyl blocking
+group (ligand \ref{cmp:asaaz}) delivered a 91:9 er, while the indanyl ligand \ref{cmp:ligandab}
+finally gave a synthetically viable 95:5 er. We wanted to probe the effect of changing the backbone
+substitution and nature of the third coordinating group within the context of the pseudo
+C$_3$-symmetric ligand framework. Adding an isobutyl group to the backbone (ligand
+\ref{cmp:ligandah}) afforded nearly identical selectivity (94.5:5.5 er) as ligand
+\ref{cmp:ligandab}, suggesting the ligand likely binds in a tripodal fashion, placing the alkyl chain away from the site of
+reaction.\footnote{For a tripodal structure of TOX bound \ce{ScCl3} (not found in the CSD search)
+see:
+{\frenchspacing Gade, L.
+H.; Marconi, G.; Dro, C.; Ward, B.
+D.; Poyatos, M.; Bellemin-Laponnaz, S.; Wadepohl, H.; Sorace, L.; Poneti, G. Shaping and Enforcing Coordination
+Spheres: The Implications of $C_3$ and $C_1$ Chirality in the Coordination Chemistry of 1,1,1-Tris(oxazolinyl)ethane (``Trisox''). \textit{Chem. Eur. J.} \textbf{2007}, \textit{13}, 3058-3075.}} The nature of the third coordinating group was important to obtaining high selectivity.
+Without the indanyl blocking group  (ligands \ref{cmp:ligandai} and \ref{cmp:ligandaj}) selectivity
+dropped.
+\vspace{-8pt}
+\begin{singlespace}
+\ctable[
+	caption = Scope of asymmetric $\alpha$-arylation by diazoalkane ring expansion.,
+	label = nowidth,
+	pos = p,
+	label = tbl:assubstrates,
+	doinside = \footnotesize,
+	botcap,
+	notespar
+]{>{\centering}m{.6cm}>{\centering}m{1.4cm}>{\centering}m{2cm}>{\centering}m{1cm}>{\centering}m{1.5cm}>{\centering}m{2.4cm}>{\centering}m{1.2cm}>{\centering}m{1.0cm}}{
+%	\begin{textblock}{1}(18.2,-23.5) \crossrefcmp{ligandaa} \end{textblock}
+	\begin{textblock}{1}(14,-23.5) \crossrefcmp{ligandab} \end{textblock}
+\tnote{Yield over two steps from the aldehyde based on $^{19}$F NMR titration with
+\textit{o}-\ce{FC6H4CO2H}.}
+\tnote[b]{Isolated yield after silica gel chromatography.}
+\tnote[c]{By chiral SFC analysis in comparison with authentic racemic material.}
+\tnote[d]{Purified by extraction into hexanes.}
+\tnote[e]{Run at $-$45 \degc.}
+}{
+\multicolumn{8}{c}{
+\includegraphics[scale=0.8]{chp_asymmetric/images/substratetablehead} \vspace{0pt}
+} \\
+\FL
+%%% begin header line
+\multirow{2}{*}{entry} & \multirow{2}{*}{electrophile} & \multirow{2}{*}{nucleophile} &
+\multirow{2}{*}{ligand} & diazoalkane & insertion & \multirow{2}{*}{yield (\%)\tmark[b]} &
+\multirow{2}{*}{er\tmark[c]} \NN &&&&yield (\%)\tmark &product&& \ML
+%% end header line, begin data
+1\tnote[d] & \includegraphics[scale=0.8]{chp_asymmetric/images/cyclobutanone} &
+\includegraphics[scale=0.8]{chp_asymmetric/images/phenyldiazomethane} \crossrefcmp{diazoaa} &
+\ref{cmp:ligandab} & 75 & \includegraphics[scale=0.8]{chp_asymmetric/images/xaamnobox} \cmp{xaam} & $>$98 & 85.5:14.5 \NN
+2 & \includegraphics[scale=0.8]{chp_asymmetric/images/cyclopentanone} &
+\includegraphics[scale=0.8]{chp_asymmetric/images/phenyldiazomethane} \crossrefcmp{diazoaa} &
+\ref{cmp:ligandab} & 75 & \includegraphics[scale=0.8]{chp_asymmetric/images/phenylhexanone} \cmp{asphenylcyclohex} & $<$2 & nd
+\NN & \includegraphics[scale=0.8]{chp_asymmetric/images/cyclohexanone} &
+\includegraphics[scale=0.8]{chp_asymmetric/images/diazolabelg} &  &  &
+\includegraphics[scale=0.8]{chp_asymmetric/images/heptanonegeneric} &  &  \NN
+3 & & \multicolumn{1}{l}{\crossrefcmp{diazoaa} G = H} & \ref{cmp:ligandab} & 75 &
+\multicolumn{1}{l}{\crossrefcmp{xaan} G = H} & 94 & 95:5\NN 4 & & \multicolumn{1}{l}{\cmp{diazoah} G
+= \textit{p}-CH$_3$} & \ref{cmp:ligandab} & 80 & \multicolumn{1}{l}{\cmp{xaao} G =
+\textit{p}-CH$_3$} & 96 & 94:6 \NN 5 & & \multicolumn{1}{l}{\cmp{diazoai} G = \textit{m}-Br} &
+\ref{cmp:ligandab} & 68 & \multicolumn{1}{l}{\cmp{xaap} G = \textit{m}-Br} & $>$98 & 94.5:5.5 \NN
+ & \includegraphics[scale=0.8]{chp_asymmetric/images/cycloheptanone} &
+\includegraphics[scale=0.8]{chp_asymmetric/images/diazolabelg} &  &  &
+\includegraphics[scale=0.8]{chp_asymmetric/images/octanonegeneric} &  &  \NN
+6 & & \multicolumn{1}{l}{\crossrefcmp{diazoaa} G = H} & \ref{cmp:ligandab} & 75 &
+\multicolumn{1}{l}{\cmp{xaal} G = H} & 99 & 98:2 \NN
+7 & & \multicolumn{1}{l}{\crossrefcmp{diazoah} G = \textit{p}-CH$_3$} & \ref{cmp:ligandab} & 80 &
+\multicolumn{1}{l}{\cmp{xaau} G = \textit{p}-CH$_3$} & $>$98 & 98.5:1.5 \NN
+8 & & \multicolumn{1}{l}{\cmp{diazoae} G = \textit{m}-OCH$_3$} & \ref{cmp:ligandab} & 64 &
+\multicolumn{1}{l}{\cmp{xaas} G = \textit{m}-OCH$_3$} & $>$98 & 97:3 \NN
+9 & & \multicolumn{1}{l}{\cmp{diazoad} G = \textit{p}-CF$_3$} & \ref{cmp:ligandab} & 73 &
+\multicolumn{1}{l}{\cmp{xaar} G = \textit{p}-CF$_3$} & 78 & 98:2 \NN
+10 & & \multicolumn{1}{l}{\cmp{diazoac} G = \textit{o}-Br} & \ref{cmp:ligandaa} & 74 &
+\multicolumn{1}{l}{\cmp{xaaq} G = \textit{o}-Br} & 85 & 92.5:7.5 \NN
+11 & & \multicolumn{1}{l}{\cmp{diazoaf} G = \textit{o}-CH$_3$} & \ref{cmp:ligandaa} & 63 &
+\multicolumn{1}{l}{\cmp{xaat} G = \textit{o}-CH$_3$} & 97 & 93.5:6.5 \NN
+12 &  &
+\includegraphics[scale=0.8]{chp_asymmetric/images/onenapdiazo} \cmp{diazoag} & \ref{cmp:ligandaa}  &
+63 & \includegraphics[scale=0.8]{chp_asymmetric/images/xaavnobox} \cmp{xaav} & 94  & 93:7  \NN
+ 13\tnote[e] & \includegraphics[scale=0.8]{chp_asymmetric/images/cyclooctanone} &
+\includegraphics[scale=0.8]{chp_asymmetric/images/phenyldiazomethane} \crossrefcmp{diazoaa} &
+\ref{cmp:ligandab} & 75 &
+\includegraphics[scale=0.8]{chp_asymmetric/images/xaawnobox} \cmp{xaaw} & $>$98 & 93:7    \LL}
+\end{singlespace}
+With high levels of enantioselectivity for the model substrate now attainable using ligand
+\ref{cmp:ligandab}, we started to evaluate the reaction scope with regard to cycloalkanone and
+diazoalkane (\reftable{assubstrates}). Homologation of cyclobutanone with
+phenyldiazomethane delivered \ref{cmp:xaam} in a lower 85.5:14.5 er (entry 1). The
+product was purified through an aqueous workup and hexane extraction because of the tendency for $\alpha$-aryl cyclopentanones
+to racemize on silica.\crossref{ref:asshitertiary} As anticipated, the reaction with cyclopentanone
+gave a complex mixture of products derived from overhomologation (entry 2). The desired insertion product \ref{cmp:asphenylcyclohex} was
+significantly more reactive than the starting
+cyclopentanone.\crossref{ref:asgutscherev}$^,$\footnote{{\frenchspacing Maruoka, K.; Concepcion, A.
+B.; Yamamoto, H. Selective Homologation of Ketones and Aldehydes with Diazoalkanes Promoted by
+Organoaluminum Reagents. \textit{Synthesis} \textbf{1994}, 1283-1290.} \label{ref:asyamamotohomo}}
+Alkyl and halogen groups on the diazoalkane were well tolerated, providing \ref{cmp:xaao} and \ref{cmp:xaap} in nearly identical
+selectivity to \ref{cmp:xaan} (entries 4 and 5). We were very pleased to see that homologation of
+cycloheptanone delivered products with even higher selectivity than that observed with cyclohexanone (entries
+6--9). The yield in entry 9 was slightly depressed due to the lower nucleophilicity of diazoalkane
+\ref{cmp:diazoad}, which caused the reaction to progress slowly and not reach full conversion even
+after 14 hours.
+Use of more hindered \textit{ortho}-substituted nucleophiles \ref{cmp:diazoac} and \ref{cmp:diazoaf}
+resulted in diminished reactivity with TOX ligand \ref{cmp:ligandab} at the cold temperatures needed
+to ensure high enantiocontrol. In these cases, however, the parent BOX ligand \ref{cmp:ligandaa} 
+restored a rapid and smooth merger of the reactants presumably due to a less crowded Sc coordination
+sphere (\ref{cmp:xaaq} and \ref{cmp:xaat}, 93:7 er, entries 10 and 11). The same trend was observed
+when 1-naphthyldiazomethane (\ref{cmp:diazoag}) was used to prepare aryloctanone \ref{cmp:xaav}
+(93:7 er, entry 12). Reaction of cyclooctanone proceeded slowly, but full conversion and a 93:7 er was
+obtained after 14 hours at $-$45 \degc\  (entry 13). Depending on the ring size, the stoichiometry
+was modified to maximize conversion and minimize overhomologation. For entries 3--5,
+overhomologation of the cycloheptanone products had been observed in previous studies, therefore
+the diazoalkane was used as the limiting reagent. A slight excess (1.2 equivalents) of
+cyclohexanone was added to ensure the diazoalkane was completely consumed before having an
+opportunity to react with the products. In entries 6--13, overhomologation was not a concern and an
+excess of the diazoalkane was used (1.2--1.4 equivalents) to ensure high conversion. Reactions with
+larger cycloalkanones and \textit{ortho}-substituted diazoalkanes proceeded slower than 6--
+and 4-membered ring expansions, which lead to slight decomposition of the diazoalkane in the
+reaction time frame.
+
+\begin{Scheme}[b]
+  \centering
+  \begin{textblock}{1}(3.5,3.2) \crossrefcmp{diazoaa} \end{textblock}
+   \begin{textblock}{1}(8.4,1.75) \crossrefcmp{ligandab} \end{textblock}
+   \begin{textblock}{1}(11.8,2.4) \crossrefcmp{xaal} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/heptscaleup}
+   \begin{textblock}{1}(13.8,-1.5) \crossrefcmp{ligandab} \end{textblock}
+  \caption{Scale-up of cycloheptanone homologation with lower catalyst loading.}
+  \label{sch:asscaleup}
+\end{Scheme}
+The asymmetric homologation reactions could be scaled to provide preparative quantities of
+enantioenriched products. We could also drop the catalyst loading to 5 mol \% and still obtain high
+yields and selectivies in a reasonable timeframe by increasing the reaction concentration. After
+6 hours, aryl octanone \ref{cmp:xaal} was isolated in 94\% yield (235 mg) and 97:3 er with 5 mol \%
+\ce{Sc(OTf3)} and 5.5 mol \% ligand \ref{cmp:ligandab} (\refscheme{asscaleup}). Attempts to drop the
+catalyst loading further resulted in incomplete conversion even after prolonged reaction times. With
+2.5 mol \% \ce{Sc(OTf)3}, \ref{cmp:xaal} was recovered in a 50\% distilled yield (5 mmol scale) and
+95:5 er after 22 hours.
+ 
+ \begin{Scheme}[t]
+  \centering
+   \begin{textblock}{1}(2.5,4.5) \crossrefcmp{xaal} \end{textblock}
+   \begin{textblock}{1}(10,3.7) \cmp{xabc} \end{textblock}
+      \begin{textblock}{1}(18,1.2) \cmp{xabe} \end{textblock}
+   \begin{textblock}{1}(18,5.8) \cmp{xabd} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/absolutestereochem}
+  \caption{NMR-based proof of absolute stereochemistry for \ref{cmp:xaal}.}
+  \label{sch:asabsolutestereochem}
+\end{Scheme}
+The absolute stereochemistry of \ref{cmp:xaan} (entry 3,
+\reftable{assubstrates}) was assumed to be (\textit{S}) by comparing optical rotation data with that
+reported in the asymmetric protonation literature.\footnote{The absolute stereochemistry given in
+reference \ref{ref:asyanagisawa} was determined by ``analogy''.}
+In order to develop a stereochemical model we needed to confirm the absolute stereochemistry of our medium ring cycloalkanones.
+While \ref{cmp:xaal} was obtained as a solid, attempts to crystallize it directly
+or various derivatives was largely unsuccessful. We decided to reduce \ref{cmp:xaal} and attempt an
+NMR based stereoproof using $\alpha$-acetylmandelate esters
+(\refscheme{asabsolutestereochem}).\footnote{{\frenchspacing Trost, B.
+M.; Belletire, J. L.; Godleski, S.; McDougal, P. G.; Balkovec, J. M.; Baldwin, J. J.; Christy, M. E.; Ponticello, G. S.; Varga, S. L.; Springer, J. P. On the Use of the \textit{O}-Methylmandelate Ester for Establishment of Absolute Configuration of Secondary Alcohols. \textit{J. Org. Chem.} \textbf{1986}, \textit{51}, 2370-2374.}} A sample of
+optically enriched \ref{cmp:xaal} ($>$95:5 er) was reduced with Red-Al in toluene at $-78$ \degc\ to
+deliver the \textit{cis}-cyclooctanol \ref{cmp:xabc} in 2.5:1 dr and a 66\% isolated yield of
+the major diastereomer.\footnote{Racemic material was converted to the \textit{p}-\ce{NO2} benzoate
+ester and crystallized to confirm the relative stereochemistry. See the experimental section and
+appendix for details.} Initial attempts to use K-selectride resulted in a more diastereoselective
+reduction, but the recovered cyclooctanol was completely racemic. Coupling with (\textit{R})-- and
+(\textit{S})-$\alpha$-acetylmandelic acid provided sufficient quantities of $\alpha$-acetylmandelate esters \ref{cmp:xabe} and \ref{cmp:xabd} for NMR analysis. The chemical shifts of the protons in
+both diastereomers were assigned through the COSY and HSQC 2D spectra because of overlapping
+resonances. The protons indicated as H$_\mathrm{a}$ are diastereotopic and careful analysis of the
+spectra was required to ensure the correct signals in \ref{cmp:xabe} and \ref{cmp:xabd} were being compared.
+Regardless of how the data are analyzed, the proton signals associated with the carbon bearing
+H$_\mathrm{a}$ and H$_\mathrm{a'}$ show a significant upfield shift in the \textit{R} ester,
+consistent with an anisotropic shielding effect from the ester conformation shown in structure \ref{cmp:xabe}. Likewise, the
+proton labelled H$_\mathrm{b}$ was shielded in the \textit{S} ester \ref{cmp:xabd}. The data used to
+make the determination are given in \reftable{asmandelatestereoproof}. From these data, absolute
+stereochemistry for the secondary alcohol was assigned as \textit{S}, confirming that the $\alpha$-aryl stereochemistry was also \textit{S}.
+\begin{table}[h]
+{\small
+\begin{tabular}{cccccc}
+\toprule
+proton & $\delta_S$ (ppm) & $\delta_R$ (ppm) & $\delta_{S-R} (ppm)$ & Hz & group \\
+\midrule
+H$_\mathrm{a}$ & 1.87 & 1.62 & $+$0.25 & $+$125 & \textbf{\color{red}{A}} \\
+H$_\mathrm{c'}$ & 1.78 & 1.58 & $+$0.20 & $+$100 & \textbf{\color{red}{A}} \\
+H$_\mathrm{a'}$ & 1.94 & 1.74 & $+$0.20 & $+$100 & \textbf{\color{red}{A}} \\
+H$_\mathrm{c}$ & 1.64 & 1.52 & $+$0.12 & $+$60 & \textbf{\color{red}{A}} \\
+H$_\mathrm{d'}$ & 2.06 & 2.11 & $-$0.05 & $-$25 & \textbf{\color{blue}{B}} \\
+H$_\mathrm{b}$ & 2.96 & 3.10 & $-$0.14 & $-$70 & \textbf{\color{blue}{B}} \\
+H$_\mathrm{d}$ & 1.69 & 1.83 & $-$0.14 & $-$70 & \textbf{\color{blue}{B}} \\
+\bottomrule
+\end{tabular}
+}
+ \begin{textblock}{1}(13.5,-3.2)  \includegraphics[scale=0.8]{chp_asymmetric/images/prooflabels}
+ \end{textblock}
+\caption{Data used to determine the absolute stereochemistry of \ref{cmp:xaal}.}
+\label{tbl:asmandelatestereoproof}
+\end{table}
+
+
+Before proposing a stereochemical model, we also wanted to gather information about
+the approach trajectory of the diazoalkane nucleophile. We designed a diastereoselective
+homologation reaction similar to the experiment performed by Yamamoto in 1994
+(\refscheme{yamamotodiastereo}, page \pageref{sch:yamamotodiastereo}).\crossref{ref:asyamamotohomo}
+Treatment of 4-\textit{tert}-butylcyclohexanone with diazo \ref{cmp:diazoah} in the presence of 10
+mol \% \ce{Sc(OTf)3} lead to the highly diastereoselective formation of \textit{trans} insertion
+product ($\pm$)-\ref{cmp:xaay} (96.5:3.5 dr, by achiral GC analysis,
+\refscheme{asdiastereoselective}).
+Crystallization of the major diastereomer confirmed the \textit{trans} relative stereochemistry.
+Consistent with the reported data in the literature, the observed diastereoselectivity with
+stoichiometric trimethylaluminum was lower (82:18 dr).\crossref{ref:asyamamotohomo} With 10 mol \%
+\ce{Sc(OTf)3} and ligand \ref{cmp:ligandab}, an enantio-- and diastereoselective reaction delivered
+\ref{cmp:xaay} in 93:7 dr with 92.5:7.5 er for the major diastereomer. The diastereoselectivity can
+be rationalized by invoking a model with an axial approach of the diazoalkane. The diazoalkane
+likely approaches in an orientation that places the proton over the 6-membered ring to minimize
+penalizing steric interactions between the aryl group and ring. The principle of least motion
+states that \textit{``those elementary reactions will be favored that involve the least change in
+atomic position and electronic configuration''}.\footnote{{\frenchspacing Tee, O. S. Application of
+the Principle of Least Motion to Organic Reactions. A Generalized Approach. \textit{J. Am. Chem.
+Soc.} \textbf{1969}, \textit{91}, 7144-7149.}} Assuming that the betaine intermediate
+undergoes a least motion collapse directly from the drawn conformation and without \ce{C-C} bond
+rotation, the observed diastereomer can be correctly predicted. A 120$^{\circ}$ rotation
+after the diazoalkane has added would lead to the other diastereomer. However, it would introduce
+significant torsional strain. Adding the other enantioface of the diazoalkane in the same orientation (Ar and N$_2$ swapped, H over ring) still predicts to the same relative stereochemistry. \begin{Scheme}[t]
+ % \centering
+ \begin{textblock}{1}(5,4.5) \crossrefcmp{diazoah} \end{textblock}
+ \begin{textblock}{1}(11.5,1.9) \cmp{xaaz} \end{textblock}
+  \begin{textblock}{1}(11.5,6.5) \cmp{xaay} \end{textblock}
+   \begin{textblock}{1}(12.2,0.2)
+   \includegraphics[scale=0.35]{chp_asymmetric/images/xray/xaax_nolabels} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/diastereoselective}
+  \caption{Diastereo-- and enantioselective insertion reactions with
+  4-\textit{tert}-butylcyclohexanone.}
+  \label{sch:asdiastereoselective}
+\end{Scheme}
+
+A stereochemical model to predict the absolute stereochemistry was designed based on the
+aforementioned principles (\refscheme{stereochemicalmodel}). The enantioselectivity of the reaction
+is most likely derived from control over the orientation with which the diazoalkane adds to
+the symmetric cycloalkanone substrate. The counterions (omitted for clarity) and ligand
+\ref{cmp:ligandab} establish a chiral pocket that forces the diazoalkane to enter over the open side of the ligand (from left).
+The diazoalkane adds in an orientation such that the aryl group is directed away out the back of
+the chiral pocket and the proton is positioned over the cycloalkanone ring. The newly formed
+\ce{C-C} bond resides initially in an axial position, and then concerted collapse with expulsion of nitrogen gas delivers the \textit{S} product. This prediction was in agreement with the observed selectivity.
+ \begin{Scheme}[h]
+  \centering
+   \begin{textblock}{1}(18,3.2) \crossrefcmp{xaaa} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/stereochemicalmodel}
+  \caption{Stereochemical model correctly predicts the (\textit{S}) enantiomer of product.}
+  \label{sch:stereochemicalmodel}
+\end{Scheme}
+ 
+\pagebreak
+\section{Additional Developments}
+\subsection{Synthesis of a Novel $\pi$-Extended Bis(oxazoline) Ligand}
+
+\begin{figure}[b]
+  \centering
+   \begin{textblock}{1}(10.2,2.7) \crossrefcmp{ligandaa} \end{textblock}
+   \begin{textblock}{1}(1.1,1.3) \cmp{asaba} \end{textblock}
+   \begin{textblock}{1}(3.2,2.6) \cmp{asabb} \end{textblock}
+   \begin{textblock}{1}(15,2.7) \cmp{xlaai} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/indanylchart}
+  \caption{\textit{cis}-Amino indanol \ref{cmp:asaba} and derivatives.}
+  \label{fig:asindanylchart}
+\end{figure}
+Chiral vicinal amino alcohols, both natural and fully synthetic, represent an exceptionally
+important class of small molecules. Amino alcohols have long been utilized in asymmetric catalysis
+as ligands themselves\footnote{(a) {\frenchspacing Oguni, N.; Omi, T. Enantioselective Addition of Diethylzinc to
+Benzaldehyde Catalyzed by a Small Amount of Chiral 2-Amino-1-Alcohols. \textit{Tetrahedron Lett.}
+\textbf{1984}, \textit{25}, 2823-2824.} (b) {\frenchspacing Kitamura, M.; Suga, S.; Kawai, K.;
+Noyori, R. Catalytic Asymmetric Induction. Highly Enantioselective Addition of Dialkylzincs to
+Aldehydes. \textit{J. Am. Chem. Soc.} \textbf{1986}, \textit{108}, 6071-6072.} (c) {\frenchspacing
+Kitamura, M.; Okada, S.; Suga, S.; Noyori, R. Enantioselective Addition of Dialkylzincs to Aldehydes
+Promoted by Chiral Amino Alcohols. Mechanism and Nonlinear Effect. \textit{J. Am. Chem. Soc.}
+\textbf{1989}, \textit{111}, 4028-4036.}} or as precursors to various ligand
+classes.\footnote{{\frenchspacing Yoon, T. P.; Jacobsen, E. N. Privileged Chiral Catalysts.
+\textit{Science} \textbf{2003}, \textit{299}, 1691-1693.}} As chemists continue to expand the scope
+of available catalytic enantioselective transformations, the need for new and rationally designed
+synthetic amino alcohols is justified. The \textit{cis}-substituted amino indanol \ref{cmp:asaba}
+(\reffigure{asindanylchart}), for instance, was first developed as a subunit of the orally active
+HIV protease inhibitor indinavir\footnote{{\frenchspacing Senanayake, C. H. Applications of \textit{cis}-1-Amino-2-indanol
+in Asymmetric Synthesis. \textit{Aldrichimica Acta} \textbf{1998}, \textit{31(1)}, 3-15.}}
+(Crixivan\regtm). Davies, Senanayake, and others in process research at Merck went on to establish
+the derived oxazolidinone \ref{cmp:asabb} and bis(oxazoline) ligands\footnote{For pioneering
+studies with BOX ligands see: (a) {\frenchspacing Lowenthal, R. E.; Abiko, A.; Masamune, S.
+Asymmetric Catalytic Cyclopropanation of Olefins: Bis-Oxazoline Copper Complexes. \textit{Tetrahedron Lett.}
+\textbf{1990}, \textit{31}, 6005-6008.} (b) {\frenchspacing M\"{u}ller, D.; Umbricht, G.; Weber, B.;
+Pfaltz, A. C$_2$-Symmetric 4,4�,5,5'-Tetrahydrobi(oxazoles) and
+4,4',5,5'-Tetrahydro-2,2'-methylenebis[oxazoles] as Chiral Ligands for Enantioselective Catalysis.
+\textit{Helv. Chim. Acta.} \textbf{1991}, \textit{74}, 232-240.} (c) {\frenchspacing Evans, D. A.;
+Woerpel, K. A.; Hinman, M. M.; Faul, M. M. Bis(oxazolines) as Chiral Ligands in Metal-Catalyzed
+Asymmetric Reactions. Catalytic, Asymmetric Cyclopropanation of Olefins. \textit{J. Am. Chem. Soc.}
+\textbf{1991}, \textit{113}, 726-728.} (d) {\frenchspacing Corey, E. J.; Imai, N.; Zhang, H. Y.
+Designed Catalyst for Enantioselective Diels-Alder Addition from a C$_2$-Symmetric Chiral
+Bis(oxazoline)-Fe(III) Complex. \textit{J. Am. Chem. Soc.} \textbf{1991}, \textit{113}, 728-729.}}
+such as \ref{cmp:ligandaa} as highly effective and tunable chiral controllers for catalytic
+Diels-Alder reactions.\crossref{ref:asdaviesdielsalder}$^,$\footnote{(a) {\frenchspacing Davies, I.
+W.; Senanayake, C. H.; Castonguay, L.; Larsen, R. D.; Verhoeven, T. R.; Reider, P. J. Highly
+Diastereoselective Diels-Alder Reaction Mediated by a Chiral Auxiliary Derived from Amino Indanol:
+The Role of Conformation on Diastereoselectivity. \textit{Tetrahedron Lett.} \textbf{1995},
+\textit{36}, 7619-7622.} (b) {\frenchspacing Davies, I. W.; Senanayake, C. H.; Larsen, R. D.;
+Verhoeven, T. R.; Reider, P. J. Application of Indane-derived C$_2$-Symmetric Bis(oxazolines) in
+Two-point Binding Asymmetric Diels-Alder Reactions. \textit{Tetrahedron Letters} \textbf{1996},
+\textit{37}, 1725-1726.} (c) {\frenchspacing Davies, I. W.; Gerena, L.; Cai, D.; Larsen, R. D.;
+Verhoeven, T. R.; Reider, P. J. A Conformational Toolbox of Oxazoline Ligands. \textit{Tetrahedron
+Lett.} \textbf{1997}, \textit{38}, 1145-1148.} \label{ref:asdaviesbiglist}} The superiority of these
+systems relative to those based on phenylglycinol draws from the fact that the indane ring prevents free rotation about the
+\ce{C-Ph} bond, enforcing conformational rigidity.\footnote{{\frenchspacing Sibi, M. P.; Ji, J.
+Practical and Efficient Enantioselective Conjugate Radical Additions. \textit{J. Org. Chem.}
+\textbf{1997}, \textit{62}, 3800-3801.} See references \ref{ref:asdaviesdielsalder} and
+\ref{ref:asdaviesbiglist} also.} Our success with BOX and TOX ligands derived from amino indanol
+\ref{cmp:asaba} inspired us to develop a new $\pi$-extended amino alcohol (\ref{cmp:xlaai}) to
+address some of the enantioselectivity issues with smaller ring homologations (entry 1,
+\reftable{assubstrates}, page \pageref{tbl:assubstrates}).\footnote{{\frenchspacing Rendina, V. L.; Goetz, S. A.;
+Neitzel, A. E.; Kaplan, H. Z.; Kingsbury, J. S. Scalable Synthesis of a New Enantiomerically Pure $\pi$-Extended Rigid Amino
+Indanol.
+\textit{Tetrahedron Lett.} \textbf{2012}, \textit{53}, 15-18.}} We hypothesized that the lower
+selectivity observed for  4\ce{->}5 ring expansions was the result of more conformational
+freedom of the smaller cycloalkanone within the chiral pocket. By extending the ligand blocking
+groups, we hoped to minimize this flexibility and increase enantioselectivity in the arguably more
+synthetically useful cyclobutanone homologations.\crossref{ref:asbuchwaldarylation} 
+\begin{Scheme}[h]
+  \centering
+   \begin{textblock}{1}(1.9,2) \cmp{xlaak} \end{textblock}
+  \begin{textblock}{1}(6,3) \crossrefcmp{xlaai} \end{textblock}
+   \begin{textblock}{1}(9.5,3) \cmp{xlaae} \end{textblock}
+    \begin{textblock}{1}(13.5,3) \cmp{xlaad} \end{textblock}
+    \begin{textblock}{1}(17,3) \cmp{asabc} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/ligandretro}
+  \caption{Retrosynthetic analysis for new $\pi$-extended bis(oxazoline) ligand.}
+  \label{sch:asligandretro}
+\end{Scheme}
+
+
+
+\refscheme{asligandretro} shows a retrosynthesis for the new $\pi$-extended BOX ligand
+\ref{cmp:xlaak}. The required 3\textit{H}-benz[\textit{e}]indene (\ref{cmp:xlaae}) was a known
+material, but it forms in low yield as a byproduct of the pyrolysis of 2'-methyl-biphenyl-2,3-dicarboxylic anhydride.\footnote{{\frenchspacing Brown, R.; Eastwood, F.; Smith, C.
+Pyrolytic Generation of Aryne and Exocyclic Carbene Species: Trapping by an Adjacent
+\textit{o}-Tolyl Group. \textit{Aust. J. Chem.} \textbf{1992}, \textit{45}, 1315-1320.}} As such, it
+seemed appropriate to target \ref{cmp:xlaae} more efficiently by a simple reduction-elimination
+sequence on the known ketone \ref{cmp:xlaad}. In opening attempts to prepare \ref{cmp:xlaad} in one
+flask from acryloyl chloride and naphthalene by tandem AlCl$_3$-mediated Friedel-Crafts acylation
+and Nazarov cyclization,\footnote{{\frenchspacing Dietrich, U.; Hackmann, M.; Rieger, B.; Klinga,
+M.; Leskel\"{a}, M. Control of Stereoerror Formation with High-Activity ``Dual-Side'' Zirconocene
+Catalysts: A Novel Strategy To Design the Properties of Thermoplastic Elastic Polypropenes. \textit{J. Am. Chem. Soc.} \textbf{1999}, \textit{121}, 4348-4355.}} tedious column chromatography was needed and the yield was only modest.
+Other literature procedures called for expensive starting materials and did not scale well in our
+hands.\footnote{(a) {\frenchspacing Hulin, B.; Koreeda, M. A Convenient, Mild Method for the
+Cyclization of 3-- and 4-Arylalkanoic Acids \textit{via} Their Trifluoromethanesulfonic Anhydride
+Derivatives. \textit{J. Org. Chem.} \textbf{1984}, \textit{49}, 207-209.} (b) {\frenchspacing Kita,
+Y.; Higuchi, K.; Yoshida, Y.; Iio, K.; Kitagaki, S.; Ueda, K.; Akai, S.; Fujioka, H.
+Enantioselective Total Synthesis of a Potent Antitumor Antibiotic, Fredericamycin A. \textit{J. Am.
+Chem. Soc.} \textbf{2001}, \textit{123}, 3214-3222.} (c) {\frenchspacing Wu, X.; Nilsson, P.;
+Larhed, M. Microwave-Ehanced Carbonylative Generation of Indanones and 3-Acylaminoindanones.
+\textit{J. Org. Chem.} \textbf{2005}, \textit{70}, 346-349.} \label{ref:astlalternatives}}
+Therefore, an alternative route was developed from inexpensive 2-methylnaphthalene
+(\ref{cmp:asabc}, \refscheme{astlligandone}).
+
+\begin{Scheme}[t]
+  \centering
+  \begin{textblock}{1}(0.4,3.8) \crossrefcmp{asabc} \end{textblock}
+  \begin{textblock}{1}(8,4) \cmp{xlaab} \end{textblock}
+  \begin{textblock}{1}(13.1,3.8) \crossrefcmp{xlaad} \end{textblock}
+  \begin{textblock}{3}(17.5,3.3) \textsf{\scriptsize{($\pm$)-}}\cmp{xlaaf} \end{textblock}
+  \begin{textblock}{3}(17,9.4) \textsf{\scriptsize{(--)-}}\cmp{xlaag} \end{textblock}
+  \begin{textblock}{3}(10.5,9.4) \textsf{\scriptsize{(\textit{R},\textit{R})-}}\cmp{xlaal}
+  \end{textblock}
+  \begin{textblock}{3}(4,9.4) \textsf{\scriptsize{(\textit{R},\textit{S})-}}\crossrefcmp{xlaai}
+  \end{textblock}
+  \begin{textblock}{1}(1.1,9.45) \cmp{xlaah} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/tlligandone}
+  \vspace{5pt}
+  \caption{Forward synthetic path for $\pi$-extended amino alcohol \ref{cmp:xlaai}.}
+  \label{sch:astlligandone}
+\end{Scheme}
+The path of synthesis begins from \ref{cmp:asabc} with radical monobromination, displacement of the
+crude bromide with the sodium salt of dimethyl malonate, and basic hydrolysis to afford the
+homobenzylic diacid \ref{cmp:xlaab} in a 49\% yield over three steps.\footnote{{\frenchspacing An,
+Q.; Li, G.; Tao, C.; Li, Y.; Wu, Y.; Zhang, W. A General and Efficient Method to Form Self-Assembled
+Cucurbit[\textit{n}]uril Monolayers on Gold Surfaces. \textit{Chem. Commun.} \textbf{2008}, 1989-1991.}} Cationic cyclization\crossref{ref:astlalternatives}$^\mathrm{c}$ to give \ref{cmp:xlaad} was possible in one step using molten \ce{H3PO4}/\ce{P2O5}, but the yield was variable (30--76\%) due to competitive
+oligomerization.
+ In
+practice, we found it preferable to accomplish the transformation by the sequence:
+(1) thermal decarboxylation, (2) chlorination, and (3) Friedel-Crafts ring closure
+(\ref{cmp:xlaab}\ce{->}\ref{cmp:xlaad}, 78\% yield, three steps).
+In just six steps requiring no purification of intermediates, ketone \ref{cmp:xlaad} can be obtained
+on decagram scale in an overall 37\% yield and $>$95\% purity as judged by $^1$H NMR analysis.
+Reduction and acid-mediated elimination in the same vessel provides the target hydrocarbon
+3\textit{H}-benz[\textit{e}]indene (\ref{cmp:xlaae})  in an 85\% yield
+as a white crystalline solid after simple filtration through a pad of silica gel. An initial plan to
+use the Jacobsen epoxidation\footnote{{\frenchspacing Palucki, M.; Finney, N. S.; Pospisil, P. J.;
+G\"uler, M. L.; Ishida, T.; Jacobsen, E. N. The Mechanistic Basis for Electronic Effects on
+Enantioselectivity in the (salen)Mn(III)-Catalyzed Epoxidation Reaction. \textit{J. Am. Chem. Soc.}
+\textbf{1998}, \textit{120}, 948-954.}} for the control of absolute stereochemistry was complicated
+by the propensity for the racemic epoxide (from \textit{m}-CPBA/\ce{NaHCO3} or DMDO) to undergo
+spontaneous ring opening/1,2-rearrangement to the homobenzylic
+cyclopentanone.\footnote{Rearrangement of the epoxide readily occurred under a variety of
+reaction conditions.\\
+\includegraphics[scale=0.7]{chp_asymmetric/images/naprearrangement} \label{ref:asepoxiderar}}
+Alternative strategies based on catalytic enantioselective dihydroxylation\footnote{(a)
+{\frenchspacing Hanessian, S.; Meffre, P.; Girard, M.; Beaudoin, S.; Sanceau, J. Y.; Bennani, Y.
+Asymmetric Dihydroxylation of Olefins with a Simple Chiral Ligand. \textit{J. Org. Chem.}
+\textbf{1993}, \textit{58}, 1991-1993.} (b) {\frenchspacing Malla Reddy, S.; Srinivasulu, M.; Venkat
+Reddy, Y.; Narasimhulu, M.; Venkateswarlu, Y. Catalytic Asymmetric Dihydroxylation of Olefins using
+Polysulfone-based Novel Microencapsulated Osmium Tetroxide. \textit{Tetrahedron Lett.} \textbf{2006}, \textit{47}, 5285-5288.}} or diboration\footnote{{\frenchspacing Trudeau, S.; Morgan, J. B.; Shrestha, M.; Morken, J. P.
+Rh-Catalyzed Enantioselective Diboration of Simple Alkenes: Reaction Development and Substrate
+Scope. \textit{J. Org. Chem.} \textbf{2005}, \textit{70}, 9538-9544.}} could be applicable, but
+experimentation with racemic material quickly established chiral esters of bromohydrin
+\ref{cmp:xlaaf} as highly crystalline. Thus, indene oxidation with NBS in THF-water (99\% yield)
+and coupling with (\textit{S})-naproxen under standard conditions gave a mixture of diasteromeric
+esters from which (--)-\ref{cmp:xlaag} crystallized in a 34\% yield as a single diastereomer.
+Naproxen was selected as a resolving agent because of the trivial means by which multigram quantities of
+ enantiopure material can be obtained from over-the-counter pain relief tablets. The absolute
+ configuration of (--)-\ref{cmp:xlaag} was unequivocally assigned by X-ray diffraction (\reffigure{asnaproxenxray}).
+ \begin{figure}[t]
+  \centering
+  \includegraphics[scale=0.35]{chp_asymmetric/images/xray/xlaag_nolabels}
+  \caption{X-ray structure of (--)-\ref{cmp:xlaag} confirms the absolute stereochemistry.}
+  \label{fig:asnaproxenxray}
+\end{figure}
+ 
+ Among several different hydrolytic conditions tested, cleavage
+of the resolving agent was best achieved by borane reduction to give the desired
+(\textit{R},\textit{R}) bromohydrin \ref{cmp:xlaal} in a 91\% yield with $>$98:2 er by chiral SFC
+analysis. The choice of reductive cleavage necessitated the only chromatographic
+purification in the entire sequence. While hydrolytic cleavage would have been preferrable,
+competitive bromide elimination was prohibitive. Attempts to move unpurified \ref{cmp:xlaal} forward
+were not successful. The purified bromohydrin was then subjected to a Ritter
+reaction\footnote{{\frenchspacing Davies, I.
+W.; Senanayake, C. H.; Larsen, R. D.; Verhoeven, T. R.; Reider, P. J. Application of a Ritter-type Reaction to the Synthesis of Chiral Indane-derived C$_2$-Symmetric Bis(oxazolines). \textit{Tetrahedron Lett.} \textbf{1996}, \textit{37}, 813-814.}} to afford (\textit{R},\textit{S})-\ref{cmp:xlaai} cleanly in a 68\% yield after an acid/base extraction procedure.
+The modest yield was accounted for by the recovery of \textit{cis}-acetamide \ref{cmp:xlaah} (in a
+$>$2:1 ratio in favor of amino alcohol \ref{cmp:xlaai}).  The byproduct likely forms as a result of
+non-stereospecific trapping of the benzylic cation by acetonitrile and subsequent failure to undergo
+intramolecular closure to the intermediate oxazoline (\refscheme{asrittermechanism}). The added
+stability gained by transient bromonium ion formation, a key feature for stereocontrol in this
+reaction, was offset by enhanced delocalization of the cation within the naphthalene ring.
+Co-production of acetamide \ref{cmp:xlaah}, together with the aforementioned facile rearrangement of
+epoxy-\ref{cmp:xlaae},\crossref{ref:asepoxiderar} lends support to this hypothesis. Noteworthy is
+that acetamide hydrolysis does not occur in the absence of the vicinal hydroxyl functionality.\footnote{{\frenchspacing Bruice, T. C.; Marquardt, F. H. Hydroxyl Group Catalysis.
+IV. The Mechanism of Intramolecular Participation of the Aliphatic Hydroxyl Group in Amide
+Hydrolysis. \textit{J. Am. Chem. Soc.} \textbf{1962}, \textit{84}, 365-370.}}
+\begin{Scheme}[t]
+  \centering
+   \begin{textblock}{3}(14.8,3.3) \textsf{\scriptsize{(\textit{R},\textit{S})-}}\crossrefcmp{xlaai}
+   \end{textblock}
+   \begin{textblock}{1}(11.7,3.3) \crossrefcmp{xlaah} \end{textblock}
+\begin{textblock}{3}(1.1,5.4) \textsf{\scriptsize{(\textit{R},\textit{R})-}}\crossrefcmp{xlaal}
+  \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/rittermechanism}
+  \caption{Mechanistic rationale for formation of acetamide \ref{cmp:xlaal}.}
+  \label{sch:asrittermechanism}
+\end{Scheme}
+\begin{Scheme}[b]
+  \centering
+  \begin{textblock}{3}(0,3.5) \textsf{\scriptsize{(\textit{R},\textit{S})-}}\crossrefcmp{xlaai}
+  \end{textblock}
+  \begin{textblock}{1}(8.9,1.9) \cmp{xlaaj} \end{textblock}
+  \begin{textblock}{1}(17,2) \crossrefcmp{xlaak} \end{textblock}
+  \includegraphics[scale=0.8]{chp_asymmetric/images/tlligandtwo}
+  \caption{Transformation of amino alcohol \ref{cmp:xlaai} to corresponding BOX ligand.}
+  \label{sch:astlligandtwo}
+\end{Scheme}
+
+Our experience with the synthesis of bis(oxazolinyl)methanes had shown that the diethoxyimidate
+method of Davies \textit{et al.}\crossref{ref:asdaviesdielsalder}$^\mathrm{a}$ allows expedient
+access to the unsubstituted BOX framework.
+Coupling of amino alcohol \ref{cmp:xlaai} with commercially available diethyl malonimidate
+dihydrochloride furnishes BOX ligand \ref{cmp:xlaaj} in 63\% yield as a white flocculent solid
+after washing with hexanes and
+methanol (\refscheme{astlligandtwo}). Deprotonation with sodium hydride and subsequent trapping with
+methyl iodide lead to the target \textit{gem}-dimethylated ligand \ref{cmp:xlaak} in a 92\% yield
+after a hexanes wash.
+
+ \begin{figure}[ht]
+  \centering
+  \vspace{-15pt}
+  \includegraphics[scale=0.55]{chp_asymmetric/images/xray/boxcomplex_nolabels}
+  \vspace{-10pt}
+  \caption{X-ray structure of \ce{CuCl2.}\ref{cmp:xlaak} complex.}
+  \label{fig:astlcopperbox}
+\end{figure}
+We were eager to test the newly prepared BOX ligand \ref{cmp:xlaak} in our asymmetric homologation
+chemistry. The new ligand was sparingly soluble in toluene and in all homologation cases tested,
+racemic products were obtained. The ligand was likely unable to complex with scandium because of the
+poor solubility in toluene, however, when we tested the same reactions in \ce{CH2Cl2}, racemic
+products were again obtained. For further proof of structure and to confirm that \ref{cmp:xlaak}
+could act as a viable chiral ligand, we turned to copper(II) salts. Suitable single crystals of
+\ce{CuCl2.}\ref{cmp:xlaak} were obtained by vapor diffusion of pentane into a saturated
+dichloromethane solution. X-ray diffraction revealed a four-coordinate
+distorted square planar 17-electron complex flanked by sizeable naphthalene units
+(\reffigure{astlcopperbox}).
+Importantly, there was considerable homology between this structure and the analogous
+\ce{CuCl2.}(indanyl-box) catalyst with regard to the disposition of groups around the
+copper(II) center.\footnote{{\frenchspacing Thorhauge, J.; Roberson, M.; Hazell, R. G.; J\o rgensen,
+K. A. On the Intermediates in Chiral Bis(oxazoline)copper(II)-Catalyzed Enantioselective
+Reactions--Experimental and Theoretical Investigations. \textit{Chem. Eur. J.} \textbf{2002},
+\textit{8}, 1888-1898.}} While \ref{cmp:xlaak} appears to form a competent complex with
+copper(II), whether or not the extended blocking groups translate into higher levels of selectivity
+in asymmetric reactions remains to be seen.
+
+
+\subsection{Development of a Fluorine NMR Titration Protocol}
+During the course of our studies, we required a rapid and accurate
+method to assay the active diazoalkane concentration in toluene stock solutions.
+Although a number of methods have been reported in the literature, none offered
+a simple procedure that could be executed quickly and with small quantities of
+the diazoalkane reagent. Those based on acid-mediated decomposition and collection
+of evolved nitrogen gas require large quantities of the diazoalkane and
+elaborate experimental setups.\crossref{ref:asbrewer} Spectrophotometric methods require
+preparation of calibration standards and calculation of extinction coefficients
+for compounds that can readily decompose at room temperature or by light-induced
+pathways.\footnote{{\frenchspacing Gassman, P. G.; Greenlee, W. J. Dideuteriodiazomethane.
+\textit{Org. Synth.} \textbf{1973}, \textit{53}, 38.}} Esterification with excess benzoic acid and titration of the unreacted carboxylic acid is time-consuming, requiring preparation and
+calibration of stock base solutions in order to obtain accurate
+results.\footnote{{\frenchspacing Arndt, F. Diazomethane. \textit{Org. Synth.} \textbf{1935},
+\textit{15}, 3.}} Esterification with benzoic acid and calculation of concentration on the basis of the unpurified yield of the benzoate ester is also
+possible, but at times will provide concentration results of questionable
+accuracy due to common diazoalkane impurities.\footnote{Bimolecular decomposition pathways to
+produce azine or olefin impurities are common for noncarbonylstabilized diazoalkanes. (a)
+{\frenchspacing Overberger, C. G.; Anselme, J. The Thermal and the Photolytic Decomposition of
+1-Phenyldiazoethane. \textit{J. Org. Chem.} \textbf{1964}, \textit{29}, 1188-1190.} (b)
+{\frenchspacing Abelt, C. J.; Pleier, J. M. Stereoselective Azine Formation in the Decomposition of
+Phenyldiazomethanes. \textit{J. Am. Chem. Soc.} \textbf{1989}, \textit{111}, 1795-1799.} (c)
+{\frenchspacing Smith, L. I.; Howard, K. L. Diphenyldiazomethane. \textit{Org. Synth.}
+\textbf{1944}, \textit{24}, 53.} \label{ref:asdiazodecomp}}
+
+Previously, our preferred method involved quenching a known volume of the
+diazoalkane solution with excess benzoic acid and isolating the corresponding
+benzoate ester by chromatography. The isolated yield of the
+benzoate ester could then be used to calculate the amount of active diazoalkane
+in the aliquot. This method was not only time intensive, but inherently flawed.
+Assuming the diazoalkane quantitatively converted to the benzoate ester, the
+method was still subject to mechanical losses during purification and transfer
+steps.\footnote{{\frenchspacing Wernerova, M.; Hudlicky, T. On the Practical Limits of Determining
+Isolated Product Yields and Ratios of Stereoisomers: Reflections, Analysis, and Redemption.
+\textit{Synlett} \textbf{2010}, 2701-2707.}} A new method, using commercially available 2-fluorobenzoic acid and quantitative $^{19}$F NMR spectroscopy was developed to address some of these shortcomings.\footnote{\frenchspacing{﻿Rendina, V. L.; Kingsbury, J. S. Titration of Nonstabilized Diazoalkane
+Solutions by Fluorine NMR. \textit{J. Org. Chem.} \textbf{2012}, \textit{77},
+1181-1185.}} The new protocol required minimal experimental time and could be performed safely at
+low temperature with only micromolar quantities of the diazoalkane.
+
+In a typical experimental procedure, an accurately weighed quantity of excess
+2-fluoro\-benzoic acid was dissolved in 700 $\mu$L of \ce{CDCl3},\footnote{It was found that
+2-fluorobenzoic acid dissolved slowly in \ce{CDCl3}, and preparation of a stock solution was
+generally more convenient. See the experimental section for details.} enough solvent to prepare a
+single NMR sample.
+After cooling to $-$78 \degc, which causes the solution to freeze, a 100 $\mu$L aliquot of the
+diazoalkane solution was added rapidly in a single portion.\footnote{A 1.00 mL syringe with calibration marks every 0.01 mL used.
+The procedure was sufficiently reproducible with this size syringe; howevery, if more accurate
+results were desired a 250 $\mu$L syringe was substituted.} Upon warming of the mixture to room
+temperature, the reaction was complete as indicated by the absence of the characteristic diazoalkane
+color and lack of further nitrogen gas evolution. The reaction mixture was swirled gently to ensure
+homogeneity and then transferred without rinsing to a standard NMR tube for analysis. The $^{19}$F
+NMR data were recorded with an extended relaxation delay of 10 seconds (d1 = 10). The fluorine $T_1$
+values for 2-fluorobenzoic acid and benzyl 2-fluorobenzoate were determined to be 1.14 $\pm$ 0.03
+and 1.73 $\pm$ 0.06 seconds respectively. Relaxation delays of 10 seconds were sufficiently long
+($>$5 x $T_1$) to ensure integral accuracies of $\pm$1\%.\footnote{{\frenchspacing Saito, T.;
+Nakaie, S.; Kinoshita, M.; Ihara, T.; Kinugasa, S.; Nomura, A.; Maeda, T. Practical Guide for Accurate
+Quantitative Solution State NMR Analysis. \textit{Metrologia} \textbf{2004}, \textit{41}, 213-218.}} The difference in $^{19}$F NMR chemical shift between the unreacted 2-fluorobenzoic acid and 2-fluorobenzoate esters was approximately 1.0 ppm. The spectra were referenced relative to hexafluorobenzene ($\delta$ $-$164.9 ppm) as an internal standard; however, the use
+of a reference standard was not necessary due to the uniform upfield shift of the esters.
+Conversion, and ultimately concentration, was calculated on the basis of integration of the two
+fluorine signals (Equation \ref{eq:diazoconc}).
+\begin{eqnarray}
+I_{\mathrm{ester}} &=& \mathrm{integration\  of\  ester} \\
+I_{\mathrm{acid}} &=& \mathrm{integration\  of\  acid} \\
+m_{\mathrm{acid}} &=& \mathrm{amount\ of\  acid\ (mmol)} \\
+V_{\mathrm{aliquot}} &=& \mathrm{volume\ of\ aliquot\ (mL)} \\
+concentration\  \mathrm{(M)} &=& \frac{\left(\frac{I_{\mathrm{ester}}}{I_{\mathrm{ester}} +
+I_{\mathrm{acid}}} \right) \times m_{\mathrm{acid}}}{V_{\mathrm{aliquot}}} \label{eq:diazoconc}
+\end{eqnarray}
+\vspace{-25pt}
+
+\reftable{astitration} summarizes our findings for titration of various alkyl, aryl, and vinyl
+diazoalkane solutions. In every case, the reaction quickly and cleanly produced the corresponding
+2-fluorobenzoate esters.  Noteworthy of the assay is its high reproducibility. Data in
+\reftable{astitration} are reported as the average of three trials $\pm$ standard deviations. Prior to the discovery of 2-fluorobenzoic acid, attempts were made to use $^1$H NMR spectroscopy with several substituted benzoic acid derivatives. Although the use of 2,6-dimethoxybenzoic acid was successful in certain cases, it did not
+prove to be a general solution because of problems with overlapping resonances.
+Recourse to $^{19}$F NMR spectroscopy has avoided this complication in all cases
+tested thus far. 
+\begin{table}[ht]
+\begin{textblock}{1}(1.6,3.13) \textsf{\scriptsize{(\cmp{xtabe})}}\end{textblock}
+\begin{textblock}{1}(11,1)
+\includegraphics[scale=0.8]{chp_asymmetric/images/titrationchart}\end{textblock}
+% row 1
+\begin{textblock}{1}(12.8,2.5) \cmp{diazoak} \end{textblock}
+\begin{textblock}{1}(16.5,2.5) \crossrefcmp{diazoaa} \end{textblock}
+% row 2
+\begin{textblock}{1}(13,4.5) \cmp{diazoal} \end{textblock}
+\begin{textblock}{1}(17,4.5) \cmp{diazoam} \end{textblock}
+% row 3
+\begin{textblock}{1}(11.6,6.6) \crossrefcmp{diazoaf} \end{textblock}
+\begin{textblock}{1}(14.5,6.6) \crossrefcmp{diazoac} \end{textblock}
+\begin{textblock}{1}(17.5,6.6) \crossrefcmp{diazoah} \end{textblock}
+% row 4
+ \begin{textblock}{1}(12.3,9.3) \crossrefcmp{diazoad} \end{textblock}
+ \begin{textblock}{1}(14.8,9.5) \crossrefcmp{diazoae} \end{textblock}
+ \begin{textblock}{1}(17.5,9.5) \crossrefcmp{diazoai} \end{textblock}
+% row 5
+ \begin{textblock}{1}(12.2,12) \crossrefcmp{diazoag} \end{textblock}
+ \begin{textblock}{1}(15.5,12) \cmp{diazoab} \end{textblock}
+ \begin{textblock}{1}(18,12) \cmp{diazoaj} \end{textblock}
+%\vspace{10pt}
+\includegraphics[scale=0.8]{chp_asymmetric/images/astitrationhead} \\
+{\small
+\begin{tabular}{cccc}
+\toprule
+\multirow{2}{*}{entry} & \multirow{2}{*}{diazoalkane} & 2-fluorobenzoic & benzoic  \\
+&&acid (M) & acid (M) \\
+\midrule
+1 & \ref{cmp:diazoak} & 0.49 $\pm$ 0.05& 0.34 \\
+2 & \ref{cmp:diazoal} & 0.133 $\pm$ 0.003& 0.40 \\
+3 & \ref{cmp:diazoam} & 0.43 $\pm$ 0.01& 1.26 \\
+4 & \ref{cmp:diazoaa} & 1.16 $\pm$ 0.03& 1.23 \\
+5 & \ref{cmp:diazoaf} & 1.19 $\pm$ 0.01& 1.33 \\
+6 & \ref{cmp:diazoac} & 0.62 $\pm$ 0.01& 0.68 \\
+7 & \ref{cmp:diazoah} & 0.60 $\pm$ 0.01& 0.64 \\
+8 & \ref{cmp:diazoad} & 0.56 $\pm$ 0.02& 0.69 \\
+9 & \ref{cmp:diazoae} & 0.227 $\pm$ 0.002& 0.29 \\
+10 & \ref{cmp:diazoai} & 0.826 $\pm$ 0.006& 1.05 \\
+11 & \ref{cmp:diazoag} & 0.57 $\pm$ 0.02& 0.64 \\
+12 & \ref{cmp:diazoab} & 0.53 $\pm$ 0.02& 0.55 \\
+13 & \ref{cmp:diazoaj} & 0.310 $\pm$ 0.009& 0.38 \\
+\bottomrule
+\end{tabular}
+}
+%\vspace{-5pt}
+\caption{Scope of titration with 2-fluorobenzoic acid and comparison to the gravimetric benzoate
+ester method.}
+\label{tbl:astitration}
+\end{table}
+
+Results for esterification with benzoic acid and weighing of the unpurified benzoate ester after a
+basic aqueous workup are also provided in \reftable{astitration} for comparison. With the exception of
+methyl benzoate (entry 1), isolation of the benzoate esters leads to concentration values that
+exceed those obtained with the new procedure. The volatility of methyl benzoate was likely responsible for
+the lower value obtained in entry 1. Certain diazoalkanes can undergo decomposition upon prolonged
+storage or warming, and nonvolatile impurities can be introduced during preparative
+procedures.\crossref{ref:asdiazodecomp} Either of these complications can account for the higher
+concentration values observed with the gravimetric benzoylation method. The new titration procedure
+does not require isolation of the esters and was not affected by the presence of typical impurities.
+
+The accuracy of this method, and all methods based on esterification, rely on
+quantitative conversion of the diazoalkanes to their corresponding
+esters. The concentration of unreacted phenyldiazomethane (\ref{cmp:diazoaa}) was quickly analyzed
+in triplicate by $^1$H NMR spectroscopy with 1,3,5-trimethoxybenzene as an internal standard. The
+concentration was determined to be 1.25 $\pm$ 0.02 M by this method, in reasonable agreement with
+the value in \reftable{astitration} (entry 4). In certain cases, diazonium ions formed after the initial protonation event can undergo spontaneous rearrangement or elimination, ultimately leading to byproducts that would not be observed by $^{19}$F NMR spectroscopy.\footnote{{\frenchspacing Curtin, D. Y.; Gerber, S. M. The Reaction of Aliphatic Diazo Compounds with Acids. \textit{J. Am. Chem. Soc.} \textbf{1952}, \textit{74},
+4052-4056.}} When 1-diazo-2,2-dimethylpropane (\ref{cmp:diazoan}) was subjected to 2-fluorobenzoic
+acid, rapid rearrangement to the tertiary carbocation occured affording predominantly ester
+\ref{cmp:xtabg} and two elimination byproducts (\refscheme{astitrationpiv}). The expected ester
+\ref{cmp:xtabf}, resulting from direct substitution, only accounted for 10\% of the product
+distribution.
+For diazoalkanes that undergo elimination, the use of $^{19}$F NMR spectroscopy alone does not provide accurate concentration values.
+The concentration of \ref{cmp:diazoan} could still be determined from the combined $^1$H and
+$^{19}$F NMR data, although likely not with the same level of accuracy and
+precision as diazoalkanes which cleanly afford a single ester product. 
+\begin{Scheme}[t]
+  \centering
+  \includegraphics[scale=0.8]{chp_asymmetric/images/titrationpiv}
+  \begin{textblock}{1}(2,-2.5) \crossrefcmp{xtabe} \end{textblock}
+  \begin{textblock}{1}(5.5,-2.8) \cmp{diazoan} \end{textblock}
+  \begin{textblock}{1}(16,-2.8) \cmp{xtabf} \end{textblock}
+  \begin{textblock}{1}(16,0) \cmp{xtabg} \end{textblock}
+  \vspace{5pt}
+  \caption{Production of elimination byproducts not observable by $^{19}$F NMR.}
+  \label{sch:astitrationpiv}
+\end{Scheme}  
+
+
+\pagebreak
+\section{Conclusion}
+
+In conclusion, this chapter has described a number of projects, not solely limited to
+diazoalkane ring expansion chemistry. Advances were first made in the procedures for racemic
+\ce{Sc(OTf)3}-catalyzed homologation reactions. By carefully purifying and drying all reaction
+components, catalyst loadings as low as 0.5 mol \% were readily tolerated and reactions
+consistently afforded high chemical yields. With a conscientious and rigorous approach to reaction
+development, the first examples of catalytic asymmetric diazoalkane ring expansions were
+demonstrated. High enantioselectivities in the context of $\alpha$-aryl medium-ring cycloalkanones
+were observed. The lower selectivities with smaller cycloalkanones prompted the development of a
+new $\pi$-extended amino alcohol and the corresponding bis(oxazoline) ligands. A scalable and
+inexpensive route was designed and provided the new amino alcohol in 4 steps from known compounds
+with one chromatography step.
+Finally, the need for a safe and convenient means to assay diazoalkane solution concentrations lead to the development of a quantitative $^{19}$F NMR titration protocol.
+
+Future work in this area will certainly focus on extending the substrate scope of asymmetric
+homologation reactions. We have taken the first steps towards developing a unified method for the
+construction of $\alpha$-keto stereogenic centers. By modifying the diazoalkane nucleophile, access
+to $\alpha$-aryl, --vinyl, and --alkyl all-carbon quaternary stereogenic centers could be within
+reach. The stigma and hazards of handling diazoalkane reagents may hamper future efforts, and
+research should concentrate on finding suitable methods to generate the diazoalkanes \textit{in situ}. Without the
+need to prepare or store the hazardous diazoalkane reagents, this chemistry could find much broader
+appeal among the chemical community. The fact that the reaction rapidly builds significant molecular
+complexity in a single convergent step justifies its further development. 
+
+\pagebreak
+\section{Experimental Data}
+\input{chp_asymmetric/experimental.tex}

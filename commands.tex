@@ -1,0 +1,94 @@
+% Setup a new counter to automatically number compounds
+\newcounter{compound}
+%\def\thecompound{\textbf{\thechapter.\arabic{compound}}}
+\def\thecompound{\textbf{\arabic{chapter}.\arabic{compound}}}
+\newcommand{\cmp}[1]{\refstepcounter{compound}\label{cmp:#1}\textsf{\scriptsize{\thecompound}}}
+
+% For hyperlinking compounds correctly
+\newcounter{cmpreset}
+\makeatletter
+\@addtoreset{compound}{cmpreset}
+\makeatother
+
+
+% to print compound letter labels uncomment and comment above
+%\newcommand{\cmp}[1]{\refstepcounter{compound}\label{cmp:#1}\textsf{\scriptsize{\thecompound(#1)}}}
+
+% for degrees c symbol
+\newcommand{\degc}{$^\circ$C}
+
+% for optical rotation
+\newcommand{\rotation}{[$\alpha$]$^{20}_D$ }
+
+% for crossreferencing of footnotes in the text
+\newcommand{\crossref}[1]{$^{\ref{#1}}$}
+
+% for crossreferencing compounds in a scheme, sets correct font
+\newcommand{\crossrefcmp}[1]{\textsf{\scriptsize{\ref{cmp:#1}}}}
+
+% for referencing schemes
+\newcommand{\refscheme}[1]{Scheme \ref{sch:#1}}
+
+% for referencing figures
+\newcommand{\reffigure}[1]{Figure \ref{fig:#1}}
+
+% for referencing tables
+\newcommand{\reftable}[1]{Table \ref{tbl:#1}}
+
+% for registered trademarks
+\newcommand{\regtm}{$\textsuperscript{\textregistered}$}
+
+% don't allow footnotes to span multiple pages
+\interfootnotelinepenalty=10000
+
+% Setup spacing for textpos package
+\setlength{\TPHorizModule}{0.05\textwidth}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+% Create a new float for schemes
+\newfloat{Scheme}{htbp}{los}[chapter]
+
+% Setup fancing chapter and section headers
+% \titleformat{\section}[block]
+%   {\singlespacing\normalfont\sffamily}
+%   {\colorbox{black}{\parbox[c][15pt][c]{30pt}{
+%       \hfil\color{white}\Large\thesection\hfil}}}
+%   {0pt}
+%   {\parbox{5.5in}{
+%       \hspace*{1em}\color{black}\large\sffamily#1\\[-8pt]\color{black}\titlerule}}
+%       \titlespacing*{\section}
+%   {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+  
+  
+  \titleformat{\section}[block]
+  {\singlespacing\normalfont}
+  {\colorbox{black}{\parbox[c][15pt][c]{30pt}{
+      \hfil\color{white}\Large\thesection\hfil}}}
+  {0pt}
+  {\parbox{5.5in}{
+      \hspace*{1em}\color{black}\normalsize\textsc{#1}\\[-8pt]\color{black}\titlerule}}
+      \titlespacing*{\section}
+  {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+  
+
+\titleformat{\subsection}[block]
+  {\normalfont\sffamily}
+  {\thesubsection}
+  {0pt}
+  {\textit{\hspace*{1em}#1}}
+  
+
+
+% \titleformat{\chapter}[block]
+%   {\normalfont\sffamily}
+%   {\parbox{\linewidth}{\flushright \colorbox{black}{\parbox[c][60pt][c]{60pt}{
+%       \hfil\color{white}Chapter \\
+%     \Huge\centering\thechapter\hfil}}}\vspace{4em}\\} {0pt}
+%   {\parbox{\linewidth}{\Large #1}}
+  
+  \titleformat{\chapter}[block]
+  {\normalfont}
+  {\parbox{\linewidth}{\centering \colorbox{black}{\parbox[c][60pt][c]{60pt}{
+      \hfil\color{white}\textsc{Chapter} \\
+    \Huge\centering\thechapter\hfil}}}\hrule \vspace{4em}} {0pt}
+  {\parbox{\linewidth}{\Large \centering \textsc{#1}} \vspace{4em} \hrule}

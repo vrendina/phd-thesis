@@ -1,0 +1,1155 @@
+%%% Reset counters for the footnotes and compound numbering
+%\setcounter{compound}{0}
+\stepcounter{cmpreset}
+\captionsetup[figure]{list=no} % hide figures from list in experimental section
+
+ \chapter{Extension of Catalytic Single Carbon Ring Expansion to Complex
+ Molecule Synthesis}
+ \label{chp:singlecarbon}
+ %\thispagestyle{empty}
+ \pagebreak
+ 
+\section{Introduction} 
+\doublespacing 
+Natural product total synthesis
+often provides the impetus for developing new organic methodologies and can
+function as a proving ground for evaluating the utility of existing synthetic
+tools.\footnote{For a review on the impact of total synthesis on the
+field of organic chemistry see: \frenchspacing{Nicolaou, K. C.; Vourloumis, D.;
+Winssinger, N.; Baran, P. S. The Art and Science of Total Synthesis at the Dawn
+of the Twenty-First Century. \textit{Angew. Chem. Int. Ed.} \textbf{2000},
+\textit{39}, 44-122.}} Our group recently disclosed methodology for catalytic
+and regioselective single carbon ring expansion of $\alpha$,$\alpha$-substituted
+cyclobutanones with
+trimethylsilyldiazomethane.\footnote{\frenchspacing{Dabrowski, J. A.; Moebius,
+D. C.; Wommack, A. J.; Kornahrens, A. F.; Kingsbury, J. S. Catalytic and
+Regioselective Ring Expansion of Arylcyclobutanones with
+Trimethylsilyldiazomethane. Ligand-Dependent Entry to $\beta$-Ketosilane or
+Enolsilane Adducts. \textit{Org. Lett.} \textbf{2010}, \textit{12}, 3598-3601.}
+\label{ref:cdabrowski}} To prove the generality of our new mild and catalytic approach, we aimed to
+apply this strategic ring expansion reaction in the context of natural product synthesis. Several biologically active sesquiterpenoid quinone natural products
+bearing a \textit{cis}-fused decalin core were selected, and we set out with the
+intent of developing a general strategy to access the \textit{cis}-decalin
+carbon framework common to the avarane\footnote{(a) \frenchspacing{Marcos, I.
+S.; Conde, A.; Moro, R. F.; Basabe, P.; Diez, D.; Urones, J. G.
+Quinone/Hydroquinone Sesquiterpenes. \textit{Mini-Rev. Org. Chem.}
+\textbf{2010}, \textit{7}, 230-254}. (b) \frenchspacing{Thomson, R. H.
+\textit{Naturally Occuring Quinones IV: Recent Advances}, 4th ed.; Chapman \&
+Hall: New York, 1997}.} family of natural products (\refscheme{strategydecalin}). By designing a
+route in which the pendant aryl group could be tuned, a number of different natural products and
+their analogs could be accessed through single carbon homologation of a cyclopentanone intermediate
+(\ref{cmp:baa}\ce{->}\ref{cmp:bab}). 
+
+\begin{Scheme}[H]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/strategydecalin}
+\begin{textblock}{1}(1.7,-0.25) \cmp{baa} \end{textblock}
+\begin{textblock}{1}(7.6,-0.25) \cmp{bab} \end{textblock}
+  \caption{Access to \textit{cis}-decalin natural products by single-carbon ring
+  expansion.}
+  \label{sch:strategydecalin}
+\end{Scheme}
+ This chapter will discuss progress made towards sesquiterpene
+ quinone natural products with an emphasis on ring expansion methodology development.
+ Improvements have been
+made to our original reaction conditions for cyclobutanones, such that the
+arguably more challenging cyclopentanone\footnote{The order of reactivity for
+the ring expansion of cycloalkanones with diazomethane based on literature
+precedents and qualitative observations is: cyclobutanone $\approx$
+cyclohexanone $>$ cycloheptanone $>$ cyclopentanone. \frenchspacing{Gutsche, C.
+D. The Reaction of Diazomethane and Its Derivatives with Aldehydes and Ketones.
+\textit{Org. React.} \textbf{1954}, \textit{8}, 364-403}. \label{ref:cgutsche}}
+substrates are now readily homologated to the corresponding cyclohexanones with high yields and
+regioselectivities. Methods developed in our group showcase the first examples
+of catalytic ring expansions with trimethylsilyldiazomethane and
+represent a significant improvement over existing protocols. A history of previous
+single carbon homologation methods with diazoalkanes was presented in chapter \ref{chp:diazobkg}.
+Examples of diazoalkane-based single carbon homologation in complex molecule synthesis are presented
+in the section that follows.
+
+\pagebreak
+
+ \section{Diazoalkane Single Carbon Homologation in Complex
+Molecules}
+Single-carbon ring expansion is a powerful synthetic disconnection and has been
+successfully implemented in a number of complex molecule syntheses. As discussed in Chapter
+\ref{chp:diazobkg}, diazoalkane based ring expansions have made significant advances over the years.
+More recent methodologies, based on the findings of Shioiri\footnote{{\frenchspacing Hashimoto, N.;
+Aoyama, T.; Shioiri, T. New Methods and Reagents in Organic Synthesis. 10.
+Trimethylsilyldiazomethane (TMSCHN$_2$). A New, Stable, and Safe Reagent for the Homologation of
+Ketones. \textit{Tetrahedron Lett.} \textbf{1980}, \textit{21}, 4619-4622.} \label{ref:cshioiri}}
+and Yamamoto,\footnote{(a)
+\frenchspacing{Maruoka, K.; Concepcion, A. B.; Yamamoto, H. Selective Homologation of Ketones and Aldehydes with Diazoalkanes Promoted by Organoaluminum Reagents. \textit{Synthesis}. \textbf{1994}, 1283-1290}. (b) \frenchspacing{Maruoka, K.; Concepcion, A. B.; Yamamoto, H. Organoaluminum-Promoted Homologation of Ketones with Diazoalkanes. \textit{J.
+Org. Chem.} \textbf{1994}, \textit{59}, 4725-4726.} \label{ref:cyamamoto}} have made their way into
+the total syntheses of several natural and synthetic biologically active complex molecules. Chemists will often construct or purchase
+the lower homologue of a ring system, utilize known methods to build up
+complexity, and then implement a key ring expansion event to access the target ring size. In the
+section that follows, several examples of sucessful single-carbon homologation
+in the context of complex substrates will be presented. 
+
+Polycyclic ether marine natural products, especially those belonging to
+the brevotoxin family, have been linked to
+cases of neurotoxic shellfish poising.\footnote{\frenchspacing{Watkins, S. M.;
+Reich, A.; Fleming, L. E.; Hammond, R. Neurotoxic Shellfish Poisoning. \textit{Mar. Drugs.} \textbf{2008},
+\textit{6}, 431-55.}} The discovery of these molecules and their
+corresponding biological effects lead to the development of new synthetic
+strategies to access the \textit{trans}-fused 6-- to 9-membered polycyclic ether
+framework common to these natural products.\footnote{\frenchspacing{Nicolaou, K. C.; Yang, Z.; Shi, G.;
+Gunzner, J. L.; Agrios, K. A.; G\"artner, P. Total Synthesis of Brevetoxin A.
+\textit{Nature.} \textbf{1998}, \textit{392}, 264-269.}} In 1997, Mori and
+coworkers published a strategy based on iterative ring expansion of the corresponding 6-membered lower homologue to access 7-membered oxepane rings.\footnote{(a) \frenchspacing{Mori, Y.; Yaegashi, K.; Furukawa, H. Stereoselective Synthesis of the 6,7,6- and 6,7,7-Ring Systems of Polycyclic Ethers by 6-endo Cyclization and Ring Expansion. \textit{Tetrahedron.} \textbf{1997}, \textit{53}, 12917-12932}. (b) \frenchspacing{Mori, Y. Yaegashi, K.; Furukawa, H. Oxiranyl Anions in
+Organic Synthesis: Application to the Synthesis of Hemibrevetoxin B. \textit{J.
+Am. Chem. Soc.} \textbf{1997}, \textit{119}, 4557-4558}. (c)
+\frenchspacing{Mori, Y.; Nogami, K.; Hayashi, H.; Noyori, R.
+Sulfonyl-Stabilized Oxiranyllithium-Based Approach to Polycyclic Ethers.
+Convergent Synthesis of the ABCDEF-Ring System of Yessotoxin and Adriatoxin.
+\textit{J. Org. Chem.} \textbf{2003}, \textit{68}, 9050-9060}.} Table
+\ref{tbl:mori} shows the results of a Lewis acid screen on model substrate
+\ref{cmp:baq}. The highest yields and regioselectivites were observed with the
+Shioiri\crossref{ref:cshioiri} conditions at $-$78~\degc~(entry 4). Preferential
+migration of the anticipated less substituted bond, followed by 1,3-Brook
+rearrangement\footnote{{\frenchspacing Brook, A. G. Some Molecular Rearrangements of Organosilicon
+Compounds. \textit{Acc. Chem. Res.} \textbf{1974}, \textit{7}, 77-84.} \label{ref:cbrook}} yielded
+\ref{cmp:bar}, which was deprotected with PPTS to afford the target oxepane \ref{cmp:bas} in 76\%
+yield over two steps.\footnote{For a more complete discussion of regioselectivity preferences see Chapter \ref{chp:diazobkg}.} \begin{table}[t] \centering
+\vspace{10pt}
+\includegraphics[scale=0.8]{chp_singlecarbon/images/morione} \\
+\begin{textblock}{1}(2.2,-0.7) \cmp{baq} \end{textblock}
+\begin{textblock}{1}(9.4,-0.7) \cmp{bar} \end{textblock}
+\begin{textblock}{1}(16.5,-0.7) \cmp{bas} \end{textblock}
+\vspace{10pt}
+{\small
+\begin{tabular}{cccccc}
+\toprule
+entry & Lewis acid & conditions & \ref{cmp:bas} (\%) & 8-keto isomer (\%) & rr 
+\\
+\midrule
+1&\ce{Et2AlCl}&$-$78~\degc, 2h & 40 & 7 & 5.7:1\\
+2&\ce{Me3Al}&$-$78~\degc, 1.5h & 48 & 32 & 1.5:1 \\
+3&\ce{BF3.Et2O}&$-$20~\degc, 1h & 56 & 11 & 5.1:1 \\
+\rowcolor{gray!15}4&\ce{BF3.Et2O}&$-$78~\degc, 1h & 76 & 5 & 15:1\\
+\bottomrule
+\end{tabular}
+}
+\caption{Lewis acid and condition screen for polyether model substrate.}
+\label{tbl:mori}
+\end{table}
+
+Satisfied with these model
+studies, Mori utilized this ring expansion strategy in a formal synthesis of
+hemibrevetoxin B (\refscheme{mori}). Lewis acid mediated ring
+closure of \ref{cmp:bat} and deoxygenation afforded cyclohexanone homologation
+substrate \ref{cmp:bau}. Single carbon ring expansion under highly optimized
+conditions yielded the first 7-membered ether \ref{cmp:bav} in a 67\% yield.
+After a series of manipulations, \ref{cmp:baw} was obtained and subsequently
+homologated to introduce the second 7-membered ring. Mori was able to
+sucessfully implement two regioselective single-carbon ring expansion events and
+secure intermediate \ref{cmp:bax}, which could then be elaborated to the target
+product (\ce{->}\ref{cmp:bay}). 
+
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/moritwo}
+  \caption{Mori's formal synthesis of hemibrevetoxin B featuring iterative
+  ring expansions.}
+  \begin{textblock}{1}(3.3,-8) \cmp{bat} \end{textblock}
+  \begin{textblock}{1}(13.7,-8) \cmp{bau} \end{textblock}
+  \begin{textblock}{1}(12.3,-4.7) \cmp{bav} \end{textblock}
+  \begin{textblock}{1}(4,-4.8) \cmp{baw} \end{textblock}
+  \begin{textblock}{1}(5.5,-1.2) \cmp{bax} \end{textblock}
+  \begin{textblock}{1}(13,-1) \cmp{bay} \end{textblock}
+  \label{sch:mori}
+\end{Scheme}
+
+In Pazos' 2009 synthesis of isolaurepan, a similar homologation strategy was
+employed to produce the oxepane ring system found in the desired target
+(\refscheme{pazos}).\footnote{\frenchspacing{Pazos, G.; P\'erez, M.
+G\'andara, Z.; G\'omez, G.; Fall, Y. A New, Enantioselective Synthesis of (+)-Isolaurepan.
+\textit{Tetrahedron Lett.} \textbf{2009}, \textit{50}, 5285-5287.}} Treatment of
+$\alpha$-tertiary substituted cyclohexanone \ref{cmp:bbk} with \ce{BF3.Et2O} and
+TMSD afforded cycloheptanone \ref{cmp:bbl} in a respectable 60\% isolated yield.
+Again, preferential migration of the less substituted carbon atom was observed
+to deliver a 7.5:1 mixture of regioisomers. The late stage homologation product
+\ref{cmp:bbl} was then advanced to the target isolaurepan (\ref{cmp:bbm}) with
+four additional steps.
+\begin{Scheme}[h]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/pazos}
+  \caption{Pazos' total synthesis of isolaurepan.}
+\begin{textblock}{1}(2,-0.6) \cmp{bbk} \end{textblock}
+\begin{textblock}{1}(9,-0.4) \cmp{bbl} \end{textblock}
+\begin{textblock}{1}(16,-0.7) \cmp{bbm} \end{textblock}	
+  \label{sch:pazos}
+\end{Scheme}
+
+% The migratory apptitudes observed in the aforementioned syntheses follow
+% a pattern that is distinct from those observed in the classic Baeyer-Villager
+% reaction. In the Baeyer-Villager reaction, migration of the more substituted carbon
+% substitutent is typically observed.\footnote{(a) \frenchspacing{﻿Doering, W.
+% E.; Speers, L. The Peracetic Acid Cleavage of Unsymmetrical Ketones. \textit{J.
+% Am. Chem. Soc.} \textbf{1950}, \textit{72}, 5515-5518}. (b)
+% \frenchspacing{﻿Crudden, C. M.; Chen, A. C.; Calhoun, L. A. A Demonstration of the Primary Stereoelectronic Effect in the Baeyer-Villiger Oxidation of $\alpha$-Fluorocyclohexanones. \textit{Angew. Chem. Int. Ed.} \textbf{2000},
+% \textit{39}, 2851-2855.}} This observation is rationalized by
+% disposing the substrate such that the peracid bond is oriented antiperiplanar to
+% the larger substituent. This effect has also been attributed to the ability of
+% the migrating group to stabilize a buildup of partial positive charge in the
+% transition state. The regiochemical outcome in these
+% two syntheses was however, not unprecedented. Both
+% Gutsche\crossref{ref:gutschetwo} and Shioiri\crossref{ref:shioiri} demonstrated
+% that the less substituted bond migrates preferentially with diazomethane and
+% TMSD. Greene\crossref{ref:greene} had previously demonstrated that
+% $\alpha$,$\alpha$-dichlorocyclobutanones show a preference for migration of the
+% more electron rich bond, however, the stereoelectronic disposition of the
+% diazoalkane appears to a more important determining factor in less
+% electronically biased situations.
+\begin{Scheme}[t] \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/seto}
+  \caption{Seto's synthesis of 6a-Carbabrassinolide.}
+  \begin{textblock}{1}(4.5,-2.95) \cmp{baz} \end{textblock}
+  \begin{textblock}{1}(4.5,-2.4) \cmp{bba} \end{textblock}
+  \begin{textblock}{1}(7.7,-0.8) \cmp{bbb} \end{textblock}
+  \begin{textblock}{1}(16.5,-2.5) \cmp{bbc} \end{textblock}
+  \label{sch:seto}
+\end{Scheme}
+In Seto's synthesis of 6a-carbabrassinolide, a regioselective ring expansion
+facilitated concise access to the target steroid derivative
+(\refscheme{seto}).\footnote{\frenchspacing{Seto, H.; Fujioka, S.;
+Koshino, H.; Hayasaka, H.; Shimizu, T.; Yoshida, S.; Watanabe, T. Synthesis and
+Biological Activity of 6a-Carbabrassinolide: B-Ring Homologation of
+6-Oxo-Steroid to 6-Oxo-7a-Homosteroid with Trimethylsilyldiazomethane-Boron
+Trifluoride Etherate. \textit{Tetrahedron Lett.} \textbf{1999}, \textit{40},
+2359-2362.}} Global acetate protection (\ref{cmp:baz} \ce{->} \ref{cmp:bba})
+prevents formation of methyl ethers by O-H insertion. Seto proposes that the
+diazoalkane adds to place the bulky TMS group away from the ring fusion and with
+the proton oriented inside of the ring system (\ref{cmp:bbb}). This simple
+model, based on minimization of steric interactions, correctly predicts the
+regiochemical outcome in the previous two examples as well. Seto obtains the desired
+heptanone in 11:1 regioselectivity and an excellent 80\% yield. Base-mediated
+global acetate deprotection delivered 6a-carbabrassinolide (\ref{cmp:bbc}). 
+
+
+In Smalley's approach to the novel antiviral compound TAK-779 (\refscheme{smalley}), a decagram
+scale highly regioselective single carbon ring expansion was employed to form the crucial benzofused
+7-membered carbocycle.\footnote{\frenchspacing{Smalley, T. L. A Ring Expansion Strategy in Antiviral
+Synthesis: A Novel Approach to TAK-779. \textit{Synthetic Commun.} \textbf{2004}, \textit{34},
+1973-1980.}} Starting from inexpensive and commercially available 7-methoxy-1-tetralone
+(\ref{cmp:bbd}), biaryl tetralone \ref{cmp:bbe} was quickly accessed through a three step sequence. 
+Ring expansion with \ce{BF3.Et2O} and TMSD afforded the desired suberone \ref{cmp:bbf} in multi-gram
+quantities as a single regioisomer by $^1$H NMR spectroscopy. The high preference for migration of the aryl bond can be rationalized by an electronic orbital overlap
+argument. Diazoalkane insertion reactions with aldehydes typically afford ketone products, formed by
+preferential migration of the carbonyl C-H bond.\footnote{For a lead reference on
+aldehyde homologations with diazoalkanes see: {\frenchspacing Wommack, A. J.; Moebius, D. C.;
+Travis, A. L.; Kingsbury, J. S. Diverse Alkanones by Catalytic Carbon Insertion into the Formyl C-H
+Bond. Concise Access to the Natural Precursor of Achyrofuran. \textit{Org. Lett.} \textbf{2009},
+\textit{11}, 3202-3205.}} The spherical, non-directional nature of the hydrogen \textit{s} orbital
+allows for facile migration. In Smalley's example, the migrating carbon center is sp$^2$ hybridized,
+resulting in a less directional orbital that can overlap more readily with the \ce{C-N} $\sigma^*$
+orbital. This migration preference was also consistent with a previous report by House that showed a
+strong preference for phenyl versus alkyl migration with diazomethane and
+\ce{BF3.Et2O}.\footnote{See Table \ref{tbl:housereg} on page \pageref{tbl:housereg} and:
+{\frenchspacing House, H. O.; Grubbs, E. J.; Gannon, W. F. The Reaction of Ketones with
+Diazomethane. \textit{J. Am. Chem. Soc.} \textbf{1960}, \textit{82}, 4099-4106.}} The synthesis was
+completed in 5 additional steps, providing scalable access to TAK-779 (\ref{cmp:bbg}).
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/smalley}
+  \caption{Smalley's approach to TAK-779 with highly regioselective ring
+  expansion.}
+  \begin{textblock}{1}(2,-5.2) \cmp{bbd} \end{textblock}
+  \begin{textblock}{1}(9,-5.2) \cmp{bbe} \end{textblock}
+  \begin{textblock}{1}(16.8,-5.2) \cmp{bbf} \end{textblock}
+  \begin{textblock}{1}(8.4,-1) \cmp{bbg} \end{textblock}
+  \label{sch:smalley}
+\end{Scheme}
+
+The reaction of diazomethane with $\alpha$,$\beta$-unsaturated carbonyl compounds under classical
+protic conditions has been shown to produce pyrazoline products arising from 1,3-dipolar
+cycloaddtions.\footnote{See reference \ref{ref:cgutsche} for further details.\\
+\includegraphics[scale=0.7]{chp_singlecarbon/images/alphabetaunsat}} Limited examples of
+$\alpha$,$\beta$-unsaturated carbonyl substrates undergoing ring expansion in the presence of Lewis
+acid catalysts have been reported. It was not until the introduction of
+Lewis acids for diazoalkane ring expansion that these types of substrates
+were accessible.\footnote{{\frenchspacing Johnson, W.
+S.; Neeman, M.; Birkeland, S. P.; Fedoruk, N. A. The Acid-catalyzed Reaction of Diazomethane with Some
+$\alpha$,$\beta$-Unsaturated Ketones. \textit{J. Am. Chem. Soc.} \textbf{1962}, \textit{84},
+989-992.}} In Dr\`ege's synthesis of the cyathin terpenoid framework, an intramolecular Heck
+reaction (\ref{cmp:bbh} \ce{->} \ref{cmp:bbi}, Scheme \ref{sch:drege}) set the stage for a rare
+$\alpha$,$\beta$-unsaturated cyclohexenone ring expansion.\footnote{\frenchspacing{(a) Dr\`ege, E.; Morgant, G.; Desma\"ele, D.
+Asymmetric Synthesis of the Tricyclic Core of Cyathin Diterpenoids via Intramolecular Heck Reaction.
+\textit{Tetrahedron Lett.} \textbf{2005}, \textit{46}, 7263-7266}. (b) \frenchspacing{Dr\`ege, E.;
+Tominiaux, C.; Morgant, G.; Desma\"ele, D. Synthetic Studies on Cyathin Terpenoids: Enantioselective
+Synthesis of the Tricyclic Core of Cyathin through Intramolecular Heck Cyclisation. \textit{Eur. J.
+Org. Chem.} \textbf{2006}, 4825-4840.}}  Under the Yamamoto\crossref{ref:cyamamoto} conditions,
+cyclohexenone \ref{cmp:bbi} was smoothly converted to the desired cycloheptanone \ref{cmp:bbj} in a
+60\% isolated yield with 6:1 regioselectivity.
+
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/drege}
+  \caption{Dr\`ege's approach to the cyathin terpenoid carbon framework.}
+\begin{textblock}{1}(1.2,-0.2) \cmp{bbh} \end{textblock}
+\begin{textblock}{1}(9,-0.6) \cmp{bbi} \end{textblock}
+\begin{textblock}{1}(13.5,-0.6) \cmp{bbj} \end{textblock}
+  \label{sch:drege}
+\end{Scheme}
+
+In arguably one of the most challenging single
+carbon homologations to date, the Snyder group attempted to
+homologate an exceptionally crowded $\alpha$,$\alpha'$-disubstituted
+cyclohexanone during their synthesis of
+Rippertenol (\refscheme{snyder}).\footnote{\frenchspacing{Snyder,
+S. A.; Wespe, D. A.; von Hof, J. M. A Concise, Stereocontrolled Total Synthesis
+of Rippertenol. \textit{J. Am. Chem. Soc.} \textbf{2011}, \textit{133},
+8850-8853.}} A Lewis acid mediated inverse demand Diels-Alder reaction between
+electron deficient diene \ref{cmp:bbn} and ketene acetal \ref{cmp:bbo} afforded
+the carbon framework of the six membered ring (\ce{->}\ref{cmp:bbp}) that would later
+be subjected to single carbon homologation. Two further steps, Lombardo-Takai
+olefination with an acidic workup and hydrogenation, unmasked the ketone for ring
+expansion (\ref{cmp:bbp} \ce{->} \ref{cmp:bbq}). Extensive screening lead to modified
+Shioiri\crossref{ref:cshioiri} conditions as the optimium means to obtain
+cycloheptanone \ref{cmp:bbr}, although it was only recovered in 21\% yield under
+highly optimized conditions. The regiochemical outcome was not anticipated,
+however, it was of little consequence as the ketone was removed in subsequent
+steps. To avoid epimerization of the adjacent methyl stereocenter, a two-step
+reduction radical deoxgenation strategy followed by silyl deprotection delivered
+the target natural product \ref{cmp:bbs}. 
+
+The Synder synthesis of rippertenol and other examples that have been presented
+illustrate a need for more mild and catalytic methods to accomplish single
+carbon ring expansions. Although a number of the syntheses showcase successful
+and high yielding ring expansions, none of the examples are catalytic. The
+sections that follow will detail our work to develop and successfully implement
+the first mild and catalytic ring expansion methodology in the context of
+complex molecule synthesis.
+
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/snyder}
+  \caption{Synder's total synthesis of rippertenol.}
+\begin{textblock}{1}(2,-4.5) \cmp{bbn} \end{textblock}	
+\begin{textblock}{1}(5.8,-7.8) \cmp{bbo} \end{textblock}	
+\begin{textblock}{1}(10.6,-5.5) \cmp{bbp} \end{textblock}	
+\begin{textblock}{1}(17.3,-5.5) \cmp{bbq} \end{textblock}	
+\begin{textblock}{1}(14,-2) \cmp{bbr} \end{textblock}	
+\begin{textblock}{1}(6.5,-1.5) \cmp{bbs} \end{textblock}	
+  \label{sch:snyder}
+\end{Scheme}
+
+
+\clearpage
+\section{Model Optimization Studies for Cyclopentanone Ring Expansions}
+\label{sec:modeloptimization}
+
+Previous studies from our group on scandium catalyzed single carbon ring expansion were focused
+on $\alpha$-quaternary cyclobutanones,\crossref{ref:cdabrowski} and we were intent
+on utilizing this methodology in the context of an advanced $\alpha$-quaternary substituted
+cyclopentanone intermediate. We therefore chose to concentrate our
+studies first on a suitable model system, 2-methyl-2-phenyl cyclopentanone (\ref{cmp:meph}), which
+was prepared on gram scale by methods developed in our group for substituted carbon insertion.\footnote{See Chapter \ref{chp:asymmetric} for experimental details. \\
+\includegraphics[scale=0.7]{chp_singlecarbon/images/meph}} 
+\begin{table}[h] \centering
+\vspace{10pt}
+\includegraphics[scale=0.8]{chp_singlecarbon/images/comparisonhead}
+\begin{textblock}{1}(5.5,-0.5) \cmp{meph}\end{textblock}
+\begin{textblock}{1}(9.9,-0.5) \cmp{xbac} \end{textblock}
+\begin{textblock}{1}(13.5,-0.5) \cmp{xbad} \end{textblock}
+{\small
+\begin{tabular}{ccccc}
+\toprule 
+entry$^a$ & promoter & conversion (\%) & yield \ref{cmp:xbac} (\%) & rr
+(\ref{cmp:xbac}:\ref{cmp:xbad})
+\\
+\midrule
+1$^b$&\ce{BF3.Et2O}&94& 80 & $>$100:1 \\
+2$^c$&\ce{Al(CH3)3}&13& $<2$ & --  \\
+\bottomrule
+\multicolumn{5}{p{4.5in}}{\footnotesize $^a$Conversion, yield, and
+regioselectivity were determined by GC analysis with hexamethylbenzene as an
+internal standard. $^b$Run with 1.5 equivalents of \ce{BF3.Et2O} and TMSD.
+$^c$Run with 1.2 equivalents of \ce{Al(CH3)3} and 1.1 equivalents TMSD.}
+\end{tabular}
+}
+\caption{Establishing a point of comparison to previous methods.}
+\label{tbl:comparison}
+\end{table}
+To establish a benchmark for our testing, we first evaluated the efficacy of the
+Shioiri\crossref{ref:cshioiri} conditions (Table \ref{tbl:comparison}, entry 1).
+We were surprised to see such high levels of regiocontrol with good yields of
+the desired cyclohexanone \ref{cmp:xbac}. We then tested
+Yamamoto's\crossref{ref:cyamamoto} conditions, which resulted in substantially
+lower conversion and a poor yield of the desired product (entry 2). The Shioiri
+conditions worked well in this context, but regardless required
+superstoichiometric amounts of \ce{BF3.Et2O} to achieve high levels of
+conversion. For this model substrate 1.5 equivalents was sufficient, but some
+of the previously mentioned studies on more complex molecules required more than 4 equivalents. The
+presence of Lewis basic functional groups other than the target ketone can interact with the Lewis
+acid promoter and shut down the reaction. 
+
+We then attempted to translate the previously reported conditions to our model
+cyclopentanone substrate. Initial attempts resulted in highly irreproducible
+reactions, rarely affording complete conversion. Even two identical reactions
+run side by side under presumably the same conditions gave dramatically
+different outcomes. Occasionally, reactions were successful, giving hope that
+we could discover or control all the variables to produce a more reliable
+reaction profile. We decided to approach the problem in two directions: (1) control all the
+environmental variables by running with freshly purified reagents under dry conditions in a glove box, (2) monitor the reaction progress with an advanced analytical
+technique to obtain the maximum possible information. 
+
+Attempts to use ReactIR to monitor the reaction did not generate any usable data
+and was operationally difficult to set up rigorously anhydrous reactions. ReactIR was abandoned
+quickly in favor of $^1$H NMR spectroscopy, which proved to be operationally simpler and provided better
+quality data. Reactions could be set up in a glove box and transferred to a J-Young tube
+for analysis. In a glove box, rigorously vacuum dried \ce{Sc(OTf)3} was combined with cyclopentanone 
+\ref{cmp:meph} in \ce{CDCl3} and allowed to stir for 15 minutes before adding 1.5 equivalents of
+TMSD. The heterogeneous yellow reaction mixture was transferred to a J-Young NMR
+tube, where a slow stream of nitrogen gas evolution began. $^1$H NMR data were recorded at
+30 minute intervals and showed complete conversion after 450 minutes (7.5 hours)
+at room temperature. After an additional 8 hours, no further
+change was observed in the spectrum, and the mixture was then subjected to a dilute
+acid hydrolysis. The products of the reaction were primarily
+\ref{cmp:xbac} and \ref{cmp:xbad} in an 8:1 ratio by $^1$H NMR
+spectroscopy. This promising result was promptly repeated with an identical
+setup and gratifyingly afforded identical results. 
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[scale=0.55, trim = 45mm 45mm 30mm 40mm,
+clip]{chp_singlecarbon/images/decompgraph}
+  \caption{Decomposition of TMSD with \ce{Sc(OTf)3} and \ce{H2O}.}
+  \begin{textblock}{3}(1,-9)  \begin{sideways}\small
+  \textbf{\textsf{TMSD Remaining (\%)}} \end{sideways}
+  \end{textblock}
+\begin{textblock}{3}(8.5,-1.5)  \small \textbf{\textsf{Time (min)}}
+\end{textblock}
+\begin{textblock}{5}(10,-8)  \small \textsf{TMSD, \ce{Sc(OTf)3}, \ce{H2O} \\
+t$_{\frac{1}{2}} = $ 19 minutes}
+\end{textblock}
+  \label{fig:decompgraph}
+\end{figure}
+
+With these two successful reactions, we still needed to determine the cause of
+the previously irreproducible reactions. When the reactions were worked
+up, they were first rinsed into a separatory funnel with benchtop \ce{Et2O}, which
+immediately caused the rapid destruction of any remaining diazoalkane. We had
+also observed that monitoring the reaction progress by thin layer chromatography
+in certain cases also destroyed the diazoalkane. Trace amounts of water were
+previously found to have a profound impact on both reaction kinetics and selectivity for asymmetric ring expansion reactions with chiral scandium catalysts.\footnote{\frenchspacing{Rendina, V. L.; Moebius, D. C.; Kingsbury, J. S. An Enantioselective Synthesis of 2-Aryl Cycloalkanones by Sc-Catalyzed Carbon Insertion. \textit{Org. Lett.}
+\textbf{2011}, \textit{13}, 2004-2007.}} We rationalized that trace amounts of
+water present in any of the reaction components, or adventitious atmospheric
+water, may have been responsible for the inconsistent reactivity. An experiment was carried out to
+test this hypothesis. When TMSD was mixed with 5 equivalents of water, an insignificant change in
+the concentration\footnote{Determined by $^1$H NMR spectroscopy with
+1,3,5-trimethoxybenzene as an internal standard.} was observed after 24
+hours at room temperature. The same experiment with TMSD and 10 mol
+\% \ce{Sc(OTf)3} also showed minimal change,\footnote{This result was
+somewhat surprising given that Lewis acids are known to promote the
+decomposition of diazoalkanes. See reference \ref{ref:cyamamoto}a and references
+within.} but when an equivalent of water was added the diazoalkane began to
+rapidly decompose (Figure \ref{fig:decompgraph}). In less than 20 minutes, half of the original
+diazoalkane had been destroyed. The proposed pathway of decomposition is illustrated in Scheme
+\ref{sch:scwatereq}.
+Although \ce{Sc(OTf)3} is a water tolerant Lewis acid and is prepared from aqueous
+triflic acid,\footnote{\frenchspacing{Kobayashi, S.; Hachiya, I.; Araki,
+M.; Ishitani, H. Scandium Trifluoromethanesulfonate (Sc(OTf)$_3$). A Novel
+Reusable Catalyst in the Diels-Alder Reaction. \textit{Tetrahedron Lett.}
+\textbf{1993}, \textit{34}, 3755-3758.}} presumably an equilibrium can be
+established with water which generates small quantities of acid.\footnote{{\frenchspacing Kobayashi,
+S.; Nagayama, S.; Busujima, T.
+Lewis Acid Catalysts Stable in Water. Correlation between Catalytic Activity in Water and Hydrolysis Constants and Exchange Rate
+Constants for Substitution of Inner-Sphere Water Ligands. \textit{J. Am. Chem. Soc.} \textbf{1998},
+\textit{120}, 8287-8288.}}  Br{\o}nsted acids
+have long been known to facilitate rapid decomposition of diazoalkanes, first by
+protonation and then by subsequent substitution with the conjugate base or an
+appropriate nucleophile.\footnote{For a lead reference on the reaction of diazoalkanes with acids
+see: {\frenchspacing Rendina, V. L.; Kingsbury, J. S. Titration of Nonstabilized Diazoalkane
+Solutions by Fluorine NMR. \textit{J. Org. Chem.} \textbf{2012}, \textit{77}, 1181-1185.}} In this
+case, water displaces nitrogen followed by a proton transfer to regenerate the Br{\o}nsted acid.
+Trimethylsilyl methanol (\ref{cmp:bbt}) was not observed by $^1$H NMR
+spectroscopy, instead a 1,2-Brook rearrangement\crossref{ref:cbrook} likely occurred to produce
+methoxytrimethylsilane (\ce{->}\ref{cmp:bbu}). 
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/scwatereq}
+  \caption{Proposed pathway for diazoalkane decomposition with hydrated
+  scandium triflate.}
+\begin{textblock}{1}(10,-0.1) \cmp{bbt} \end{textblock}
+\begin{textblock}{1}(5,-0.1) \cmp{bbu} \end{textblock}		
+  \label{sch:scwatereq}
+\end{Scheme}
+
+
+\begin{table}[t] \centering
+\vspace{10pt}
+\includegraphics[scale=0.8]{chp_singlecarbon/images/catscreenhead}
+\begin{textblock}{1}(9.9,-0.5) \textsf{\scriptsize{\ref{cmp:xbac}}}
+\end{textblock}
+\begin{textblock}{1}(13.5,-0.5) \textsf{\scriptsize{\ref{cmp:xbad}}}
+\end{textblock}
+\begin{textblock}{1}(5.5,-0.5) \textsf{\scriptsize{\ref{cmp:meph}}}
+\end{textblock}
+{\small
+\begin{tabular}{cccccc}
+\toprule 
+entry$^a$ & catalyst & time (h) & conversion (\%) & yield$^b$
+(\%) & rr (\ref{cmp:xbac}:\ref{cmp:xbad})
+\\
+\midrule
+\rowcolor{gray!15}1&\ce{Sc(OTf)3}&16&$>$98&88&7.4:1 \\
+2&\ce{Sc(Cl)3(thf)3}&24&22&--&5.6:1 \\
+3&\ce{Sc(hfac)3}&24&35&--&8:1 \\
+4&\ce{ScBr3}&16&$<2$&--&-- \\
+5&\ce{Sc(acac)3}&16&$<2$&--&-- \\
+6&\ce{Y(OTf)3}&24&$<10$&--&-- \\
+\rowcolor{gray!15}7&\ce{Yb(OTf)3}&24&80&70&55:1 \\
+\bottomrule
+\multicolumn{6}{p{5.1in}}{\footnotesize $^a$Conditions: 0.05
+mmol scale, 10 mol \% catalyst, 2 equivalents TMSD, 0.1 M in
+\ce{CH2Cl2}. Conversion, yield, and regioselectivity were determined by GC
+analysis with hexamethylbenzene as an internal standard after treatment with 2
+equivalents TBAF (1M in THF) and filtration through silica gel. $^b$Combined
+yield of both regioisomers.}
+\end{tabular}
+}
+\caption{Screen of Lewis acid catalysts.}
+\label{tbl:catscreen}
+\end{table}
+With a reliable reaction protocol in hand, we began to evaluate other variables
+to discover an optimized set of conditions. We first investigated other scandium
+(III) salts and several other lanthanide triflates to ensure that we were
+optimizing the best catalyst. Results of the catalyst screen are summarized in
+\reftable{catscreen}. The highest yield of the major regioisomer
+\ref{cmp:xbac} was obtained with \ce{Sc(OTf)3} (entry 1). Other less
+Lewis acidic scandium salts (entries 2--5) resulted in lower levels of
+conversion with comparable levels of regiocontrol. We were intrigued by the high
+levels of regiocontrol observed with \ce{Yb(OTf)3} (entry 7). This less potent
+and larger Lewis acid may enforce a more selective initial addition of the
+diazoalkane, leading to the substantially higher regioselectivity. Later
+attempts to use the stronger Lewis acid \ce{Yb(NTf2)3} to increase reaction
+conversion resulted in rapid decomposition of the diazoalkane and low
+conversion to the homologated products. We decided to continue optimizing
+\ce{Sc(OTf)3} because of its higher activity and the ease that reactions could
+be monitored by $^1$H NMR spectroscopy. Ytterbium (III) salts are paramagnetic
+and complicated monitoring by NMR. 
+\begin{table}[h] \centering
+\vspace{10pt}
+\includegraphics[scale=0.8]{chp_singlecarbon/images/solventscreenhead}
+\begin{textblock}{1}(9.9,-0.5) \textsf{\scriptsize{\ref{cmp:xbac}}}
+\end{textblock}
+\begin{textblock}{1}(13.5,-0.5) \textsf{\scriptsize{\ref{cmp:xbad}}}
+\end{textblock}
+\begin{textblock}{1}(5.5,-0.5) \textsf{\scriptsize{\ref{cmp:meph}}}
+\end{textblock}
+{\small
+\begin{tabular}{cccccc}
+\toprule 
+entry$^a$ & solvent & conversion (\%) & yield$^b$
+(\%) & yield \ref{cmp:xbac}
+(\%) & rr (\ref{cmp:xbac}:\ref{cmp:xbad})
+\\
+\midrule
+1&\ce{CH2Cl2}&$>$98&88&78&7.4:1 \\
+2&toluene&$>$98&95&79&5:1 \\
+3&\ce{CHCl3}&$>$98&91&79&7:1 \\
+4&\ce{hexanes}&94&86&75&6.8:1 \\
+5&\ce{Et2O}&77&70&65&14.7:1 \\
+6&\ce{THF}&27&10&8&3.2:1 \\
+7&\ce{CH3CN}&62&28&25&8.2:1 \\
+\bottomrule
+\multicolumn{6}{p{5.1in}}{\footnotesize $^a$Conditions: 0.05
+mmol scale, 10 mol \% \ce{Sc(OTf)3}, 2 equivalents TMSD, 0.1 M in solvent, 16 h.
+Conversion, yield, and regioselectivity were determined by GC analysis with hexamethylbenzene as an internal standard after treatment with 2
+equivalents TBAF (1M in THF) and filtration through silica gel. $^b$Combined
+yield of both regioisomers.}
+\end{tabular}
+}
+\caption{Solvent screen with \ce{Sc(OTf)3}.}
+\label{tbl:solventscreen}
+\end{table}
+
+Table \ref{tbl:solventscreen} shows the results of a solvent screen with
+catalytic \ce{Sc(OTf)3}. Entries 1--4 all showed high levels of conversion and
+similar levels of regiocontrol, despite significant differences in polarity.
+Even hexanes (entry 4), where the catalyst was completely heterogeneous,
+proceeded to high conversion. Running in ethereal or Lewis basic solvents
+(entries 5--7) not surprisingly supressed catalyst efficiency.\footnote{A similar observation was
+made by Shioiri when using \ce{BF3.Et2O} as a promoter. Methylene chloride was selected as the
+optimum solvent. See reference \ref{ref:cshioiri} for details.} The higher regiocontrol observed in
+\ce{Et2O} suggested that filling the coordination sphere around scandium may produce a more selective catalyst. A single experiment examining regioselectivity as a function of conversion seemed to
+indicate that binding of the product silyl enol ether resulted in higher
+selectivity as the reaction progressed. The large discrepancy between conversion
+and yield in \ce{CH3CN} (entry 7) was determined to be the result of
+overhomologation to produce the cycloheptanone.
+
+
+With a successful preliminary result (Table \ref{tbl:catscreen}, entry 1, page
+\pageref{tbl:catscreen}), we still wanted to see if the yield of the major regioisomer could be
+enhanced by increasing the regioisomeric ratio. We prepared the sterically more demanding
+phenyldimethylsilyldiazomethane\footnote{\frenchspacing{Shioiri, T.;
+Aoyama, T.; Mori, S. Trimethylsilyldiazomethane. \textit{Org. Synth.}
+\textbf{1990}, \textit{68}, 1.} \label{ref:bshioriorgsynth}} (\ref{cmp:bbv}, \refscheme{pdmsd}) and
+rationalized that higher levels of regioselectivity would be observed based on the preference for the
+diazoalkane to add such that the bulky silicon group would be oriented away from
+the more substituted side of the ketone. The intermediate \ref{cmp:bbw} avoids
+this costly steric interaction and leads to the observed major regioisomer
+\ref{cmp:xbac} in $>$15:1 selectivity, doubling the previously observed
+selectivity with TMSD. For simpler model substrates, employing \ref{cmp:bbv} could provide
+access to an easily isolable and synthetically useful more stable silyl enol ether with high
+levels of regiocontrol.
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/pdmsd}
+  \caption{Higher levels of regiocontrol with a more sterically hindered
+  diazoalkane.}
+\begin{textblock}{1}(5,-2) \cmp{bbv} \end{textblock}
+\begin{textblock}{1}(12.2,-4) \cmp{bbw} \end{textblock}
+\begin{textblock}{1}(11,-0.75) \cmp{bbx} \end{textblock}
+\begin{textblock}{1}(2.25,-2) \textsf{\scriptsize{\ref{cmp:meph}}}
+\end{textblock}
+\begin{textblock}{1}(16.5,-4) \textsf{\scriptsize{\ref{cmp:xbac}}}
+\end{textblock}
+\begin{textblock}{1}(16.6,-0.75) \textsf{\scriptsize{\ref{cmp:xbad}}}
+\end{textblock}
+  \label{sch:pdmsd}
+\end{Scheme}
+
+Pleased with the performance of the \ce{Sc(OTf)3} TMSD system
+thus far, we did not want to spend excessive time optimizing model substrate
+\ref{cmp:meph}. Our synthetic strategy would ultimately involve homologation of
+a \textit{cis}-fused 6,5-ring system (\refscheme{strategydecalin}, page
+\pageref{sch:strategydecalin}), and we wanted to evaluate a more representative model. Commercially
+available estrone 3-methyl ether (\ref{cmp:bby}) was subjected to two equivalents of TMSD and 5 mol \% \ce{Sc(OTf)3} in
+deuterochloroform for 24 hours (\refscheme{estrone}). Complete
+conversion and a 72\% yield of enol silane \ref{cmp:bbz} was observed by $^1$H NMR spectroscopy before deprotection
+with TBAF. Purification by column chromatography afforded the major regioisomer
+\ref{cmp:xbae} in an acceptable 68\% isolated yield along with 22\% of
+\ref{cmp:xbaf}.
+\begin{Scheme}[b]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/estrone}
+  \caption{Single carbon homologation of estrone 3-methyl ether.}
+\begin{textblock}{1}(2.8,-3.6) \cmp{bby} \end{textblock}
+\begin{textblock}{1}(7.2,-1) \cmp{bbz} \end{textblock}
+\begin{textblock}{1}(11.4,-3.6) \cmp{xbae} \end{textblock}
+\begin{textblock}{1}(16.5,-3.6) \cmp{xbaf} \end{textblock}
+  \label{sch:estrone}
+\end{Scheme}
+
+With all of these results and information in hand, we were ready to start
+looking at more complex substrates. The following section will discuss our
+progress towards several sesquiterpene quinone natural products, with a focus on
+the key ring expansion step. 
+
+\clearpage
+\section{Application to the Total Synthesis of 5-\textit{epi}-Ilimaquinone}
+
+
+\begin{wrapfigure}{r}{1.7in}
+  \vspace{-25pt}
+  \begin{center}
+    \includegraphics[scale=0.8]{chp_singlecarbon/images/5epiilimaquinone}
+    \begin{textblock}{1}(2,-1) \cmp{bcf} \end{textblock}
+  \end{center}
+  \vspace{-30pt}
+\end{wrapfigure}
+We initially decided to concentrate our efforts on the synthesis of
+5-\textit{epi}-ilimaquinone (\ref{cmp:bcf}), first isolated from the marine
+sponge \textit{Fenestraspongia} by Faulkner and coworkers in
+1985.\footnote{Originally isolated as a 2:3 mixture with
+(--)-ilimaquinone. \frenchspacing{Cart\'e, B.; Rose, C. B.; Faulkner, D. J.
+5-\textit{epi}-Ilimiquinone, a Metabolite of the Sponge \textit{Fenestraspongia} Sp.
+\textit{J. Org. Chem.} \textbf{1985}, \textit{50}, 2785-2787.}} Access to
+5-\textit{epi}-ilimaquinone, never prepared before by total synthesis, would
+additionally faciliate access to several other related aminoquinone
+derivatives. The section that follows
+will discuss two synthetic generations, culminating in the successful
+implementation of catalytic single carbon ring expansion through careful
+experimentation and application of findings discussed in the previous section.
+
+\subsection{First Generation Synthesis}
+The retrosynthetic analysis for 5-\textit{epi}-ilimaquinone (\ref{cmp:bcf}) is
+depicted in \refscheme{retrosynthesis}. We had also
+originally planned to target several other natural aminoquinone derivatives
+(\ref{cmp:bcc}, \ref{cmp:bcd}, \ref{cmp:bce}), which could theoretically be prepared in a single
+substitution step from \ref{cmp:bcf} with the appropriate amine. A late-stage oxidation of aryl
+intermediate \ref{cmp:bcg}, similar to that found in Snapper's synthesis of ($-$)-illimaquinone,
+could provide the sensitive quinone moiety found in the final targets.\footnote{{\frenchspacing
+Bruner, S. D.; Radeke, H. S.; Tallarico, J. A.; Snapper, M. L. Total Synthesis of (-)-Ilimaquinone.
+\textit{J. Org. Chem.} \textbf{1995}, \textit{60}, 1114-1115.} \label{ref:csnapper}} Intermediate
+\ref{cmp:bcg} could be accessed by olefination of \ref{cmp:bch}, which would be dervived from
+\ref{cmp:xbas} following the key ring expansion event and hydrogenation to set the C-8
+$\beta$-methyl stereocenter. Intermediate \ref{cmp:xbas} could be prepared from \ref{cmp:xban}
+following olefination and oxidation steps. The pendant aryl group in \ref{cmp:xban} could be
+attached by a dissolved metal reductive alyklation with reduced Hajos-Parrish ketone \ref{cmp:xbah} and aryl
+iodide \ref{cmp:xbam}, introducing both the \textit{cis} ring junction and C-9 quaternary center.
+
+\begin{Scheme}[t]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/retrosynthesis}
+  \caption{Retrosynthetic analysis for 5-\textit{epi}-ilimaquinone and related
+  aminoquinones.}
+\begin{textblock}{1}(-0.3,-5.15) \cmp{bcc} \end{textblock}
+\begin{textblock}{1}(-0.3,-4.75) \cmp{bcd} \end{textblock}
+\begin{textblock}{1}(-0.3,-4.35) \cmp{bce} \end{textblock}
+\begin{textblock}{1}(6.5,-6) \textsf{\scriptsize{\ref{cmp:bcf}}} \end{textblock}
+\begin{textblock}{1}(11.6,-6) \cmp{bcg} \end{textblock}
+\begin{textblock}{1}(17,-6.3) \cmp{bch} \end{textblock}
+\begin{textblock}{1}(17,-0.2) \cmp{xbas} \end{textblock}
+\begin{textblock}{1}(10.5,-0.2) \cmp{xban} \end{textblock}
+\begin{textblock}{1}(4.5,-1)\cmp{xbam} \end{textblock}
+\begin{textblock}{1}(1.4,-0.5) \cmp{xbah} \end{textblock}
+  \label{sch:retrosynthesis}
+\end{Scheme}
+
+We began by preparing reduced Hajos-Parrish ketone \ref{cmp:xbah} according to a modified literature
+protocol,\footnote{See the experimental section for details. {\frenchspacing Shigehisa, H.;
+Mizutani, T.; Tosaki, S.; Ohshima, T.; Shibasaki, M. Formal Total Synthesis of (+)-Wortmannin Using
+Catalytic Asymmetric Intramolecular Aldol Condensation Reaction. \textit{Tetrahedron} \textbf{2005},
+\textit{61}, 5057-5065.}} which was obtained with $>$98\% ee after a single recrystallization.
+Electrophile \ref{cmp:xbam} was selected because of its prior
+use in the total synthesis of ($-$)-ilimaquinone by the Snapper
+group.\footnote{The Snapper group utilized the corresponding aryl bromide. See reference
+\ref{ref:csnapper} for details.} Starting from commercially available
+3,5-dimethoxybenzoic acid (\ref{cmp:bcl}), reduction and chlorination afforded chloroalcohol \ref{cmp:xbak} (\refscheme{ephileone}). Standard bromination conditions allowed access to the benzyl bromide which was stable enough to be purified by silica gel chromatography. By employing
+Finkelstein conditions, the more reactive benzyl iodide (\ref{cmp:xbam}) could be isolated cleanly
+after simple filtration and concentration.
+
+\begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/genoneelectrophile}
+  \caption{First generation electrophile synthesis.}
+  \begin{textblock}{1}(1.4,-0.75) \cmp{bcl} \end{textblock}
+  \begin{textblock}{1}(8.5,-0.75)\cmp{xbak} \end{textblock}
+  \begin{textblock}{1}(15.5,-0.75) \textsf{\scriptsize{\ref{cmp:xbam}}}
+\end{textblock}
+  \label{sch:ephileone}
+\end{Scheme}
+
+
+\begin{Scheme}[t]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/forwardgenone}
+  \caption{First generation forward synthesis.}
+  \begin{textblock}{1}(16,-4.8) \cmp{xbaq} \end{textblock}
+  \begin{textblock}{1}(6.4,0) \cmp{xbat} \end{textblock}
+  \begin{textblock}{1}(1.5,0) \cmp{xbau} \end{textblock}
+    \begin{textblock}{1}(13.5,0) \textsf{\scriptsize{\ref{cmp:xbas}}}
+\end{textblock}
+  \begin{textblock}{1}(8,-4.8) \textsf{\scriptsize{\ref{cmp:xban}}}
+\end{textblock}
+    \begin{textblock}{1}(1.6,-5.3) \textsf{\scriptsize{\ref{cmp:xbah}}}
+\end{textblock}
+  \begin{textblock}{1}(5.8,-6.3) \textsf{\scriptsize{\ref{cmp:xbam}}}
+\end{textblock}
+  \label{sch:forwardgenone}
+\end{Scheme}
+With fragments \ref{cmp:xbam} and \ref{cmp:xbah} in hand, we were prepared
+to couple them in a single dissolved metal reductive alkylation step. In previous
+examples, 6,6 ring systems were known to form exclusively \textit{trans} decalin
+ring systems.\footnote{The stereochemical outcome of these reactions was extensively studied by
+Stork. (a) {\frenchspacing Stork, G.; Darling, S. D. Stereochemistry of the Lithium-Ammonia
+Reduction of $\alpha$,$\beta$-Unsaturated Ketones. \textit{J. Am. Chem. Soc.} \textbf{1960},
+\textit{82}, 1512-1513.} (b) {\frenchspacing Stork, G.; Rosen, P.; Goldman, N. L. The
+$\alpha$-Alkylation of Enolates From the Lithium-Ammonia Reduction of $\alpha$,$\beta$-Unsaturated
+Ketones. \textit{J. Am. Chem. Soc.} \textbf{1961}, \textit{83}, 2965-2966.} (c) {\frenchspacing
+Stork, G.; Darling, S. D. The Stereochemistry of the Lithium-Ammonia Reduction of
+$\alpha$,$\beta$-Unsaturated Ketones. \textit{J. Am. Chem. Soc.} \textbf{1964}, \textit{86},
+1761-1768.} (d) {\frenchspacing Stork, G.; Rosen, P.; Goldman, N.; Coombs, R. V; Tsuji, J.
+Alkylation and Carbonation of Ketones by Trapping the Enolates from the Reduction of
+$\alpha$,$\beta$-Unsaturated Ketones. \textit{J. Am. Chem. Soc.} \textbf{1965}, \textit{87},
+275-286.}} Key to our synthetic strategy was the precedents for formation of a \textit{cis} ring
+junction within the context of 6,5 ring systems.\footnote{Two examples are known in the literature:
+(a) {\frenchspacing Paquette, L. A.; Wang, T.-Z.; Sivik, M. R. Total Synthesis of ($-$)-Austalide B.
+A Generic Solution to Elaboration of the Pyran/p-Cresol/Butenolide Triad. \textit{J. Am. Chem. Soc.}
+\textbf{1994}, \textit{116}, 11323-11334.} (b) {\frenchspacing Renoud-Grappin, M.; Vanucci, C.;
+Lhommet, G. Diastereoselective Synthesis of a Limonoid Model Related to the Insect Antifeedant
+Genudin. \textit{J. Org. Chem.} \textbf{1994}, \textit{59}, 3902-3905.}} However, previous examples
+in the literature did not study the diastereoselectivity in these systems when trapping an
+electrophile to form an all carbon quaternary center. Exposure of \ref{cmp:xbah} to lithium metal in ammonia formed a cup-shaped enolate intermediate after protonation at the ring fusion, facilitating a substrate controlled highly diastereoselective trap of electrophile \ref{cmp:xbam} (\ce{->} \ref{cmp:xban}, \refscheme{forwardgenone}). The \textit{cis} ring
+fusion and stereochemistry of the newly forged all carbon quaternary center were later unambiguously
+confirmed by X-ray crystallography.
+Ketoalcohol \ref{cmp:xban} was protected\footnote{Olefination of unprotected \ref{cmp:xban} resulted
+recovery of an unexpected product, likely the result of an intramolecular 1,5-hydride shift. See
+section \ref{sec:hydride} (page \pageref{sec:hydride}) for further details.} and olefinated to
+deliver \ref{cmp:xbaq} in 76\% yield over two steps. Attempts to hydrogenate \ref{cmp:xbaq}, the
+free alcohol, or ketone to set the C-8 $\beta$-methyl stereocenter were less than satisfactory with
+a variety of standard heterogeneous hydrogenation catalysts. We reasoned that moving the olefin into
+the ring system and farther away from the congested C-9 quaternary center could favorably affect the
+outcome of further hydrogenation efforts. Rhodium mediated isomerization\footnote{{\frenchspacing
+Stahl, P.; Kissau, L.; Mazitschek, R.; Huwe, A.; Furet, P.; Giannis, A.; Waldmann, H. Total Synthesis and
+Biological Evaluation of the Nakijiquinones. \textit{J. Am. Chem. Soc.} \textbf{2001}, \textit{123},
+11586-11593.}} with concomitant silyl deprotection followed by PCC oxidation provided cyclopentanone
+\ref{cmp:xbas} in a 91\% yield over two steps.
+Hydrogenation over Adams' catalyst delivered epimeric cyclopentanones \ref{cmp:xbat} and
+\ref{cmp:xbau} in an unoptimized 3:2 dr slightly favoring the desired $\beta$-methyl epimer. We
+turned our attention next to the key ring expansion event with two potential cyclopentanone
+substrates in hand (\ref{cmp:xbas} and \ref{cmp:xbat}).
+
+\begin{Scheme}[b]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/homoone}
+    \begin{textblock}{1}(12.2,-0.5) \cmp{xbav} \end{textblock}
+    \begin{textblock}{1}(5,-0.5) \textsf{\scriptsize{\ref{cmp:xbas}}}
+\end{textblock}
+  \caption{Successful ring expansion of cyclopentanone \ref{cmp:xbas}.}
+  \label{sch:homoone}
+\end{Scheme}
+We were pleased to see that the conditions optimized previously for model
+systems translated exceptionally well to cyclopentanone \ref{cmp:xbas} with very
+little modification (\refscheme{homoone}). Exposure of \ref{cmp:xbas} to 10 mol \%
+\ce{Sc(OTf)3} and 1.5 equivalents of TMSD in \ce{CDCl3} showed only 33\% conversion after 18
+hours at room temperature. Simply heating the reaction mixture to 50
+\degc~resulted in 88\% conversion in an additional 9 hours and complete
+conversion with a further 10 hours of heating. After dilute acid hydrolysis, the
+regioselectivity by $^1$H NMR spectroscopy was approximately 6:1,
+favoring the desired regioisomer (\ref{cmp:xbav}). Dropping the catalyst loading to 5 mol \% and
+increasing the concentration allowed the desired cyclohexanone to be recovered
+in an 89\% isolated yield ($>$8:1 regioselectivity, 16 h, 50 \degc) after protodesilylation. We also
+attempted to use the bulkier PDMSD with \ref{cmp:xbas}, which had previously performed better in the context of model studies (\refscheme{pdmsd}, page
+\pageref{sch:pdmsd}). After heating for 24 hours at 50 \degc\  the reaction mixture was analyzed by
+$^1$H NMR spectroscopy and showed a single regioisomer; however, the conversion had only reached
+75\% during this time period (\ce{->} \ref{cmp:xbav}, \refscheme{homoonepdms}). The larger
+diazoalkane afforded the higher levels of regioselectivity expected from model studies, but the
+reaction efficiency suffered. Content with the use of TMSD, we attempted to press forward with
+\ref{cmp:xbav} in hand. Unfortunately, all attempts to hydrogenate \ref{cmp:xbav} were
+unsucessful.\footnote{A complete discussion of attempts to further transform \ref{cmp:xbav} and
+related compounds will be included as part of the Ph.D. dissertation of Hilan Z. Kaplan.
+\label{ref:kaplancopout}} \begin{Scheme}[h]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/homoonepdms}
+    \begin{textblock}{1}(12.2,-0.5) \textsf{\scriptsize{\ref{cmp:xbav}}} \end{textblock}
+    \begin{textblock}{1}(5,-0.5) \textsf{\scriptsize{\ref{cmp:xbas}}}
+\end{textblock}
+  \caption{Higher regiocontrol but lower efficiency with PDMSD.}
+  \label{sch:homoonepdms}
+\end{Scheme}
+
+
+\begin{Scheme}[t]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/homoonebeta}
+   \begin{textblock}{1}(12.6,-0.5) \cmp{bcm} \end{textblock}
+    \begin{textblock}{1}(5,-0.5) \textsf{\scriptsize{\ref{cmp:xbat}}}
+\end{textblock}
+  \caption{Complete decomposition with forcing conditions.}
+  \label{sch:homoonebeta}
+\end{Scheme}
+When $\beta$-methyl cyclopentanone \ref{cmp:xbat} was subjected to similar homologation
+conditions optimized above for \ref{cmp:xbas} (5 mol \% \ce{Sc(OTf)3}, 2 equivalents TMSD), we were
+disappointed to see a complete lack of reactivity. Heating the reaction mixture to 50 \degc\ did nothing to drive a productive reaction,
+instead simply accelerated decomposition of the diazoalkane. The starting cyclopentanone was
+returned unchanged. In another experiment with 6 equivalents of TMSD, heating to 70 \degc\ lead to
+complete decomposition of the diazoalkane and starting material (\refscheme{homoonebeta}). Not even
+a trace amount of the characteristic enol silane \ref{cmp:bcm} could be detected. A control
+experiment containing a mixture of $\beta$-- and $\alpha$-methyl cyclopentanones \ref{cmp:xbat} and \ref{cmp:xbau} was run with two equivalents of TMSD and 5 mol \% \ce{Sc(OTf)3} at 50 \degc\ 
+overnight. We were able to observe complete conversion of the $\alpha$ epimer \ref{cmp:xbau} by
+$^1$H NMR, but the $\beta$ epimer remained completely untouched. This control indicated that our
+reaction was working properly and something particular about the $\beta$ epimer was preventing the
+homologation reaction from occuring. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.4, trim = 10mm 0mm 15mm -125mm,
+clip,
+  angle=92]{chp_singlecarbon/images/betamethylcrystal}
+    \begin{textblock}{1}(3.3,-10) \textsf{\scriptsize{\ref{cmp:xbat}}} \end{textblock}
+   \begin{textblock}{1}(3,-10)
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/betamethylstructure}
+  \end{textblock}
+  \caption{ORTEP diagram of $\beta$-methyl hydrogenation product.}
+  \label{fig:betamethylcrystal}
+\end{figure}
+Looking at the solid state structure of $\beta$-methyl cyclopentanone \ref{cmp:xbat} revealed a
+likely rationale for why this substrate failed to undergo homologation even under strongly forcing
+conditions (\reffigure{betamethylcrystal}). Access to the $\pi$* orbital of the carbonyl was
+exceptionally hindered by angular methyl groups on both sides of the molecule. The $\alpha$ face of the carbonyl was
+effectively blocked by the adjacent methyl group and the $\beta$ face was shielded by the axial
+methyl group on the C-9 quaternary center. The solid state structure of the $\alpha$-methyl
+cyclopentanone \ref{cmp:xbau} revealed a different chair conformation where the $\beta$ face of the
+carbonyl was now more accessible (\reffigure{alphamethylcrystal}).  Although the solid state structure may not
+accurately represent the solution phase structure as there may be more conformational liberty in
+solution, these structural features shed light on why \ref{cmp:xbau} readily underwent
+homologation, whereas \ref{cmp:xbat} was completely inert.
+ \begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.40, trim = 10mm -50mm 15mm 0mm,
+clip,
+  angle=92]{chp_singlecarbon/images/alphamethylcrystal}
+  \begin{textblock}{1}(12,-10)
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/alphamethylstructure}
+  \end{textblock}
+   \begin{textblock}{1}(13,-10) \textsf{\scriptsize{\ref{cmp:xbau}}} \end{textblock}
+  \caption{ORTEP diagram of $\alpha$-methyl hydrogenation product.}
+  \label{fig:alphamethylcrystal}
+\end{figure}
+
+
+\subsection{Second Generation Synthesis}
+
+The first generation dissolved metal reductive alkylation (\ref{cmp:xbah} + \ref{cmp:xbam} \ce{->}
+\ref{cmp:xban}, \refscheme{forwardgenone}, page \pageref{sch:forwardgenone}) and subsequent single
+carbon homologation reactions with trisubstituted ene-one \ref{cmp:xbas} performed exceptionally
+well. However, we ran into a number of unexpected difficulties when attempting to further transform
+cyclohexanone \ref{cmp:xbav}. Installing the C-8 $\beta$-methyl stereogenic
+center appeared to be an insurmountable problem.\crossref{ref:kaplancopout} In an attempt to address
+these issues, a second generation route was designed. The synthetic strategy remained largely the
+same for the second generation route. A dissolved metal reductive alkylation event would build a significant portion of the carbon framework and set the key
+\textit{cis} ring fusion. Ring expansion with TMSD would then provide access to the decalin core
+found in the final target. The major difference in the second generation was the selection of
+electrophile.
+
+\begin{Scheme}[b]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/gentwoelectrophile}
+  \begin{textblock}{1}(2.2,0) \cmp{bcn} \end{textblock}
+  \begin{textblock}{1}(8.8,0) \cmp{xbaw} \end{textblock}
+  \begin{textblock}{1}(15.5,0) \cmp{xbay} \end{textblock}
+  \caption{Second generation electrophile synthesis.}
+  \label{sch:ephiletwo}
+\end{Scheme}
+We wanted to incorporate functionality into the electrophile that could be unmasked later and
+provide a means to direct a homogeneous hydrogenation catalyst to the $\beta$-face of the
+molecule.\footnote{{\frenchspacing Hoveyda, A.
+H.; Evans, D.
+A.; Fu, G.
+C.
+Substrate-Directable Chemical Reactions. \textit{Chem. Rev.} \textbf{1993}, \textit{93},
+1307-1370.}} A similar directed hydrogenation strategy was employed by Terashima to set the C-8
+methyl stereogenic center in his synthesis of ($+$)-arenarol, a natural product containing a very
+similar \textit{cis}-decalin carbon framework.\footnote{{\frenchspacing Kawano, H.; Masanori, I.;
+Tadashi, K.; Terashima, S. Studies Toward the Synthesis of Popolohuanone E: Synthesis of Natural
+(+)-Arenarol Related to the Proposed Biogenetic Precursor of Popolohuanone E.
+\textit{Tetrahedron Lett.} \textbf{1997}, \textit{38}, 7769-7772.}} We began by preparing
+electrophile \ref{cmp:xbay} (\refscheme{ephiletwo}), which contained an orthogonally protected
+phenol that we planned to use later as a directing group and ultimately as a functional handle for
+quinone oxidation.\footnote{Early model studies on the oxidation of free phenols with Fremy's salt
+were very promising. {\frenchspacing Wehrli, P.
+A.; Pigott, F.
+Oxidation with the Nitrosodisulfonate Radical. I. Preparation and Use of Disodium
+Nitrosodisulfonate: Trimethyl-\textit{p}-Benzoquinone.
+\textit{Org. Synth.} \textbf{1972}, \textit{52}, 83.} For a review see: {\frenchspacing Zimmer, H.;
+Lankin, D. C.; Horgan, S. W. Oxidations with Potassium Nitrosodisulfonate (Fremy's Radical). The
+Teuber Reaction. \textit{Chem. Rev.} \textbf{1971}, \textit{72}, 229-246.}} Starting from benzyl
+alcohol \ref{cmp:bcn}, regioselective chlorination with 1,3-dichloro-5,5-dimethylhydantoin delivered
+the desired aryl-chloride \ref{cmp:xbaw} in 92\% yield.\footnote{{\frenchspacing Auerbach, J.;
+Weissman, S. A.; Blacklock, T. J.; Angeles, M. R.; Hoogsteen, K.
+\textit{N}-Bromosuccinimide / Dibromodimethylhydantoin in Aqueous Base: A Practical Method for the
+Bromination of Activated Benzoic Acids. \textit{Tetrahedron Lett.} \textbf{1993}, \textit{34},
+931-934.}} Bromination under Appel conditions,\footnote{{\frenchspacing Appel, R. Tertiary
+Phosphane/Tetrachloromethane, a Versatile Reagent for Chlorination, Dehydration, and P--N Linkage.
+\textit{Angew. Chem. Int. Ed.} \textbf{1975}, \textit{14}, 801-811.}} followed by displacement of
+the bromide with sodium iodide provided decagram-scale access to the desired second generation
+electrophile \ref{cmp:xbay} in an 86\% yield over two steps.
+
+\begin{Scheme}[h]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/forwardgentwo}
+  \begin{textblock}{1}(8.5,0) \cmp{xbaz} \end{textblock}
+  \begin{textblock}{1}(15.5,0) \cmp{xbbc} \end{textblock}
+ \begin{textblock}{1}(2.4,-0.5) \textsf{\scriptsize{\ref{cmp:xbah}}} \end{textblock}
+ \begin{textblock}{1}(6.5,-1.62) \textsf{\scriptsize{\ref{cmp:xbay}}} \end{textblock}
+  \caption{Second generation forward synthesis.}
+  \label{sch:forwardgentwo}
+\end{Scheme}
+\begin{Scheme}[b]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/forwardgentwodiverge}
+  \begin{textblock}{1}(1.4,0) \cmp{xbbe} \end{textblock}
+  \begin{textblock}{1}(16.5,0) \cmp{xbbg} \end{textblock}
+ % \begin{textblock}{1}(15.5,0) \cmp{xbay} \end{textblock}
+ \begin{textblock}{1}(9,0) \textsf{\scriptsize{\ref{cmp:xbbc}}} \end{textblock}
+  \caption{Divergent approach in second generation synthesis.}
+  \label{sch:forwardgentwodiverge}
+\end{Scheme}
+We then proceeded with the dissolved metal reductive alkylation of
+electrophile \ref{cmp:xbay} and reduced Hajos-Parrish ketone \ref{cmp:xbah}. The reductive
+alkylation smoothly delivered the desired keto-alcohol \ref{cmp:xbaz} in 79\% yield after column
+chromatography (\refscheme{forwardgentwo}). Silyl protection under standard conditions and
+Wittig olefination afforded \ref{cmp:xbbc} in 85\% yield over two steps. At this stage in the
+previous generation synthesis we isomerized the 1,1-disubstituted exocyclic olefin to help
+facilitate a poorly diastereoselective hydrogenation over Adam's catalyst (\refscheme{forwardgenone}, page
+\pageref{sch:forwardgenone}). By diverging the material at this point and
+bringing forward both the 1,1-disubstituted olefin and the trisubstituted olefin, we could have
+more substrates to test in the homologation reaction and subsequent hydrogenation
+(\refscheme{forwardgentwodiverge}).
+Direct deprotection of \ref{cmp:xbbc} with TBAF followed by Dess-Martin oxidation provided access to
+the exocyclic 1,1-disubstituted cyclopentanone \ref{cmp:xbbe} in quantitative yield over two steps.
+Rhodium mediated isomerization and deprotection of \ref{cmp:xbbc} followed by Dess-Martin oxidation
+afforded the trisubtituted olefin \ref{cmp:xbbg} in 98\% yield over two steps. Attempts were not
+made to hydrogenate either \ref{cmp:xbbe} or \ref{cmp:xbbg} prior to the homologation event because
+of our previous challenges with $\beta$-methyl cyclopentanone \ref{cmp:xbat}.
+
+\begin{Scheme}[h]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/homotwoexocyclic}
+ \begin{textblock}{1}(12,-1.5) \cmp{xbbh} \end{textblock}
+ \begin{textblock}{1}(17,-1.5) \cmp{xbbi} \end{textblock}
+\begin{textblock}{1}(3,-0.5) \textsf{\scriptsize{\ref{cmp:xbbe}}} \end{textblock}
+  \caption{Homologation of \ref{cmp:xbbe} gives diminished selectivity and yields.}
+  \label{sch:homotwoexocyclic}
+\end{Scheme}
+\begin{Scheme}[b]
+  \centering \includegraphics[scale=0.8]{chp_singlecarbon/images/homotwotrisub}
+ \begin{textblock}{1}(13,-0.25) \cmp{xbbj} \end{textblock}
+ \begin{textblock}{1}(5,-0.25) \textsf{\scriptsize{\ref{cmp:xbbg}}} \end{textblock}
+  \caption{Excellent yield with the homologation of \ref{cmp:xbbg}.}
+  \label{sch:homotwotrisub}
+\end{Scheme}
+We then focused on the key ring expansion event with two additional cyclopentanone substrates in
+hand (\ref{cmp:xbbe}, \ref{cmp:xbbg}). We were pleased again to see that both substrates readily
+underwent homologation with mild warming of the reaction mixture, reaching full conversion in less
+than 24 hours.
+Exocyclic cyclopentanone \ref{cmp:xbbe} delivered a slightly diminished 69\% isolated yield of the desired major regioisomer
+\ref{cmp:xbbh}, along with a 7\% isolated yield of the minor regioisomer \ref{cmp:xbbi}
+(\refscheme{homotwoexocyclic}, approx.
+7:1 rr by crude $^1$H NMR).
+Isomerized cyclopentanone \ref{cmp:xbbg} afforded an excellent 93\% isolated yield of the target
+homologated product \ref{cmp:xbbj} (\refscheme{homotwotrisub}). The homologation reaction of
+\ref{cmp:xbbg} tracked well with the results obtained in the first generation route with \ref{cmp:xbas} (89\% isolated, $>$8:1 rr). These results
+illustrate how seemingly subtle changes to the molecule can have a fairly striking effect on the
+outcome of the homologation reaction. 
+ 
+ \begin{figure}[h]
+  \centering
+  \vspace{-60pt}
+  \includegraphics[scale=0.30]{chp_singlecarbon/images/homotwomodel}
+  \vspace{-75pt}
+   \begin{textblock}{1}(13,-9) \textsf{\scriptsize{\ref{cmp:xbbe}}} \end{textblock}
+   \begin{textblock}{1}(1,-9) \textsf{\scriptsize{\ref{cmp:xbbg}}} \end{textblock}
+  \caption{Modeling of cyclopentanones \ref{cmp:xbbe} and \ref{cmp:xbbg} reveals different chair 
+  conformations.}
+  \label{fig:homotwomodel}
+\end{figure}
+Modeling of cyclopentanones \ref{cmp:xbbe} and \ref{cmp:xbbg} \textit{in silico} revealed that the
+position of the olefin significantly impacts the preferred chair conformation of the
+molecule.\footnote{Optimized geometries were calculated with Gaussian '09 - B3LYP 3-21G / Avogadro
+1.03} The endocyclic olefin cyclopentanone \ref{cmp:xbbg} (left, \reffigure{homotwomodel}) adopts a
+half-chair conformation that places both the C-9 appended aryl group and $\alpha$-keto methyl in a
+distorted 1,3-diaxial orientation. The exocyclic olefin cyclopentanone \ref{cmp:xbbe} (right,
+\reffigure{homotwomodel}) prefers a twist-boat conformation where the C-9 aryl moiety rests in an
+equatorial disposition and the $\alpha$-keto methyl remains axial. The change in conformation
+translates to a modified steric environment around the ketone, which in turn affects the outcome
+of the homologation reactions. 
+
+
+
+The homologation reactions performed exceptionally well, and we were especially pleased to see that
+reactions worked consistently. The reliability and scalability of the reaction allowed ample
+quantities of material to be moved forward. Again significant hardships were encountered when
+attempting to further transform both
+\ref{cmp:xbbh} and \ref{cmp:xbbj}. A complete discussion is beyond the scope of this chapter and will be discussed elsewhere.\crossref{ref:kaplancopout}
+
+
+\subsection{An Unexpected 1,5-Hydride Shift}
+\label{sec:hydride}
+
+\begin{Scheme}[b]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/hydrideone}
+  \begin{textblock}{1}(3.8,-0.25) \textsf{\scriptsize{\ref{cmp:xban}}} \end{textblock}
+  \begin{textblock}{1}(8.5,-0.6) \cmp{bco}  \end{textblock}
+  \begin{textblock}{1}(14,-0.25) \cmp{xbao}  \end{textblock}
+  \caption{Unexpected molecular rearrangement during Wittig olefination.}
+  \label{sch:hydrideone}
+\end{Scheme}
+During the course of our studies we observed an unexpected molecular rearrangement when attempting
+to directly olefinate the \textit{cis}-fused keto alcohol products derived from
+dissolved metal reductive alkylation.
+When keto-alcohol \ref{cmp:xban} was subjected to Wittig methylenation conditions, an ene-carbinol
+isomeric with the anticipated product was isolated in an 81\% yield
+(\ce{->}\ref{cmp:xbao}, \refscheme{hydrideone}).
+The observed product, whose connectivity was rigorously established by TOCSY NMR data, was the result of what we believed to be
+a transannular 1,5-hydride migration followed by cyclo\textit{pentanone} methylenation. This type of
+internal redox event has been observed previously in a number conformationally biased bicyclic
+systems.\footnote{(a) {\frenchspacing Dvornik, D.; Edwards, O. E. Ajaconine: An Intramolecular
+Cannizzaro-type Reaction and the Location of the Undefined Oxygen. \textit{Proc. Chem. Soc.}
+\textbf{1958}, 280-281.} (b) {\frenchspacing Acklin, W.; Prelog, V. Die Bestimmung der absoluten
+Konfiguration von 8-Methyl-hydrindan-Derivaten durch asymmetrische Synthese. Eine intramolekulare
+1,5-Hydrid-Verschiebung in der \textit{cis}-Hydrindan-Reihe. \textit{Helv. Chim. Acta.}
+\textbf{1959}, \textit{42}, 1239-1247.} (c) {\frenchspacing Parker, W.; Stevenson, J. R. A
+Transannular 2,6-Hydride Shift in the Bicyclo[3,3,1]nonane System. \textit{J. Chem. Soc. Chem.
+Comm.} \textbf{1969}, 1289-1290.} (d) {\frenchspacing Wicha, J.; Caspi, E. Transformations of
+Steroidal Neopentyl Systems. VII. Mechanism of the Transformation of
+(19\textit{R})-Hydroxy-19a-methyl-(5$\alpha$)-3-ones to
+19-Keto-19a-methyl-(5$\alpha$)-3$\alpha$-hydroxy Analogs. \textit{J. Org. Chem.} \textbf{1973},
+\textit{38}, 1280-1283.} (e) {\frenchspacing Shepherd, J. M.; Singh, D.; Wilder Jr., P. An Alkali
+Induced 1,4-Hydride Shift in endo-Tricyclo[5.2.1.0]decyl Ketols. \textit{Tetrahedron Lett.}
+\textbf{1974}, \textit{15}, 2743-2746.} (f) {\frenchspacing Warnhoff, E. W. A Base-induced
+Transannular 1,4-Hydride Shift in a Cyclohexanone. \textit{J. Chem. Soc. Chem. Comm.} \textbf{1976},
+517-518.} \label{ref:hydriderefs}} We speculated that the two quaternary carbon centers, arranged
+1,3 around the cyclohexanone, would suffer from a 1,3-diaxial interaction in either chair conformer. Under the
+reaction conditions, a boat conformation (\ref{cmp:bco}) that helps alleviate some of the penalizing
+1,3 interactions could be energetically accessible and allow the migrating hydrogen to come in close
+proximity of the carbonyl $\pi$* orbital. In the second generation synthesis we also observed a similar molecular rearrangement with
+unprotected keto-alcohol \ref{cmp:xbaz} (\refscheme{hydridetwo}). Instead of isolating the analogous 
+rearranged ene-carbinol, further transformation of \ref{cmp:bcp} led to the unusual tetracyclic
+olefin \ref{cmp:xbba} which could be recovered in a 60\% isolated yield. All analytical data were
+consistent with structure \ref{cmp:xbba} and no other major products were isolated from the reaction
+mixture.
+\begin{Scheme}[t]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/hydridetwo}
+  \begin{textblock}{1}(3.4,-0.25) \textsf{\scriptsize{\ref{cmp:xbaz}}} \end{textblock}
+  \begin{textblock}{1}(10.5,-0.6) \cmp{bcp}  \end{textblock}
+  \begin{textblock}{1}(14.5,-0.25) \cmp{xbba}  \end{textblock}
+  \caption{Further molecular rearrangement with second generation electrophile.}
+  \label{sch:hydridetwo}
+\end{Scheme}
+\begin{Scheme}[hb]
+  \centering
+  \includegraphics[scale=0.8]{chp_singlecarbon/images/crossover}
+  \begin{textblock}{1}(1,-1) \textsf{\scriptsize{\ref{cmp:xbaz}}} \end{textblock}
+  \begin{textblock}{1}(5,-1) \cmp{xbbo}  \end{textblock}
+  \begin{textblock}{1}(12.5,-3.9) \cmp{bcq}  \end{textblock}
+  \begin{textblock}{1}(17,-3.9) \cmp{bcr}  \end{textblock}
+  \begin{textblock}{1}(12.5,0) \cmp{bcs}  \end{textblock}
+  \begin{textblock}{1}(17,0) \cmp{bct}  \end{textblock}
+  \caption{Design of crossover experiment to test intramolecular hydride shift.}
+  \label{sch:crossover}
+\end{Scheme}
+
+
+\begin{figure}[t]
+  \centering
+\includegraphics[scale=0.8]{chp_singlecarbon/images/crossovermass}
+  \begin{textblock}{5}(12,-15)\textit{\textsf{\small predicted spectrum}}\end{textblock}
+   \begin{textblock}{5}(12,-5)\textit{\textsf{\small observed spectrum}}\end{textblock}
+  \caption{Predicted mass spectrum for \ref{cmp:bcq} + \ref{cmp:bcr} and observed spectrum.}
+  \label{fig:crossovermass}
+\end{figure}
+To test if the hydride shift occured through an intramolecular process we designed a simple
+crossover experiment (\refscheme{crossover}). Subjecting a 1:1
+molar mixture of \ref{cmp:xbaz} and \ref{cmp:xbbo} to Wittig conditions should result in exclusive
+formation of \ref{cmp:bcq} and \ref{cmp:bcr} if the process proceeds through a clean intramolecular
+reaction.
+In the event that the mechanism involves a bimolecular process, the crossover products \ref{cmp:bcs}
+and \ref{cmp:bct} should also be observed. We began by preparing a sample of doubly-labelled
+keto-alcohol \ref{cmp:xbbo}, which required the synthesis of labelled versions of the
+second generation electrophile \ref{cmp:xbay} and reduced Hajos-Parrish ketone
+\ref{cmp:xbah}.\footnote{See the experimental section for details.} With the requisite material in
+hand, we subjected \ref{cmp:xbaz} and \ref{cmp:xbbo} to the standard Wittig conditions. High
+resolution mass spectroscopic data were then recorded on the reaction mixture
+(\reffigure{crossovermass}) and confirmed that the process does indeed occur through an exclusively
+intramolecular pathway. The predicted mass spectrum for
+\ref{cmp:bcq} and \ref{cmp:bcr}, which accounts for the natural isotopic distribution pattern, was
+identical to the experimental spectrum. The crossover product masses for \ref{cmp:bcs}
+(\ce{C20H25DClO2}, 334.1679 [M+H]$^+$) and \ref{cmp:bct} (\ce{C20H24D2ClO2}, 335.1741 [M+H]$^+$)
+were not detected. Although there is a mass hit in the experimental spectrum at 334.1652, the peak
+corresponds to the expected [M + H + 1]$^+$ peak for \ref{cmp:bcq} and the resolution of the
+instrument was high enough to distinguish between 334.1652 and 334.1679. In the event that the masses overlapped in
+the spectrum, the ratio between peak heights was still in agreement with the expected natural
+isotopic distribution for the intramolecular products. These
+data are a nice complement to the examples in the literature, since the previously reported cases
+did not thoroughly investigate the reaction mechanism.\crossref{ref:hydriderefs} 
+% \begin{Scheme}[h]
+%   \centering
+%   \includegraphics[scale=0.8]{chp_singlecarbon/images/gentwoelectrophiled}
+%   \caption{Synthesis of deuterium labelled electrophile for crossover
+%   experiment.}
+%   \label{sch:ephiletwod}
+% \end{Scheme}
+
+
+
+
+\pagebreak
+\section{Conclusion}
+
+In summary, we have succesfully demonstrated the first examples of catalytic single-carbon
+homologation with $\alpha$-quaternary cyclopentanone substrates. In model systems, high levels of
+regioselectivity can be obtained by either using \ce{Yb(OTf)3} as the catalyst, or by employing the
+more sterically demanding diazoalkane PDMSD (up to $>$50:1 rr). Rigorously controlling environmental
+variables led to procedures that allow these reactions to be carried out reliably. The precautions
+discussed in Chapter \ref{chp:asymmetric} with regard to dry reaction conditions proved to be
+integral to the success of single-carbon homologations as well. When extending the method to more
+complex substrates, moderate to high yields with good levels of regiocontrol were observed (69-93\% yield, $>$8:1 rr). Of the previous examples in the literature, the new reactions catalyzed by low loadings of \ce{Sc(OTf)3} were among the highest yielding and most selective. We are confident that these newly developed conditions could find other applications in the future. 
+
+\pagebreak
+\section{Experimental Data}
+\input{chp_singlecarbon/experimental.tex}

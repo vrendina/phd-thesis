@@ -1,0 +1,90 @@
+\documentclass[11pt,letterpaper,openright,oneside]{report}
+\usepackage{pifont}								% for \ding characters
+\usepackage[version=3]{mhchem}					% for formatting chemical formulas with \ce{}
+\usepackage{setspace}							% for setting line spacing \doublespace
+\usepackage[top=1.5in, bottom=1.0in, left=1.5in, right=1.0in,  includefoot,
+letterpaper]{geometry}							% define margins required by the college
+\usepackage{fancyhdr}							% for adding chapter/page numbers to the header
+\setlength{\headheight}{25pt}
+\usepackage{graphicx}
+\usepackage[overlay]{textpos}
+\usepackage{wrapfig}
+\usepackage[hang,flushmargin,bottom]{footmisc}
+\usepackage[format=hang,labelfont=bf,font={footnotesize,sf}]{caption}
+\usepackage{float}							% for defining new types of floats, ie the scheme
+\usepackage[explicit]{titlesec}			% setup for chapter and section headings
+\usepackage{ctable}							% for highly customizable tables with footnotes
+\usepackage[table]{xcolor}				% for coloring table rows
+\usepackage{booktabs}  					% for making really nice tables
+\usepackage{rotating}						% to rotate text
+\usepackage{supertabular}				% to have tables span multiple pages
+\usepackage{array}							% to center data in a table row
+\usepackage{caption}
+\usepackage{tocloft}			
+\usepackage{multirow}						% to span multiplerows 		
+\usepackage{textcomp}					% for copyleft symbol
+%\usepackage[process=all]{pstool}
+\usepackage{epstopdf}						% to convert eps files to pdf
+% \usepackage{lineno}							% uncomment to display line numbers in document
+% \linenumbers
+
+\usepackage[
+  colorlinks,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black,
+  ]{hyperref}
+\usepackage[all]{hypcap}						% fix hyperlinking so it goes to the top
+\hypersetup{pdftitle={Development of Lewis Acid Catalyzed Asymmetric Ring Expansion
+Reactions and Catalysis of Etherification Reactions with sp3 Electrophiles},pdfauthor={Victor L.
+Rendina}, pdfsubject={}, pdfkeywords={}}
+
+\makeatletter
+\newcommand*{\toccontents}{\@starttoc{toc}} % prints toc without header
+\makeatother
+
+\renewcommand{\cftchapfont}{\small\scshape}
+
+\begin{document}
+\include{commands}
+\include{titlepage}
+%%%% Dedication
+\thispagestyle{empty}
+\begin{center}
+{\color{white} .}\\
+\vspace{60mm}
+\textit{For my parents}, who taught me to always be passionate \\
+about what you believe in. 
+\end{center}
+\clearpage
+%%%% End Dedication
+\include{abstracts}
+\pagenumbering{roman}
+\setcounter{page}{1}
+% Print table of contents with consistent header
+%\noindent {\Large \sffamily Contents}
+\noindent \textsc{\Large Contents} \\
+\hrule
+\toccontents				%%% this is throwing a weird error
+\include{acknowledgements}
+\include{abbreviations}
+%%% Setup the headers
+\pagebreak
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\lhead{\footnotesize \textsc{\thesection \hspace{2mm} \rightmark}}
+%\rhead{\textit{\footnotesize \sffamily \textbf{Chapter \thechapter}\\ Page
+%\thepage}}
+\rhead{\footnotesize  \textsc{Chapter \thechapter} \hspace{2mm} {\huge$|$} \hspace{2mm}
+\textsc{\textbf{\thepage}}}
+\cfoot{}
+\pagenumbering{arabic}
+%%% Chapter includes
+\include{chp_diazobkg/chp_diazobkg}
+\include{chp_asymmetric/chp_asymmetric}
+\include{chp_singlecarbon/chp_singlecarbon}
+\include{chp_alkylation/chp_alkylation}
+\include{chp_appendix/chp_appendix}
+
+\end{document}
